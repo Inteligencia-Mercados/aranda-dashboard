@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro de Monitoreo Operativo · Aranda Service Desk · UAO</title>
+
+<!--
+  ============================================================================
+  FLUJO DE DATOS DE LA SOLUCIÓN
+  ============================================================================
+  Este dashboard NO recibe carga manual de archivos. La arquitectura prevista es:
+
+    1) SharePoint Online
+       Los archivos PQRS.xlsx, "Servicios Fsnancieros.xlsx" y CAE.xlsx se
+       almacenan en una biblioteca de documentos de SharePoint Online y son
+       actualizados de forma continua por los usuarios de negocio (Aranda
+       exporta / sincroniza hacia estas tablas).
+
+    2) Power Automate (disparador: "Cuando se modifica un archivo" /
+       "Cuando se crea o modifica un elemento" sobre la tabla de SharePoint)
+       - Detecta cambios en cada uno de los tres archivos Excel.
+       - Lee las filas de la tabla de Excel mediante el conector de Excel
+         Online (Business) / Lists.
+       - Normaliza y transforma cada fila al modelo JSON que consume este
+         dashboard (ver carpeta /data y la sección "Estructura de datos").
+
+    3) Publicación automática en GitHub Pages
+       - El flujo invoca la GitHub REST API
+         (PUT /repos/{owner}/{repo}/contents/data/{archivo}.json) para
+         confirmar ("commit") el JSON actualizado directamente en la rama
+         que sirve GitHub Pages.
+       - Cada actualización reemplaza el contenido de data/PQRS.json,
+         data/ServiciosFinancieros.json y data/CAE.json sin intervención manual.
+
+    4) Dashboard Web (este archivo)
+       - Consume ÚNICAMENTE los archivos JSON publicados (fetch con
+         cache-busting) cada 5 minutos, sin recargar la página.
+       - Si un origen no responde o el JSON es inválido, se muestra un
+         aviso de error en la fuente afectada y se conserva el último dato
+         válido en memoria (ver app.js → loadDataSource).
+
+  Para producción, basta reemplazar las rutas en CONFIG.dataSources (app.js)
+  por la URL pública de GitHub Pages donde Power Automate publica los JSON.
+  ============================================================================
+-->
+
+<!-- Bootstrap 5 -->
+<link href="lib/bootstrap.min.css" rel="stylesheet">
+<!-- DataTables (Bootstrap 5 theme) + Buttons extension (export Excel/CSV) -->
+<link href="lib/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link href="lib/buttons.bootstrap5.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="lib/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-mark">UAO</div>
+      <div class="brand-text">
+        <span class="brand-title">Centro de Monitoreo</span>
+        <span class="brand-sub">Aranda Service Desk</span>
+      </div>
+      <button class="sidebar-toggle d-lg-none" id="sidebarClose" aria-label="Cerrar menú">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <button class="nav-link active" data-view="resumen">
+        <i class="bi bi-grid-1x2"></i><span>Resumen ejecutivo</span>
+      </button>
+      <button class="nav-link" data-view="responsables">
+        <i class="bi bi-people-fill"></i><span>Gestión de Responsables</span>
+      </button>
+      <button class="nav-link nav-link--alert" data-view="atencion">
+        <i class="bi bi-exclamation-triangle"></i><span>Atención Prioritaria</span>
+        <span class="nav-badge" id="navBadgeAtencion">0</span>
+      </button>
+      <button class="nav-link nav-link--solucionado" data-view="solucionados">
+        <i class="bi bi-check2-circle"></i><span>Solucionados</span>
+        <span class="nav-badge nav-badge--ok" id="navBadgeSolucionados">0</span>
+      </button>
+
+      <div class="nav-section-label">Procesos</div>
+      <button class="nav-link" data-view="cae">
+        <i class="bi bi-mortarboard"></i><span>CAE</span>
+        <span class="nav-badge" id="navBadgeCAE">0</span>
+      </button>
+      <button class="nav-link" data-view="pqrs">
+        <i class="bi bi-chat-square-text"></i><span>PQRS</span>
+        <span class="nav-badge" id="navBadgePQRS">0</span>
+      </button>
+      <button class="nav-link" data-view="sf">
+        <i class="bi bi-cash-coin"></i><span>Servicios Financieros</span>
+        <span class="nav-badge" id="navBadgeSF">0</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sync-pill" id="syncPill">
+        <i class="bi bi-arrow-repeat" id="syncIcon"></i>
+        <span id="syncText">Sincronizando…</span>
+      </div>
+      <div class="sidebar-footer-meta">Actualización automática cada 5 min</div>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ===================== MAIN ===================== -->
+  <div class="main-content">
+
+    <header class="topbar">
+      <button class="icon-btn d-lg-none" id="sidebarOpen" aria-label="Abrir menú">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="breadcrumb-block">
+        <div class="breadcrumb" id="breadcrumb">
+          <span>Centro de Monitoreo</span><i class="bi bi-chevron-right"></i><span id="breadcrumbCurrent">Resumen ejecutivo</span>
+        </div>
+        <h1 class="view-title" id="viewTitle">Resumen ejecutivo</h1>
+      </div>
+
+      <div class="topbar-actions">
+        <div class="global-search">
+          <i class="bi bi-search"></i>
+          <input type="text" id="globalSearch" placeholder="Buscar caso, cliente o responsable…" autocomplete="off">
+        </div>
+        <div class="last-update">
+          <span class="last-update-label">Última sincronización</span>
+          <span class="last-update-value" id="lastUpdateValue">—</span>
+        </div>
+        <button class="icon-btn" id="refreshNowBtn" title="Sincronizar ahora">
+          <i class="bi bi-arrow-clockwise"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="error-banner-stack" id="errorBannerStack"></div>
+
+    <!-- Barra de filtros globales — contenido inyectado por JS -->
+    <div class="global-filter-bar" id="globalFilterBar"></div>
+
+    <main class="view-container" id="viewContainer">
+
+      <!-- ============ VISTA: RESUMEN EJECUTIVO ============ -->
+      <section class="view active" id="view-resumen" data-view="resumen">
+
+        <div class="kpi-grid" id="kpiExecGrid">
+          <!-- KPI cards injected by JS: kpi-card template -->
+        </div>
+
+        <div class="grid-2col">
+          <div class="panel">
+            <div class="panel-header">
+              <h2><i class="bi bi-graph-up-arrow"></i> Tendencia de creación de casos</h2>
+              <div id="execTendPeriod"></div>
+            </div>
+            <div class="chart-wrap chart-tall chart-wrap--hscroll">
+              <div class="chart-scroll-inner" id="execTendInner">
+                <canvas id="chartExecTendencia" class="chart-skeleton"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-header">
+              <h2><i class="bi bi-pie-chart"></i> Distribución por clasificación</h2>
+              <span class="panel-sub">Normal · Riesgo · Crítico · Vencido</span>
+            </div>
+            <div class="chart-wrap chart-tall">
+              <canvas id="chartExecClasificacion" class="chart-skeleton"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2><i class="bi bi-bar-chart-steps"></i> Comparativo ejecutivo entre áreas</h2>
+            <span class="panel-sub">Haga clic en los encabezados para ordenar</span>
+          </div>
+          <div class="table-responsive">
+            <table class="table data-table" id="tableComparativo" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Área</th>
+                  <th>Casos</th>
+                  <th>Vencidos</th>
+                  <th>Críticos</th>
+                  <th>Riesgo</th>
+                  <th>SLA Cumplido</th>
+                  <th>Tiempo promedio (días)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2><i class="bi bi-bricks"></i> Casos por área y clasificación</h2>
+          </div>
+          <div class="chart-wrap chart-tall">
+            <canvas id="chartComparativoStack" class="chart-skeleton"></canvas>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ============ VISTA: NECESITA ATENCIÓN HOY ============ -->
+      <section class="view" id="view-atencion" data-view="atencion">
+        <div class="attention-hero">
+          <div class="attention-hero-title">
+            <i class="bi bi-exclamation-octagon-fill"></i>
+            <div>
+              <h2>Atención Prioritaria</h2>
+              <p>Casos críticos y vencidos consolidados de PQRS, Servicios Financieros y CAE</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid kpi-grid--attention" id="kpiAttentionGrid"></div>
+
+        <div class="grid-3col">
+          <div class="panel panel--highlight">
+            <div class="panel-header"><h2><i class="bi bi-person-exclamation"></i> Responsable con más vencidos</h2></div>
+            <div class="spotlight" id="spotlightResponsable">—</div>
+          </div>
+          <div class="panel panel--highlight">
+            <div class="panel-header"><h2><i class="bi bi-tags"></i> Categoría con más vencidos</h2></div>
+            <div class="spotlight" id="spotlightCategoria">—</div>
+          </div>
+          <div class="panel panel--highlight">
+            <div class="panel-header"><h2><i class="bi bi-geo-alt"></i> Área con más vencidos</h2></div>
+            <div class="spotlight" id="spotlightArea">—</div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2><i class="bi bi-list-ul"></i> Listado de casos vencidos y críticos</h2>
+            <span class="panel-sub">Todos los procesos · ordenados por progreso descendente</span>
+          </div>
+          <div class="table-responsive">
+            <table class="table data-table" id="tableAtencion" style="width:100%">
+              <thead>
+                <tr>
+                  <th>No. Caso</th>
+                  <th>Área</th>
+                  <th>Fecha de registro</th>
+                  <th>Estado</th>
+                  <th>Categoría</th>
+                  <th>Responsable</th>
+                  <th>Fecha Est. Solución</th>
+                  <th>Tiempo transcurrido</th>
+                  <th>Progreso</th>
+                  <th>Inf. Adicional</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ VISTAS DE MÓDULO (CAE / PQRS / SF) ============ -->
+      <section class="view" id="view-cae" data-view="cae" data-area="CAE" data-prefix="cae"></section>
+      <section class="view" id="view-pqrs" data-view="pqrs" data-area="PQRS" data-prefix="pqrs"></section>
+      <section class="view" id="view-sf" data-view="sf" data-area="Servicios Financieros" data-prefix="sf"></section>
+
+      <!-- ============ VISTA: SOLUCIONADOS ============ -->
+      <section class="view" id="view-solucionados" data-view="solucionados">
+        <div class="kpi-grid" id="kpiSolucionadosGrid"></div>
+        <div class="panel">
+          <div class="panel-header">
+            <h2><i class="bi bi-check2-circle"></i> Casos solucionados</h2>
+            <span class="panel-sub">Clasificación basada en el Progreso al momento de la solución · todos los procesos</span>
+          </div>
+          <div class="table-responsive">
+            <table class="table data-table" id="tableSolucionados" style="width:100%">
+              <thead>
+                <tr>
+                  <th>No. Caso</th>
+                  <th>Área</th>
+                  <th>Fecha de registro</th>
+                  <th>Estado</th>
+                  <th>Categoría</th>
+                  <th>Responsable</th>
+                  <th>Fecha Est. Solución</th>
+                  <th>Tiempo transcurrido</th>
+                  <th>Progreso (al resolver)</th>
+                  <th>Inf. Adicional</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ VISTA: GESTIÓN DE RESPONSABLES ============ -->
+      <section class="view" id="view-responsables" data-view="responsables">
+
+        <!-- Filtros propios de esta sección — contenido inyectado por JS -->
+        <div class="global-filter-bar" id="respSectionFilter"></div>
+
+        <!-- KPI resumen general -->
+        <div class="kpi-grid" id="kpiResponsablesGrid"></div>
+
+        <!-- Tabla de desempeño de todos los responsables -->
+        <div class="panel">
+          <div class="panel-header">
+            <h2><i class="bi bi-table"></i> Desempeño por responsable</h2>
+            <span class="panel-sub">Datos históricos completos · haga clic en una fila para ver el detalle</span>
+          </div>
+          <table class="table data-table resp-resumen-table" id="tableRespResumen" style="width:100%">
+            <thead>
+              <tr>
+                <th>Responsable</th>
+                <th>Total casos</th>
+                <th>Abiertos</th>
+                <th>Vencidos activos</th>
+                <th>Críticos activos</th>
+                <th>% Resolución</th>
+                <th>SLA cumplido</th>
+                <th>Días prom. resolución</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-- Panel de detalle por responsable (oculto hasta clic) -->
+        <div class="panel resp-detail-panel" id="panelRespDetalle" style="display:none">
+          <div class="panel-header resp-detail-header">
+            <div>
+              <h2 id="respDetalleNombre" style="margin:0"><i class="bi bi-person-circle"></i> —</h2>
+              <span id="respDetalleArea" class="panel-sub" style="display:block;margin-top:4px"></span>
+            </div>
+            <button class="icon-btn" id="btnCerrarRespDetalle" title="Cerrar detalle">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="kpi-grid" id="kpiRespDetalle"></div>
+          <div class="grid-2col">
+            <div class="panel">
+              <div class="panel-header"><h2><i class="bi bi-pie-chart"></i> Casos abiertos por clasificación</h2></div>
+              <div class="chart-wrap"><canvas id="chartRespClasif" class="chart-skeleton"></canvas></div>
+            </div>
+            <div class="panel">
+              <div class="panel-header"><h2><i class="bi bi-tags"></i> Categorías más frecuentes</h2></div>
+              <div class="chart-wrap"><canvas id="chartRespCategorias" class="chart-skeleton"></canvas></div>
+            </div>
+          </div>
+          <div class="panel-header" style="margin-top:16px">
+            <h2><i class="bi bi-folder2-open"></i> Casos abiertos</h2>
+            <span class="panel-sub" id="respDetalleCasosCount"></span>
+          </div>
+          <div class="table-responsive">
+            <table class="table data-table" id="tableRespCasos" style="width:100%">
+              <thead>
+                <tr>
+                  <th>No. Caso</th>
+                  <th>Área</th>
+                  <th>Fecha Reg.</th>
+                  <th>Estado</th>
+                  <th>Categoría</th>
+                  <th>Servicio</th>
+                  <th>Tiempo transcurrido</th>
+                  <th>Progreso</th>
+                  <th>Inf. Adicional</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- Toast container for sync errors -->
+<div id="toastStack" class="toast-stack"></div>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.bundle.min.js"></script>
+<script src="lib/chart.umd.min.js"></script>
+
+<!-- DataTables core + Bootstrap5 styling + Buttons (Excel/CSV export) -->
+<script src="lib/jquery.dataTables.min.js"></script>
+<script src="lib/dataTables.bootstrap5.min.js"></script>
+<script src="lib/dataTables.buttons.min.js"></script>
+<script src="lib/buttons.bootstrap5.min.js"></script>
+<script src="lib/jszip.min.js"></script>
+<script src="lib/buttons.html5.min.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
