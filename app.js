@@ -426,7 +426,7 @@
   /* Construye el HTML de un multi-select dropdown */
   function buildMsDropHTML(key, label, icon, options, filterObj) {
     const sel = (filterObj || GLOBAL_FILTER)[key] || [];
-    const badgeVis = sel.length > 0 ? "" : "display:none";
+    const badgeVis = (sel.length > 0 && sel.length < options.length) ? "" : "display:none";
     const optsHtml = options.map(function (opt) {
       const checked = sel.indexOf(opt) !== -1 ? " checked" : "";
       return (
@@ -436,7 +436,7 @@
         '</label>'
       );
     }).join("");
-    const allChecked = sel.length === 0 ? " checked" : "";
+    const allChecked = (sel.length === 0 || (options.length > 0 && sel.length === options.length)) ? " checked" : "";
     return (
       '<div class="ms-drop" data-key="' + key + '">' +
         '<button class="ms-toggle" type="button">' +
@@ -457,6 +457,16 @@
         '</div>' +
       '</div>'
     );
+  }
+
+  function initEstadoFilter() {
+    const estadoSet = new Set();
+    AREAS.forEach(function (a) {
+      (STATE.rawData[a] || []).forEach(function (r) {
+        if (r["Estado"]) estadoSet.add(r["Estado"]);
+      });
+    });
+    GLOBAL_FILTER.estado = Array.from(estadoSet).sort();
   }
 
   function populateGlobalFilterBar() {
@@ -548,9 +558,10 @@
           const vals = [];
           drop.querySelectorAll(".ms-cb:checked").forEach(function (c) { vals.push(c.value); });
           GLOBAL_FILTER[key] = vals;
-          if (allCb) allCb.checked = vals.length === 0;
+          const totalOpts = drop.querySelectorAll(".ms-cb").length;
+          if (allCb) allCb.checked = (vals.length === 0 || vals.length === totalOpts);
           badge.textContent = vals.length;
-          badge.style.display = vals.length > 0 ? "" : "none";
+          badge.style.display = (vals.length > 0 && vals.length < totalOpts) ? "" : "none";
           onFilterChange();
         });
       });
@@ -575,6 +586,7 @@
         GF_FIELDS.forEach(function (f) { GLOBAL_FILTER[f.key] = []; });
         GLOBAL_FILTER.fechaDesde = "";
         GLOBAL_FILTER.fechaHasta = "";
+        initEstadoFilter(); // re-inicializa Estado con todos los valores seleccionados
         populateGlobalFilterBar(); // reconstruye con estado limpio
         onFilterChange();
       });
@@ -856,6 +868,9 @@
       }
       STATE.prevErrors = Object.assign({}, STATE.errors);
 
+      if (!STATE.firstLoadDone) {
+        initEstadoFilter(); // pre-selecciona todos los estados en el primer arranque
+      }
       populateGlobalFilterBar(); // reconstruye opciones con nuevos datos
       renderAll();
       STATE.firstLoadDone = true;
@@ -1134,18 +1149,22 @@
     const atencionCases = STATE.combinedRecords
       .filter(function (r) { const cls = effectiveClass(r); return cls === "Vencido" || cls === "Critico"; })
       .sort(function (a, b) { return b["Progreso"] - a["Progreso"]; });
-    const tbodyAt = document.querySelector("#tableAtencion tbody");
+
+    const selAt = "#tableAtencion";
+    if (dtRegistry[selAt]) { try { dtRegistry[selAt].destroy(); } catch (e) {} delete dtRegistry[selAt]; }
+
+    const tbodyAt = document.querySelector(selAt + " tbody");
     if (tbodyAt) {
       tbodyAt.innerHTML = atencionCases.map(function (r) { return buildCaseRow(r, { includeFechaRegistro: true }); }).join("");
     }
-    initDataTable("#tableAtencion", {
+    dtRegistry[selAt] = $(selAt).DataTable(Object.assign({ language: DT_LANG_ES }, {
       paging: true, pageLength: 15, order: [],
       dom: "frtipB",
       buttons: [
         { extend: "excelHtml5", text: '<i class="bi bi-file-earmark-excel"></i> Excel', className: "dt-button" },
         { extend: "csvHtml5",   text: '<i class="bi bi-filetype-csv"></i> CSV',         className: "dt-button" }
       ]
-    });
+    }));
   }
 
   function setSpotlight(id, entry) {
@@ -1294,8 +1313,18 @@
   function renderSolucionados() {
     const sol = [];
     AREAS.forEach(function (a) {
-      (STATE.data[a] || []).forEach(function (r) {
-        if (r["Estado"] === "Solucionado") sol.push(r);
+      (STATE.rawData[a] || []).forEach(function (r) {
+        if (r["Estado"] !== "Solucionado") return;
+        // Aplica todos los filtros globales EXCEPTO Estado (la pestaña Solucionados es independiente de ese filtro)
+        if (GLOBAL_FILTER.area.length        && GLOBAL_FILTER.area.indexOf(r["_area"])            === -1) return;
+        if (GLOBAL_FILTER.categoria.length   && GLOBAL_FILTER.categoria.indexOf(r["Categoría"])   === -1) return;
+        if (GLOBAL_FILTER.servicio.length    && GLOBAL_FILTER.servicio.indexOf(r["Servicio"])     === -1) return;
+        if (GLOBAL_FILTER.responsable.length && GLOBAL_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
+        if (GLOBAL_FILTER.grupo.length       && GLOBAL_FILTER.grupo.indexOf(r["Grupo"])           === -1) return;
+        if (GLOBAL_FILTER.urgencia.length    && GLOBAL_FILTER.urgencia.indexOf(r["Urgencia"])     === -1) return;
+        if (GLOBAL_FILTER.fechaDesde && (r["Fecha de registro"] || "") < GLOBAL_FILTER.fechaDesde) return;
+        if (GLOBAL_FILTER.fechaHasta && (r["Fecha de registro"] || "") > GLOBAL_FILTER.fechaHasta) return;
+        sol.push(r);
       });
     });
 
