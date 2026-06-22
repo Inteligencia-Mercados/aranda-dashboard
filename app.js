@@ -1328,6 +1328,23 @@
       });
     });
 
+    // Total de casos (mismos filtros activos excepto Estado) para calcular % de solución
+    let totalCasos = 0;
+    AREAS.forEach(function (a) {
+      (STATE.rawData[a] || []).forEach(function (r) {
+        if (GLOBAL_FILTER.area.length        && GLOBAL_FILTER.area.indexOf(r["_area"])            === -1) return;
+        if (GLOBAL_FILTER.categoria.length   && GLOBAL_FILTER.categoria.indexOf(r["Categoría"])   === -1) return;
+        if (GLOBAL_FILTER.servicio.length    && GLOBAL_FILTER.servicio.indexOf(r["Servicio"])     === -1) return;
+        if (GLOBAL_FILTER.responsable.length && GLOBAL_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
+        if (GLOBAL_FILTER.grupo.length       && GLOBAL_FILTER.grupo.indexOf(r["Grupo"])           === -1) return;
+        if (GLOBAL_FILTER.urgencia.length    && GLOBAL_FILTER.urgencia.indexOf(r["Urgencia"])     === -1) return;
+        if (GLOBAL_FILTER.fechaDesde && (r["Fecha de registro"] || "") < GLOBAL_FILTER.fechaDesde) return;
+        if (GLOBAL_FILTER.fechaHasta && (r["Fecha de registro"] || "") > GLOBAL_FILTER.fechaHasta) return;
+        totalCasos++;
+      });
+    });
+    const pctSolucion = pct(sol.length, totalCasos);
+
     // Clasificar cada solucionado por su Progreso real
     let vencidos = 0, criticos = 0, riesgo = 0, aTiempo = 0;
     sol.forEach(function (r) {
@@ -1341,6 +1358,7 @@
     const grid = document.getElementById("kpiSolucionadosGrid");
     if (grid) {
       grid.innerHTML =
+        kpi("% de solución", pctSolucion + "%", "sla", "bi-graph-up", sol.length + " de " + totalCasos + " casos totales") +
         kpi("Total solucionados", sol.length, "sla", "bi-check2-circle", "todos los procesos") +
         kpi("A tiempo", aTiempo, "normal", "bi-patch-check", "Progreso ≤ 70% al resolver") +
         kpi("Resueltos en riesgo", riesgo, "riesgo", "bi-shield-exclamation", "Progreso 70–90% al resolver") +
