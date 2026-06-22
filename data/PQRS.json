@@ -1,8 +1,163 @@
 {
   "area": "PQRS",
-  "generatedAt": "2026-06-22T14:13:46.219858",
+  "generatedAt": "2026-06-22T14:18:06.668972",
   "source": "Convertido desde export real de Aranda Service Desk (Items.xlsx).",
   "records": [
+    {
+      "No. Caso": "3275",
+      "Id compuesto": "RF-275711-10-3275",
+      "Asunto": "Fabricio Soto Betancourt",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "FABRICIO SOTO BETANCOURT",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Activación financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "FABRICIO SOTO BETANCOURT",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "PQRS-Kardex 4",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-14",
+      "Fecha Estimada de Atención": "2026-06-30",
+      "Jerarquía": "PETICIÓN.Servicios Financieros.Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "3274",
+      "Id compuesto": "RF-275701-10-3274",
+      "Asunto": "MARIAN CAMILA SAA NINO",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "MARIAN CAMILA SAA NINO",
+      "Categoría": "Tesorería",
+      "Servicio": "Sugerencias Tesorería",
+      "Responsable": "Jose Jovanny Cardona Delgado",
+      "Autor": "MARIAN CAMILA SAA NINO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Tesoreria",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-02",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "SUGERENCIA.Servicios Financieros.Tesorería",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "3273",
+      "Id compuesto": "RF-275693-10-3273",
+      "Asunto": "MARIAN CAMILA SAA NINO",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "MARIAN CAMILA SAA NINO",
+      "Categoría": "Tesorería",
+      "Servicio": "Atención Tesoreria",
+      "Responsable": "Margareth Kathiria Cordoba Lopez",
+      "Autor": "MARIAN CAMILA SAA NINO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Tesoreria",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-02",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "QUEJA.Servicios Financieros.Tesorería",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "3272",
+      "Id compuesto": "RF-275688-10-3272",
+      "Asunto": "MARIAN CAMILA SAA NINO",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "MARIAN CAMILA SAA NINO",
+      "Categoría": "Tesorería",
+      "Servicio": "Atención Tesoreria",
+      "Responsable": "Jose Jovanny Cardona Delgado",
+      "Autor": "MARIAN CAMILA SAA NINO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Tesoreria",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-02",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "QUEJA.Servicios Financieros.Tesorería",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "3271",
+      "Id compuesto": "RF-275685-10-3271",
+      "Asunto": "Solicitud de respuesta urgente – Descuento por última matrícula",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "ANGELICA MARIA MARCILLO ALBA",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Becas y descuentos",
+      "Responsable": "Daniela Elena Guerrero Gasca",
+      "Autor": "ANGELICA MARIA MARCILLO ALBA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "PQRS-Kardex 3",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-13",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "PETICIÓN.Servicios Financieros.Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
     {
       "No. Caso": "3270",
       "Id compuesto": "RF-275594-10-3270",
@@ -31,8 +186,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 4.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 5.0
     },
     {
       "No. Caso": "3269",
@@ -62,8 +217,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 4.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 5.0
     },
     {
       "No. Caso": "3268",
@@ -94,7 +249,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 9.0
+      "Progreso": 10.0
     },
     {
       "No. Caso": "3267",
@@ -125,7 +280,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Progreso": 13.0
     },
     {
       "No. Caso": "3266",
@@ -156,7 +311,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 14.0
+      "Progreso": 15.0
     },
     {
       "No. Caso": "3265",
@@ -187,7 +342,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 14.0
+      "Progreso": 15.0
     },
     {
       "No. Caso": "3264",
@@ -218,7 +373,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 17.0
+      "Progreso": 18.0
     },
     {
       "No. Caso": "3263",
@@ -249,7 +404,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 17.0
+      "Progreso": 18.0
     },
     {
       "No. Caso": "3261",
@@ -279,8 +434,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 19.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 20.0
     },
     {
       "No. Caso": "3260",
@@ -310,8 +465,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 19.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 20.0
     },
     {
       "No. Caso": "3256",
@@ -342,7 +497,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.0,
-      "Progreso": 29.0
+      "Progreso": 30.0
     },
     {
       "No. Caso": "3254",
@@ -366,37 +521,6 @@
       "Fecha Estimada de Solución": "2026-07-08",
       "Fecha Estimada de Atención": "2026-06-16",
       "Jerarquía": "PETICIÓN.Servicios Financieros.Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 33.0
-    },
-    {
-      "No. Caso": "3252",
-      "Id compuesto": "RF-274749-10-3252",
-      "Asunto": "JOHN ANGEL POSSO SEPULVEDA",
-      "Fecha de registro": "2026-06-16",
-      "Estado": "Registrado",
-      "Cliente": "JOHN ANGEL POSSO SEPULVEDA",
-      "Categoría": "Registro Académico",
-      "Servicio": "Certificados  académicos",
-      "Responsable": "Juan Camilo Alvarez Castillo",
-      "Autor": "JOHN ANGEL POSSO SEPULVEDA",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Grupo Registro Académico",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-08",
-      "Fecha Estimada de Atención": "2026-06-16",
-      "Jerarquía": "PETICIÓN.Registro Académico",
       "Departamento": "N/A",
       "Piso": "N/A",
       "Ciudad": "N/A",
@@ -434,7 +558,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
+      "Tiempo transcurrido": 1.4,
       "Progreso": 40.0
     },
     {
@@ -465,8 +589,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.6,
-      "Progreso": 49.0
+      "Tiempo transcurrido": 1.7,
+      "Progreso": 50.0
     },
     {
       "No. Caso": "3247",
@@ -497,7 +621,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.7,
-      "Progreso": 49.0
+      "Progreso": 50.0
     },
     {
       "No. Caso": "3245",
@@ -590,7 +714,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 2.9,
-      "Progreso": 86.0
+      "Progreso": 87.0
     },
     {
       "No. Caso": "3238",
@@ -621,7 +745,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 3.3,
-      "Progreso": 99.0
+      "Progreso": 100.0
     },
     {
       "No. Caso": "3233",
@@ -682,8 +806,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 4.6,
-      "Progreso": 92.0
+      "Tiempo transcurrido": 4.7,
+      "Progreso": 93.0
     },
     {
       "No. Caso": "3217",
@@ -714,7 +838,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 6.0,
-      "Progreso": 179.0
+      "Progreso": 180.0
     },
     {
       "No. Caso": "3206",
@@ -744,8 +868,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 8.6,
-      "Progreso": 172.0
+      "Tiempo transcurrido": 8.7,
+      "Progreso": 173.0
     },
     {
       "No. Caso": "3204",
@@ -806,8 +930,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 10.1,
-      "Progreso": 202.0
+      "Tiempo transcurrido": 10.2,
+      "Progreso": 203.0
     },
     {
       "No. Caso": "3194",
@@ -869,7 +993,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 10.8,
-      "Progreso": 324.0
+      "Progreso": 325.0
     },
     {
       "No. Caso": "3186",
@@ -931,7 +1055,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 11.0,
-      "Progreso": 329.0
+      "Progreso": 330.0
     },
     {
       "No. Caso": "3184",
@@ -962,7 +1086,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 11.0,
-      "Progreso": 329.0
+      "Progreso": 330.0
     },
     {
       "No. Caso": "3180",
@@ -992,8 +1116,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 11.1,
-      "Progreso": 334.0
+      "Tiempo transcurrido": 11.2,
+      "Progreso": 335.0
     },
     {
       "No. Caso": "3168",
@@ -1055,7 +1179,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 15.0,
-      "Progreso": 299.0
+      "Progreso": 300.0
     },
     {
       "No. Caso": "3138",
@@ -1086,7 +1210,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 22.0,
-      "Progreso": 659.0
+      "Progreso": 660.0
     },
     {
       "No. Caso": "3099",
@@ -1179,7 +1303,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 30.5,
-      "Progreso": 914.0
+      "Progreso": 915.0
     },
     {
       "No. Caso": "3054",
@@ -1210,7 +1334,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 32.3,
-      "Progreso": 969.0
+      "Progreso": 970.0
     },
     {
       "No. Caso": "3051",
@@ -1271,7 +1395,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 34.4,
+      "Tiempo transcurrido": 34.5,
       "Progreso": 1033.0
     },
     {
@@ -1334,7 +1458,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 36.3,
-      "Progreso": 1089.0
+      "Progreso": 1090.0
     },
     {
       "No. Caso": "3000",
@@ -1365,7 +1489,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 36.7,
-      "Progreso": 1099.0
+      "Progreso": 1100.0
     },
     {
       "No. Caso": "2929",
@@ -1427,7 +1551,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 40.9,
-      "Progreso": 1225.0
+      "Progreso": 1226.0
     },
     {
       "No. Caso": "2920",
@@ -1457,7 +1581,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 41.2,
+      "Tiempo transcurrido": 41.3,
       "Progreso": 1237.0
     },
     {
@@ -1488,7 +1612,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 42.2,
+      "Tiempo transcurrido": 42.3,
       "Progreso": 1267.0
     },
     {
@@ -1520,7 +1644,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 43.3,
-      "Progreso": 1299.0
+      "Progreso": 1300.0
     },
     {
       "No. Caso": "2886",
@@ -1550,8 +1674,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 43.6,
-      "Progreso": 1308.0
+      "Tiempo transcurrido": 43.7,
+      "Progreso": 1309.0
     },
     {
       "No. Caso": "2875",
@@ -1582,7 +1706,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 44.7,
-      "Progreso": 1339.0
+      "Progreso": 1340.0
     },
     {
       "No. Caso": "2854",
@@ -1612,8 +1736,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 49.0,
-      "Progreso": 1470.0
+      "Tiempo transcurrido": 49.1,
+      "Progreso": 1471.0
     },
     {
       "No. Caso": "2850",
@@ -1643,7 +1767,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 49.4,
+      "Tiempo transcurrido": 49.5,
       "Progreso": 1483.0
     },
     {
@@ -1675,7 +1799,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 49.7,
-      "Progreso": 1489.0
+      "Progreso": 1490.0
     },
     {
       "No. Caso": "2834",
@@ -1706,7 +1830,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 52.3,
-      "Progreso": 1568.0
+      "Progreso": 1569.0
     },
     {
       "No. Caso": "2832",
@@ -1737,7 +1861,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 52.3,
-      "Progreso": 1569.0
+      "Progreso": 1570.0
     },
     {
       "No. Caso": "2821",
@@ -1768,7 +1892,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 53.7,
-      "Progreso": 1609.0
+      "Progreso": 1610.0
     },
     {
       "No. Caso": "2820",
@@ -1799,7 +1923,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 53.7,
-      "Progreso": 1609.0
+      "Progreso": 1610.0
     },
     {
       "No. Caso": "2788",
@@ -1830,7 +1954,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 62.0,
-      "Progreso": 1239.0
+      "Progreso": 1240.0
     },
     {
       "No. Caso": "2780",
@@ -1892,7 +2016,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 63.7,
-      "Progreso": 1909.0
+      "Progreso": 1910.0
     },
     {
       "No. Caso": "2774",
@@ -1922,8 +2046,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 64.0,
-      "Progreso": 1280.0
+      "Tiempo transcurrido": 64.1,
+      "Progreso": 1281.0
     },
     {
       "No. Caso": "2768",
@@ -1954,7 +2078,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 65.0,
-      "Progreso": 1949.0
+      "Progreso": 1950.0
     },
     {
       "No. Caso": "2755",
@@ -1984,8 +2108,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 66.6,
-      "Progreso": 1999.0
+      "Tiempo transcurrido": 66.7,
+      "Progreso": 2000.0
     },
     {
       "No. Caso": "2750",
@@ -2016,7 +2140,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 67.9,
-      "Progreso": 2036.0
+      "Progreso": 2037.0
     },
     {
       "No. Caso": "2749",
@@ -2047,7 +2171,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 68.1,
-      "Progreso": 2041.0
+      "Progreso": 2042.0
     },
     {
       "No. Caso": "2732",
@@ -2078,7 +2202,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 70.0,
-      "Progreso": 2099.0
+      "Progreso": 2100.0
     },
     {
       "No. Caso": "2693",
@@ -2108,8 +2232,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 72.3,
-      "Progreso": 2169.0
+      "Tiempo transcurrido": 72.4,
+      "Progreso": 2170.0
     },
     {
       "No. Caso": "2690",
@@ -2140,7 +2264,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 72.7,
-      "Progreso": 2179.0
+      "Progreso": 2180.0
     },
     {
       "No. Caso": "2666",
@@ -2201,8 +2325,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 74.7,
-      "Progreso": 2241.0
+      "Tiempo transcurrido": 74.8,
+      "Progreso": 2242.0
     },
     {
       "No. Caso": "2660",
@@ -2232,8 +2356,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 74.7,
-      "Progreso": 1494.0
+      "Tiempo transcurrido": 74.8,
+      "Progreso": 1495.0
     },
     {
       "No. Caso": "2659",
@@ -2263,7 +2387,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 74.8,
+      "Tiempo transcurrido": 74.9,
       "Progreso": 2245.0
     },
     {
@@ -2295,7 +2419,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 75.2,
-      "Progreso": 1503.0
+      "Progreso": 1504.0
     },
     {
       "No. Caso": "2624",
@@ -2357,7 +2481,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 77.6,
-      "Progreso": 2326.0
+      "Progreso": 2327.0
     },
     {
       "No. Caso": "2607",
@@ -2388,7 +2512,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 78.0,
-      "Progreso": 2339.0
+      "Progreso": 2340.0
     },
     {
       "No. Caso": "2589",
@@ -2450,7 +2574,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 79.0,
-      "Progreso": 2369.0
+      "Progreso": 2370.0
     },
     {
       "No. Caso": "2549",
@@ -2480,8 +2604,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 79.8,
-      "Progreso": 2395.0
+      "Tiempo transcurrido": 79.9,
+      "Progreso": 2396.0
     },
     {
       "No. Caso": "2545",
@@ -2542,7 +2666,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 80.8,
+      "Tiempo transcurrido": 80.9,
       "Progreso": 2425.0
     },
     {
@@ -2574,7 +2698,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 80.9,
-      "Progreso": 2425.0
+      "Progreso": 2426.0
     },
     {
       "No. Caso": "2479",
@@ -2605,7 +2729,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 83.8,
-      "Progreso": 2514.0
+      "Progreso": 2515.0
     },
     {
       "No. Caso": "2469",
@@ -2635,7 +2759,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 84.3,
+      "Tiempo transcurrido": 84.4,
       "Progreso": 2530.0
     },
     {
@@ -2666,7 +2790,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 84.3,
+      "Tiempo transcurrido": 84.4,
       "Progreso": 2530.0
     },
     {
@@ -3008,7 +3132,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 100.2,
-      "Progreso": 3006.0
+      "Progreso": 3007.0
     },
     {
       "No. Caso": "2341",
@@ -3069,7 +3193,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 101.3,
+      "Tiempo transcurrido": 101.4,
       "Progreso": 3040.0
     },
     {
@@ -3132,7 +3256,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 110.5,
-      "Progreso": 3314.0
+      "Progreso": 3315.0
     },
     {
       "No. Caso": "2287",
@@ -3163,7 +3287,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 110.5,
-      "Progreso": 3314.0
+      "Progreso": 3315.0
     },
     {
       "No. Caso": "2271",
@@ -3225,7 +3349,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 112.0,
-      "Progreso": 3360.0
+      "Progreso": 3361.0
     },
     {
       "No. Caso": "2262",
@@ -3255,8 +3379,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 112.7,
-      "Progreso": 2254.0
+      "Tiempo transcurrido": 112.8,
+      "Progreso": 2255.0
     },
     {
       "No. Caso": "2255",
@@ -3287,7 +3411,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 113.1,
-      "Progreso": 3393.0
+      "Progreso": 3394.0
     },
     {
       "No. Caso": "2245",
@@ -3317,8 +3441,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 113.9,
-      "Progreso": 2278.0
+      "Tiempo transcurrido": 114.0,
+      "Progreso": 2279.0
     },
     {
       "No. Caso": "2234",
@@ -3349,7 +3473,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 114.7,
-      "Progreso": 3440.0
+      "Progreso": 3441.0
     },
     {
       "No. Caso": "2210",
@@ -3380,7 +3504,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 115.5,
-      "Progreso": 3465.0
+      "Progreso": 3466.0
     },
     {
       "No. Caso": "2184",
@@ -3410,8 +3534,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 116.3,
-      "Progreso": 3490.0
+      "Tiempo transcurrido": 116.4,
+      "Progreso": 3491.0
     },
     {
       "No. Caso": "2178",
@@ -3441,8 +3565,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 116.3,
-      "Progreso": 3490.0
+      "Tiempo transcurrido": 116.4,
+      "Progreso": 3491.0
     },
     {
       "No. Caso": "2165",
@@ -3472,8 +3596,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 116.3,
-      "Progreso": 3490.0
+      "Tiempo transcurrido": 116.4,
+      "Progreso": 3491.0
     },
     {
       "No. Caso": "2143",
@@ -3503,8 +3627,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 118.3,
-      "Progreso": 3550.0
+      "Tiempo transcurrido": 118.4,
+      "Progreso": 3551.0
     },
     {
       "No. Caso": "2122",
@@ -3535,7 +3659,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 119.7,
-      "Progreso": 2393.0
+      "Progreso": 2394.0
     },
     {
       "No. Caso": "2108",
@@ -3566,7 +3690,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 121.0,
-      "Progreso": 3629.0
+      "Progreso": 3630.0
     },
     {
       "No. Caso": "2092",
@@ -3597,7 +3721,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 122.7,
-      "Progreso": 2453.0
+      "Progreso": 2454.0
     },
     {
       "No. Caso": "2062",
@@ -3628,7 +3752,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 130.2,
-      "Progreso": 3905.0
+      "Progreso": 3906.0
     },
     {
       "No. Caso": "2011",
@@ -3690,7 +3814,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 142.6,
-      "Progreso": 2851.0
+      "Progreso": 2852.0
     },
     {
       "No. Caso": "1967",
@@ -3721,7 +3845,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 148.4,
-      "Progreso": 4450.0
+      "Progreso": 4451.0
     },
     {
       "No. Caso": "1964",
@@ -3783,7 +3907,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 149.7,
-      "Progreso": 2993.0
+      "Progreso": 2994.0
     },
     {
       "No. Caso": "1927",
@@ -3814,7 +3938,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 150.5,
-      "Progreso": 4514.0
+      "Progreso": 4515.0
     },
     {
       "No. Caso": "1909",
@@ -3845,7 +3969,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 152.6,
-      "Progreso": 4577.0
+      "Progreso": 4578.0
     },
     {
       "No. Caso": "1904",
@@ -3876,7 +4000,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 153.0,
-      "Progreso": 4590.0
+      "Progreso": 4591.0
     },
     {
       "No. Caso": "1868",
@@ -3907,7 +4031,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 154.7,
-      "Progreso": 4640.0
+      "Progreso": 4641.0
     },
     {
       "No. Caso": "1860",
@@ -3938,7 +4062,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 155.1,
-      "Progreso": 4651.0
+      "Progreso": 4652.0
     },
     {
       "No. Caso": "1834",
@@ -3969,7 +4093,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 156.0,
-      "Progreso": 4680.0
+      "Progreso": 4681.0
     },
     {
       "No. Caso": "1830",
@@ -4031,7 +4155,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 157.0,
-      "Progreso": 4710.0
+      "Progreso": 4711.0
     },
     {
       "No. Caso": "1761",
@@ -4062,7 +4186,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 164.0,
-      "Progreso": 4920.0
+      "Progreso": 4921.0
     },
     {
       "No. Caso": "1754",
@@ -4093,7 +4217,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 164.7,
-      "Progreso": 3293.0
+      "Progreso": 3294.0
     },
     {
       "No. Caso": "1707",
@@ -4124,7 +4248,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 174.0,
-      "Progreso": 5219.0
+      "Progreso": 5220.0
     },
     {
       "No. Caso": "1704",
@@ -4155,7 +4279,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 174.7,
-      "Progreso": 5240.0
+      "Progreso": 5241.0
     },
     {
       "No. Caso": "1678",
@@ -4186,7 +4310,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 178.0,
-      "Progreso": 5340.0
+      "Progreso": 5341.0
     },
     {
       "No. Caso": "1677",
@@ -4217,7 +4341,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 178.0,
-      "Progreso": 5340.0
+      "Progreso": 5341.0
     },
     {
       "No. Caso": "1610",
@@ -4248,7 +4372,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 187.7,
-      "Progreso": 5630.0
+      "Progreso": 5631.0
     },
     {
       "No. Caso": "1597",
@@ -4310,7 +4434,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 188.7,
-      "Progreso": 3773.0
+      "Progreso": 3774.0
     },
     {
       "No. Caso": "1586",
@@ -4372,7 +4496,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 189.7,
-      "Progreso": 5690.0
+      "Progreso": 5691.0
     },
     {
       "No. Caso": "1439",
@@ -4403,7 +4527,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 197.0,
-      "Progreso": 5910.0
+      "Progreso": 5911.0
     },
     {
       "No. Caso": "1427",
@@ -4465,7 +4589,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 198.9,
-      "Progreso": 5966.0
+      "Progreso": 5967.0
     },
     {
       "No. Caso": "1402",
@@ -4496,7 +4620,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 201.4,
-      "Progreso": 6040.0
+      "Progreso": 6041.0
     },
     {
       "No. Caso": "1329",
@@ -4527,7 +4651,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 217.8,
-      "Progreso": 6532.0
+      "Progreso": 6533.0
     },
     {
       "No. Caso": "1311",
@@ -4558,7 +4682,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 220.4,
-      "Progreso": 6610.0
+      "Progreso": 6611.0
     },
     {
       "No. Caso": "1237",
@@ -4589,7 +4713,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 228.2,
-      "Progreso": 6846.0
+      "Progreso": 6847.0
     },
     {
       "No. Caso": "1192",
@@ -4620,7 +4744,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 231.0,
-      "Progreso": 6928.0
+      "Progreso": 6929.0
     },
     {
       "No. Caso": "1077",
@@ -4651,7 +4775,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 244.7,
-      "Progreso": 4893.0
+      "Progreso": 4894.0
     },
     {
       "No. Caso": "1032",
@@ -4712,7 +4836,7 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 257.6,
+      "Tiempo transcurrido": 257.7,
       "Progreso": 7729.0
     },
     {
@@ -4744,7 +4868,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 270.7,
-      "Progreso": 8120.0
+      "Progreso": 8121.0
     },
     {
       "No. Caso": "737",
@@ -4806,7 +4930,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 293.0,
-      "Progreso": 8788.0
+      "Progreso": 8789.0
     },
     {
       "No. Caso": "680",
@@ -4837,7 +4961,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 298.0,
-      "Progreso": 8939.0
+      "Progreso": 8940.0
     },
     {
       "No. Caso": "646",
@@ -4868,7 +4992,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 301.0,
-      "Progreso": 9030.0
+      "Progreso": 9031.0
     },
     {
       "No. Caso": "641",
@@ -4899,7 +5023,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 301.2,
-      "Progreso": 9035.0
+      "Progreso": 9036.0
     },
     {
       "No. Caso": "536",
@@ -4930,7 +5054,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 317.4,
-      "Progreso": 9520.0
+      "Progreso": 9521.0
     },
     {
       "No. Caso": "509",
@@ -4961,7 +5085,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 318.9,
-      "Progreso": 9565.0
+      "Progreso": 9566.0
     },
     {
       "No. Caso": "422",
@@ -4992,7 +5116,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 339.5,
-      "Progreso": 10185.0
+      "Progreso": 10186.0
     },
     {
       "No. Caso": "385",
@@ -5023,7 +5147,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 346.1,
-      "Progreso": 10381.0
+      "Progreso": 10382.0
     },
     {
       "No. Caso": "243",
@@ -5054,7 +5178,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 353.8,
-      "Progreso": 10613.0
+      "Progreso": 10614.0
     }
   ]
 }

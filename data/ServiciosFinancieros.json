@@ -1,8 +1,1031 @@
 {
   "area": "Servicios Financieros",
-  "generatedAt": "2026-06-22T14:13:46.317045",
+  "generatedAt": "2026-06-22T14:18:06.803560",
   "source": "Convertido desde export real de Aranda Service Desk (Items.xlsx).",
   "records": [
+    {
+      "No. Caso": "33286",
+      "Id compuesto": "RF-275741-12-33286",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-22",
+      "Estado": "Registrado",
+      "Cliente": "JUAN MANUEL VALENCIA MARIN",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "JUAN MANUEL VALENCIA MARIN",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-22",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33285",
+      "Id compuesto": "RF-275738-12-33285",
+      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-22",
+      "Estado": "Registrado",
+      "Cliente": "NESTOR RAUL ROCHA ARANGO",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "NESTOR RAUL ROCHA ARANGO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reliquidaciones",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-22",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33284",
+      "Id compuesto": "RF-275737-12-33284",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-22",
+      "Estado": "Registrado",
+      "Cliente": "EDUARDO ANDRES LUBO GARCNA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "EDUARDO ANDRES LUBO GARCNA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-22",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33283",
+      "Id compuesto": "RF-275735-12-33283",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-21",
+      "Estado": "Registrado",
+      "Cliente": "SOFIA DE LA CRUZ ALZATE",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "SOFIA DE LA CRUZ ALZATE",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-21",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33282",
+      "Id compuesto": "RF-275734-12-33282",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-21",
+      "Estado": "Registrado",
+      "Cliente": "JUAN CAMILO RUBIO ARREGOCES",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "JUAN CAMILO RUBIO ARREGOCES",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-21",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33281",
+      "Id compuesto": "RF-275733-12-33281",
+      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-21",
+      "Estado": "Registrado",
+      "Cliente": "VANESSA VILLAMIZAR QUINTERO",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "VANESSA VILLAMIZAR QUINTERO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-21",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33280",
+      "Id compuesto": "RF-275732-12-33280",
+      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-21",
+      "Estado": "Registrado",
+      "Cliente": "EDUARDO MARTINEZ HINCAPIE",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "EDUARDO MARTINEZ HINCAPIE",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-21",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33279",
+      "Id compuesto": "RF-275731-12-33279",
+      "Asunto": "Reversiones de matrícula >> Servicios Financieros",
+      "Fecha de registro": "2026-06-21",
+      "Estado": "Registrado",
+      "Cliente": "EDITH MAYTE JASCUE VELASCO",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Reversiones de matrícula",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "EDITH MAYTE JASCUE VELASCO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reversiones Matricula",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-21",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33278",
+      "Id compuesto": "RF-275730-12-33278",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "YULAY ALEJANDRA RICO MAVISOY",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "YULAY ALEJANDRA RICO MAVISOY",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33277",
+      "Id compuesto": "RF-275729-12-33277",
+      "Asunto": "Aplicación de beneficios (descuento COMFANDI)",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "LEIDY YICETH CARMONA LOAIZA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "LEIDY YICETH CARMONA LOAIZA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33276",
+      "Id compuesto": "RF-275728-12-33276",
+      "Asunto": "Otros >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "KAROLL DAHIAN RAMIREZ MARULANDA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Otros",
+      "Responsable": "Gilmar Anderson Advincula Quinones",
+      "Autor": "KAROLL DAHIAN RAMIREZ MARULANDA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 4",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-17",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33275",
+      "Id compuesto": "RF-275727-12-33275",
+      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "SAMUEL PERDOMO GIRALDO",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "SAMUEL PERDOMO GIRALDO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33274",
+      "Id compuesto": "RF-275726-12-33274",
+      "Asunto": "ICETEX - Giros adicionales >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "JUAN CAMILO TENORIO ARISTIZABAL",
+      "Categoría": "UAO-ICETEX",
+      "Servicio": "ICETEX - Giros adicionales",
+      "Responsable": "Vivian Bolaños Gutierrez",
+      "Autor": "JUAN CAMILO TENORIO ARISTIZABAL",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "MEDIO",
+      "Grupo": "UAO-ICETEX",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-06",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Apoyo Financiero a Estudiantes.UAO-ICETEX",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33273",
+      "Id compuesto": "RF-275724-12-33273",
+      "Asunto": "NICOLAS RAMIREZ ARANGO",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "NICOLAS RAMIREZ ARANGO",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "NICOLAS RAMIREZ ARANGO",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reliquidaciones",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33272",
+      "Id compuesto": "RF-275723-12-33272",
+      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "CARLOS ENRIQUE SACASAS BORJA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "CARLOS ENRIQUE SACASAS BORJA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33271",
+      "Id compuesto": "RF-275722-12-33271",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "ALEJANDRO MOLINA LARA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "ALEJANDRO MOLINA LARA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33270",
+      "Id compuesto": "RF-275721-12-33270",
+      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "JUNIOR SANTIAGO ARIAS MUNOZ",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "JUNIOR SANTIAGO ARIAS MUNOZ",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33269",
+      "Id compuesto": "RF-275720-12-33269",
+      "Asunto": "Reversiones de matrícula >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "JOSE ADOLFO ZUNIGA HINESTROZA",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Reversiones de matrícula",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "JOSE ADOLFO ZUNIGA HINESTROZA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reversiones Matricula",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33268",
+      "Id compuesto": "RF-275717-12-33268",
+      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "DANIELA GONZALEZ CORREA",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "DANIELA GONZALEZ CORREA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reliquidaciones",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33267",
+      "Id compuesto": "RF-275716-12-33267",
+      "Asunto": "Aplicación de beneficios (becas/descuentos)  Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "VALERIA LONDONO REYES",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "VALERIA LONDONO REYES",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33266",
+      "Id compuesto": "RF-275715-12-33266",
+      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "SAMUEL GOMEZ ECHEVERRI",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "SAMUEL GOMEZ ECHEVERRI",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reliquidaciones",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33265",
+      "Id compuesto": "RF-275713-12-33265",
+      "Asunto": "Facturación electrónica (inquietudes)",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "MATEO RICARDO TOVAR MIRANDA",
+      "Categoría": "Facturación electrónica (inquietudes)",
+      "Servicio": "Facturación electrónica (inquietudes)",
+      "Responsable": "Jose Ramiro Rivas Estupiñan",
+      "Autor": "MATEO RICARDO TOVAR MIRANDA",
+      "Razón": "NEW",
+      "Impacto": "MEDIO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 2",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-09",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Facturación electrónica (inquietudes)",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33264",
+      "Id compuesto": "RF-275710-12-33264",
+      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "DANNA SOFIA ORDONEZ JIMENEZ",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "DANNA SOFIA ORDONEZ JIMENEZ",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33263",
+      "Id compuesto": "RF-275709-12-33263",
+      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "DANIEL ARMANDO RUIZ TOCORA",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "DANIEL ARMANDO RUIZ TOCORA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reliquidaciones",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33262",
+      "Id compuesto": "RF-275708-12-33262",
+      "Asunto": "Reversiones de matrícula >> Servicios Financieros",
+      "Fecha de registro": "2026-06-20",
+      "Estado": "Registrado",
+      "Cliente": "JUAN JOSE SANCHEZ JIMENEZ",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Reversiones de matrícula",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "JUAN JOSE SANCHEZ JIMENEZ",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reversiones Matricula",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-20",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33261",
+      "Id compuesto": "RF-275703-12-33261",
+      "Asunto": "Reversiones de matrícula >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "VALERIA SANCHEZ RODRIGUEZ",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Reversiones de matrícula",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "VALERIA SANCHEZ RODRIGUEZ",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reversiones Matricula",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33260",
+      "Id compuesto": "RF-275700-12-33260",
+      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "ANDRES FELIPE NIEVA CIFUENTES",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Carolina Cortes Jaramillo",
+      "Autor": "ANDRES FELIPE NIEVA CIFUENTES",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Reliquidaciones",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-07",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33259",
+      "Id compuesto": "RF-275694-12-33259",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "JEAN PAUL PARRALES MORALES",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "JEAN PAUL PARRALES MORALES",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33257",
+      "Id compuesto": "RF-275684-12-33257",
+      "Asunto": "Problema para generar recibo de matrícula financiera 2026-2S",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "KAROL  FABIANA LIZCANO ULABARRY",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Activación de matricula financiera",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "KAROL  FABIANA LIZCANO ULABARRY",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 6",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-30",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 10.0
+    },
+    {
+      "No. Caso": "33256",
+      "Id compuesto": "RF-275683-12-33256",
+      "Asunto": "Otros >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "ELIAS YESSYD TORREGROZA MACEA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Otros",
+      "Responsable": "Harold Vanegas Muñoz",
+      "Autor": "ELIAS YESSYD TORREGROZA MACEA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 4",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-17",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.0,
+      "Progreso": 0.0
+    },
+    {
+      "No. Caso": "33255",
+      "Id compuesto": "RF-275680-12-33255",
+      "Asunto": "Renovación crédito largo plazo >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "MARIA JOSE CORTES PAREDES",
+      "Categoría": "Crédito Directo",
+      "Servicio": "Renovación crédito largo plazo",
+      "Responsable": "Linda Vanessa Pinto Guzman",
+      "Autor": "MARIA JOSE CORTES PAREDES",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "CREDITO-LIQUIDACION",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-08",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Apoyo Financiero a Estudiantes.Crédito Directo",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 2.0
+    },
+    {
+      "No. Caso": "33254",
+      "Id compuesto": "RF-275677-12-33254",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "SEBASTIAN FERNANDEZ GOMEZ",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "SEBASTIAN FERNANDEZ GOMEZ",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 7.0
+    },
+    {
+      "No. Caso": "33253",
+      "Id compuesto": "RF-275675-12-33253",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-19",
+      "Estado": "Registrado",
+      "Cliente": "LAURA JULIETH VITERI DAVID",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Autor": "LAURA JULIETH VITERI DAVID",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 5",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-01",
+      "Fecha Estimada de Atención": "2026-06-19",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 8.0
+    },
     {
       "No. Caso": "33252",
       "Id compuesto": "RF-275670-12-33252",
@@ -31,8 +1054,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 0.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 19.0
     },
     {
       "No. Caso": "33251",
@@ -62,8 +1085,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 0.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 3.0
     },
     {
       "No. Caso": "33250",
@@ -93,8 +1116,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 1.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 11.0
     },
     {
       "No. Caso": "33249",
@@ -124,8 +1147,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 0.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 3.0
     },
     {
       "No. Caso": "33248",
@@ -155,8 +1178,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 1.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 4.0
     },
     {
       "No. Caso": "33247",
@@ -186,8 +1209,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 15.0
     },
     {
       "No. Caso": "33246",
@@ -217,8 +1240,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 4.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 10.0
     },
     {
       "No. Caso": "33245",
@@ -249,7 +1272,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 2.0
+      "Progreso": 5.0
     },
     {
       "No. Caso": "33244",
@@ -280,7 +1303,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Progreso": 17.0
     },
     {
       "No. Caso": "33243",
@@ -311,7 +1334,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 19.0
+      "Progreso": 38.0
     },
     {
       "No. Caso": "33242",
@@ -342,7 +1365,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 10.0
+      "Progreso": 19.0
     },
     {
       "No. Caso": "33240",
@@ -373,7 +1396,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 12.0
+      "Progreso": 22.0
     },
     {
       "No. Caso": "33239",
@@ -403,8 +1426,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 5.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 8.0
     },
     {
       "No. Caso": "33238",
@@ -434,8 +1457,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 16.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 26.0
     },
     {
       "No. Caso": "33237",
@@ -465,39 +1488,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 5.0
-    },
-    {
-      "No. Caso": "33236",
-      "Id compuesto": "RF-275615-12-33236",
-      "Asunto": "ICETEX - Giros adicionales >> Servicios Financieros",
-      "Fecha de registro": "2026-06-19",
-      "Estado": "En Proceso",
-      "Cliente": "DANIEL DAVID CARDONA PANESSO",
-      "Categoría": "UAO-ICETEX",
-      "Servicio": "ICETEX - Giros adicionales",
-      "Responsable": "Vivian Bolaños Gutierrez",
-      "Autor": "DANIEL DAVID CARDONA PANESSO",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "UAO-ICETEX",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-03",
-      "Fecha Estimada de Atención": "2026-06-19",
-      "Jerarquía": "Apoyo Financiero a Estudiantes.UAO-ICETEX",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 9.0
     },
     {
       "No. Caso": "33235",
@@ -527,8 +1519,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 5.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 9.0
     },
     {
       "No. Caso": "33234",
@@ -558,8 +1550,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 11.0
     },
     {
       "No. Caso": "33233",
@@ -589,8 +1581,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 18.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 28.0
     },
     {
       "No. Caso": "33232",
@@ -620,8 +1612,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 19.0
     },
     {
       "No. Caso": "33230",
@@ -651,8 +1643,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 39.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 58.0
     },
     {
       "No. Caso": "33229",
@@ -682,8 +1674,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 10.0
     },
     {
       "No. Caso": "33228",
@@ -713,8 +1705,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 10.0
     },
     {
       "No. Caso": "33227",
@@ -744,8 +1736,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 21.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 31.0
     },
     {
       "No. Caso": "33226",
@@ -775,8 +1767,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 21.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 31.0
     },
     {
       "No. Caso": "33225",
@@ -806,8 +1798,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 10.0
     },
     {
       "No. Caso": "33224",
@@ -837,8 +1829,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 10.0
     },
     {
       "No. Caso": "33223",
@@ -868,8 +1860,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 21.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 31.0
     },
     {
       "No. Caso": "33222",
@@ -899,8 +1891,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 21.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 31.0
     },
     {
       "No. Caso": "33221",
@@ -930,8 +1922,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 8.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 12.0
     },
     {
       "No. Caso": "33220",
@@ -961,8 +1953,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 10.0
     },
     {
       "No. Caso": "33219",
@@ -992,8 +1984,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 44.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 63.0
     },
     {
       "No. Caso": "33218",
@@ -1024,7 +2016,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 7.0
+      "Progreso": 11.0
     },
     {
       "No. Caso": "33217",
@@ -1055,7 +2047,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 24.0
+      "Progreso": 34.0
     },
     {
       "No. Caso": "33216",
@@ -1086,7 +2078,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 8.0
+      "Progreso": 11.0
     },
     {
       "No. Caso": "33215",
@@ -1097,13 +2089,13 @@
       "Cliente": "BALDOR FERNANDO BASTOS CALDERON",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Krsna Gutierrez González",
       "Autor": "BALDOR FERNANDO BASTOS CALDERON",
       "Razón": "NEW",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -1117,7 +2109,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 25.0
+      "Progreso": 34.0
     },
     {
       "No. Caso": "33214",
@@ -1148,7 +2140,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 17.0
+      "Progreso": 23.0
     },
     {
       "No. Caso": "33213",
@@ -1179,7 +2171,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 8.0
+      "Progreso": 11.0
     },
     {
       "No. Caso": "33211",
@@ -1209,8 +2201,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 3.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 5.0
     },
     {
       "No. Caso": "33210",
@@ -1240,39 +2232,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 3.0
-    },
-    {
-      "No. Caso": "33209",
-      "Id compuesto": "RF-275554-12-33209",
-      "Asunto": "URGENTE!! Necesito el descuesto de la jornada hibrida nocturna para la activación de mi matricula financiera para inscribir mis materias virtuales, constantemente salgo del país.",
-      "Fecha de registro": "2026-06-19",
-      "Estado": "Registrado",
-      "Cliente": "JOSE LUIS BOLAOS HERRERA HERRERA",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
-      "Autor": "JOSE LUIS BOLAOS HERRERA HERRERA",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-01",
-      "Fecha Estimada de Atención": "2026-06-19",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 29.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 5.0
     },
     {
       "No. Caso": "33208",
@@ -1302,8 +2263,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 30.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 40.0
     },
     {
       "No. Caso": "33207",
@@ -1333,8 +2294,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 64.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 83.0
     },
     {
       "No. Caso": "33206",
@@ -1364,8 +2325,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 33.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 42.0
     },
     {
       "No. Caso": "33205",
@@ -1395,8 +2356,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 11.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 14.0
     },
     {
       "No. Caso": "33204",
@@ -1426,8 +2387,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 11.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 14.0
     },
     {
       "No. Caso": "33203",
@@ -1457,8 +2418,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 36.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 45.0
     },
     {
       "No. Caso": "33202",
@@ -1489,7 +2450,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 37.0
+      "Progreso": 47.0
     },
     {
       "No. Caso": "33201",
@@ -1520,7 +2481,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 12.0
+      "Progreso": 16.0
     },
     {
       "No. Caso": "33200",
@@ -1551,7 +2512,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 40.0
+      "Progreso": 50.0
     },
     {
       "No. Caso": "33199",
@@ -1581,8 +2542,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 45.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 55.0
     },
     {
       "No. Caso": "33198",
@@ -1612,8 +2573,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33196",
@@ -1643,8 +2604,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 93.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 112.0
     },
     {
       "No. Caso": "33195",
@@ -1674,8 +2635,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33194",
@@ -1705,8 +2666,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 15.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 18.0
     },
     {
       "No. Caso": "33193",
@@ -1736,8 +2697,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 15.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 18.0
     },
     {
       "No. Caso": "33192",
@@ -1767,8 +2728,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33191",
@@ -1798,8 +2759,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33190",
@@ -1829,8 +2790,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 15.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 18.0
     },
     {
       "No. Caso": "33189",
@@ -1860,8 +2821,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33188",
@@ -1891,8 +2852,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 7.0
     },
     {
       "No. Caso": "33186",
@@ -1922,8 +2883,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33185",
@@ -1953,8 +2914,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 31.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "33184",
@@ -1965,13 +2926,13 @@
       "Cliente": "SANTIAGO VARGAS MARIN",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Krsna Gutierrez González",
       "Autor": "SANTIAGO VARGAS MARIN",
       "Razón": "NEW",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -1984,8 +2945,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33183",
@@ -2015,8 +2976,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33182",
@@ -2046,8 +3007,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 7.0
     },
     {
       "No. Caso": "33181",
@@ -2077,8 +3038,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33180",
@@ -2108,8 +3069,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33179",
@@ -2139,8 +3100,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 13.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 16.0
     },
     {
       "No. Caso": "33178",
@@ -2170,8 +3131,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 7.0
     },
     {
       "No. Caso": "33177",
@@ -2201,8 +3162,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 56.0
     },
     {
       "No. Caso": "33176",
@@ -2233,7 +3194,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 7.0
+      "Progreso": 8.0
     },
     {
       "No. Caso": "33174",
@@ -2264,7 +3225,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 55.0
+      "Progreso": 64.0
     },
     {
       "No. Caso": "33173",
@@ -2295,7 +3256,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 19.0
+      "Progreso": 22.0
     },
     {
       "No. Caso": "33172",
@@ -2326,7 +3287,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 57.0
+      "Progreso": 67.0
     },
     {
       "No. Caso": "33171",
@@ -2356,8 +3317,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 19.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 22.0
     },
     {
       "No. Caso": "33170",
@@ -2387,8 +3348,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 62.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 72.0
     },
     {
       "No. Caso": "33169",
@@ -2418,8 +3379,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 64.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 73.0
     },
     {
       "No. Caso": "33168",
@@ -2449,8 +3410,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 21.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 24.0
     },
     {
       "No. Caso": "33167",
@@ -2480,8 +3441,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 65.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 74.0
     },
     {
       "No. Caso": "33166",
@@ -2511,8 +3472,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 65.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 75.0
     },
     {
       "No. Caso": "33165",
@@ -2542,8 +3503,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 131.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 151.0
     },
     {
       "No. Caso": "33164",
@@ -2573,8 +3534,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 21.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 25.0
     },
     {
       "No. Caso": "33163",
@@ -2604,8 +3565,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 44.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 50.0
     },
     {
       "No. Caso": "33162",
@@ -2667,7 +3628,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 68.0
+      "Progreso": 78.0
     },
     {
       "No. Caso": "33160",
@@ -2698,7 +3659,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 23.0
+      "Progreso": 26.0
     },
     {
       "No. Caso": "33159",
@@ -2729,7 +3690,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 24.0
+      "Progreso": 27.0
     },
     {
       "No. Caso": "33158",
@@ -2759,8 +3720,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 73.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 83.0
     },
     {
       "No. Caso": "33157",
@@ -2790,8 +3751,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 75.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 85.0
     },
     {
       "No. Caso": "33156",
@@ -2821,8 +3782,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 10.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 11.0
     },
     {
       "No. Caso": "33155",
@@ -2852,8 +3813,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33154",
@@ -2883,8 +3844,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33152",
@@ -2914,8 +3875,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33151",
@@ -2926,13 +3887,13 @@
       "Cliente": "JUAN FELIPE ORDONEZ QUINTERO",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Krsna Gutierrez González",
       "Autor": "JUAN FELIPE ORDONEZ QUINTERO",
       "Razón": "NEW",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -2945,8 +3906,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33150",
@@ -2976,8 +3937,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33149",
@@ -3007,8 +3968,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33146",
@@ -3038,8 +3999,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33145",
@@ -3069,8 +4030,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33144",
@@ -3100,8 +4061,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33143",
@@ -3131,8 +4092,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33142",
@@ -3162,8 +4123,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "33141",
@@ -3224,8 +4185,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 79.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 88.0
     },
     {
       "No. Caso": "33139",
@@ -3255,8 +4216,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 79.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 89.0
     },
     {
       "No. Caso": "33138",
@@ -3286,8 +4247,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 79.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 89.0
     },
     {
       "No. Caso": "33137",
@@ -3317,8 +4278,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 160.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 180.0
     },
     {
       "No. Caso": "33136",
@@ -3348,39 +4309,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 26.0
-    },
-    {
-      "No. Caso": "33135",
-      "Id compuesto": "RF-275352-12-33135",
-      "Asunto": "Reversiones de matrícula >> Servicios Financieros",
-      "Fecha de registro": "2026-06-18",
-      "Estado": "Registrado",
-      "Cliente": "VALERIA SANCHEZ RODRIGUEZ",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Reversiones de matrícula",
-      "Responsable": "Yuddy Suleima Rayo Arias",
-      "Autor": "VALERIA SANCHEZ RODRIGUEZ",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "ALTO",
-      "Prioridad": "ALTO",
-      "Grupo": "Gestores del CAE",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-03",
-      "Fecha Estimada de Atención": "2026-06-18",
-      "Jerarquía": "Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 27.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 30.0
     },
     {
       "No. Caso": "33134",
@@ -3410,8 +4340,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 81.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 91.0
     },
     {
       "No. Caso": "33133",
@@ -3441,8 +4371,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.5,
-      "Progreso": 27.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 30.0
     },
     {
       "No. Caso": "33132",
@@ -3473,7 +4403,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 83.0
+      "Progreso": 92.0
     },
     {
       "No. Caso": "33131",
@@ -3504,7 +4434,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 83.0
+      "Progreso": 92.0
     },
     {
       "No. Caso": "33130",
@@ -3535,7 +4465,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 166.0
+      "Progreso": 186.0
     },
     {
       "No. Caso": "33129",
@@ -3566,7 +4496,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 84.0
+      "Progreso": 94.0
     },
     {
       "No. Caso": "33128",
@@ -3597,7 +4527,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 85.0
+      "Progreso": 95.0
     },
     {
       "No. Caso": "33127",
@@ -3628,7 +4558,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 28.0
+      "Progreso": 31.0
     },
     {
       "No. Caso": "33126",
@@ -3659,7 +4589,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.6,
-      "Progreso": 86.0
+      "Progreso": 96.0
     },
     {
       "No. Caso": "33125",
@@ -3689,8 +4619,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 58.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 65.0
     },
     {
       "No. Caso": "33124",
@@ -3732,13 +4662,13 @@
       "Cliente": "MARIA JOSE JIMENEZ HERNANDEZ",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Krsna Gutierrez González",
       "Autor": "MARIA JOSE JIMENEZ HERNANDEZ",
       "Razón": "NEW",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -3751,8 +4681,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 87.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 97.0
     },
     {
       "No. Caso": "33122",
@@ -3782,8 +4712,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 88.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 97.0
     },
     {
       "No. Caso": "33121",
@@ -3813,8 +4743,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 176.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 196.0
     },
     {
       "No. Caso": "33120",
@@ -3844,8 +4774,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 177.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 196.0
     },
     {
       "No. Caso": "33119",
@@ -3875,8 +4805,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 88.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 98.0
     },
     {
       "No. Caso": "33118",
@@ -3906,8 +4836,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 178.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 197.0
     },
     {
       "No. Caso": "33117",
@@ -3937,39 +4867,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 89.0
-    },
-    {
-      "No. Caso": "33115",
-      "Id compuesto": "RF-275296-12-33115",
-      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
-      "Fecha de registro": "2026-06-18",
-      "Estado": "Registrado",
-      "Cliente": "JOSE LUIS GUERRERO",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Yuddy Suleima Rayo Arias",
-      "Autor": "JOSE LUIS GUERRERO",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Gestores del CAE",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-03",
-      "Fecha Estimada de Atención": "2026-06-18",
-      "Jerarquía": "Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 31.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 98.0
     },
     {
       "No. Caso": "33114",
@@ -3999,8 +4898,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 94.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 104.0
     },
     {
       "No. Caso": "33113",
@@ -4030,8 +4929,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 95.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 105.0
     },
     {
       "No. Caso": "33112",
@@ -4061,8 +4960,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 14.0
     },
     {
       "No. Caso": "33111",
@@ -4092,8 +4991,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 96.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 105.0
     },
     {
       "No. Caso": "33110",
@@ -4123,8 +5022,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 96.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 106.0
     },
     {
       "No. Caso": "33109",
@@ -4155,7 +5054,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.7,
-      "Progreso": 98.0
+      "Progreso": 108.0
     },
     {
       "No. Caso": "33108",
@@ -4186,7 +5085,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.7,
-      "Progreso": 99.0
+      "Progreso": 109.0
     },
     {
       "No. Caso": "33107",
@@ -4217,7 +5116,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.7,
-      "Progreso": 203.0
+      "Progreso": 222.0
     },
     {
       "No. Caso": "33105",
@@ -4247,8 +5146,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 102.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 112.0
     },
     {
       "No. Caso": "33104",
@@ -4278,8 +5177,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 102.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 112.0
     },
     {
       "No. Caso": "33103",
@@ -4309,8 +5208,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 102.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 112.0
     },
     {
       "No. Caso": "33102",
@@ -4402,8 +5301,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 34.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "33098",
@@ -4433,8 +5332,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 34.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "33097",
@@ -4464,8 +5363,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 102.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 112.0
     },
     {
       "No. Caso": "33096",
@@ -4495,8 +5394,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 34.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "33095",
@@ -4526,8 +5425,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 102.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 112.0
     },
     {
       "No. Caso": "33094",
@@ -4557,8 +5456,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 13.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 15.0
     },
     {
       "No. Caso": "33093",
@@ -4619,8 +5518,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 34.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "33091",
@@ -4650,8 +5549,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 34.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "33090",
@@ -4681,8 +5580,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 103.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 113.0
     },
     {
       "No. Caso": "33089",
@@ -4712,39 +5611,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 104.0
-    },
-    {
-      "No. Caso": "33088",
-      "Id compuesto": "RF-275239-12-33088",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Solucionado",
-      "Cliente": "MIGUEL ANGEL RIVERA NAVARRO",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "MIGUEL ANGEL RIVERA NAVARRO",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 105.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 114.0
     },
     {
       "No. Caso": "33086",
@@ -4774,8 +5642,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 218.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 237.0
     },
     {
       "No. Caso": "33085",
@@ -4805,8 +5673,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 111.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 120.0
     },
     {
       "No. Caso": "33084",
@@ -4836,8 +5704,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 37.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 40.0
     },
     {
       "No. Caso": "33083",
@@ -4899,7 +5767,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 113.0
+      "Progreso": 123.0
     },
     {
       "No. Caso": "33080",
@@ -4930,7 +5798,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 114.0
+      "Progreso": 123.0
     },
     {
       "No. Caso": "33079",
@@ -4961,7 +5829,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 114.0
+      "Progreso": 124.0
     },
     {
       "No. Caso": "33077",
@@ -4992,7 +5860,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 115.0
+      "Progreso": 125.0
     },
     {
       "No. Caso": "33076",
@@ -5023,7 +5891,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 33.0
+      "Progreso": 36.0
     },
     {
       "No. Caso": "33075",
@@ -5054,7 +5922,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 116.0
+      "Progreso": 126.0
     },
     {
       "No. Caso": "33074",
@@ -5085,7 +5953,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 117.0
+      "Progreso": 127.0
     },
     {
       "No. Caso": "33073",
@@ -5116,7 +5984,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 117.0
+      "Progreso": 127.0
     },
     {
       "No. Caso": "33072",
@@ -5146,39 +6014,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 118.0
-    },
-    {
-      "No. Caso": "33070",
-      "Id compuesto": "RF-275187-12-33070",
-      "Asunto": "Aplicación de beneficios (becas/descuentos)  Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "En Espera",
-      "Cliente": "KAREN VALERIA LUNA LASSO",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "KAREN VALERIA LUNA LASSO",
-      "Razón": "por información del usuario",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 100.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 128.0
     },
     {
       "No. Caso": "33069",
@@ -5208,8 +6045,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 120.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 130.0
     },
     {
       "No. Caso": "33067",
@@ -5239,8 +6076,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 40.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 43.0
     },
     {
       "No. Caso": "33066",
@@ -5270,8 +6107,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 40.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 43.0
     },
     {
       "No. Caso": "33065",
@@ -5301,8 +6138,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 122.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 131.0
     },
     {
       "No. Caso": "33064",
@@ -5332,8 +6169,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 123.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 132.0
     },
     {
       "No. Caso": "33063",
@@ -5363,8 +6200,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 123.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 132.0
     },
     {
       "No. Caso": "33062",
@@ -5425,8 +6262,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 35.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 38.0
     },
     {
       "No. Caso": "33058",
@@ -5456,8 +6293,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 124.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 134.0
     },
     {
       "No. Caso": "33057",
@@ -5487,8 +6324,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 41.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 44.0
     },
     {
       "No. Caso": "33056",
@@ -5518,8 +6355,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 125.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 135.0
     },
     {
       "No. Caso": "33054",
@@ -5561,7 +6398,7 @@
       "Cliente": "KAROL SOFIA ARANA RIOS",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Gilmar Anderson Advincula Quinones",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "KAROL SOFIA ARANA RIOS",
       "Razón": "por información del usuario",
       "Impacto": "ALTO",
@@ -5588,17 +6425,17 @@
       "Id compuesto": "RF-275152-12-33052",
       "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "En Espera",
       "Cliente": "ALEJANDRO SARRIA DIAZ",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Carolina Cortes Jaramillo",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "ALEJANDRO SARRIA DIAZ",
-      "Razón": "NEW",
+      "Razón": "por información del usuario",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Reliquidaciones",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -5612,24 +6449,24 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.9,
-      "Progreso": 43.0
+      "Progreso": 46.0
     },
     {
       "No. Caso": "33051",
       "Id compuesto": "RF-275151-12-33051",
       "Asunto": "JHONNY ALEXANDER BASTIDAS RODRIGUEZ",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "Solucionado",
       "Cliente": "JHONNY ALEXANDER BASTIDAS RODRIGUEZ",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Activación de matricula financiera",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "JHONNY ALEXANDER BASTIDAS RODRIGUEZ",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
-      "Grupo": "Kardex 6",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -5643,7 +6480,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.9,
-      "Progreso": 260.0
+      "Progreso": 279.0
     },
     {
       "No. Caso": "33050",
@@ -5654,7 +6491,7 @@
       "Cliente": "SARAH SHEYLIN LLANTEN OSPINA",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Gilmar Anderson Advincula Quinones",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "SARAH SHEYLIN LLANTEN OSPINA",
       "Razón": "por información del usuario",
       "Impacto": "ALTO",
@@ -5681,13 +6518,137 @@
       "Id compuesto": "RF-275142-12-33049",
       "Asunto": "ICETEX - Giros adicionales >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "En Espera",
       "Cliente": "ANDRES FELIPE GONZALEZ ORTEGON",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Gilmar Anderson Advincula Quinones",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "ANDRES FELIPE GONZALEZ ORTEGON",
-      "Razón": "NEW",
+      "Razón": "por información del usuario",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-02",
+      "Fecha Estimada de Atención": "2026-06-17",
+      "Jerarquía": "Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 47.0
+    },
+    {
+      "No. Caso": "33047",
+      "Id compuesto": "RF-275139-12-33047",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-17",
+      "Estado": "Solucionado",
+      "Cliente": "NAHOMY INSUASTI TANGARIFE",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Paola Andrea Alvarez Florez",
+      "Autor": "NAHOMY INSUASTI TANGARIFE",
+      "Razón": "Validado",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-19",
+      "Fecha Estimada de Atención": "2026-06-17",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 143.0
+    },
+    {
+      "No. Caso": "33046",
+      "Id compuesto": "RF-275137-12-33046",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-17",
+      "Estado": "Solucionado",
+      "Cliente": "FRANCISCO JAVIER PEDROZA FERNANDEZ",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Paola Andrea Alvarez Florez",
+      "Autor": "FRANCISCO JAVIER PEDROZA FERNANDEZ",
+      "Razón": "Validado",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-19",
+      "Fecha Estimada de Atención": "2026-06-17",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 143.0
+    },
+    {
+      "No. Caso": "33045",
+      "Id compuesto": "RF-275135-12-33045",
+      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
+      "Fecha de registro": "2026-06-17",
+      "Estado": "En Espera",
+      "Cliente": "ANGIE NATALY ROSERO MEJIA",
+      "Categoría": "Otros servicios Kardex Financiero",
+      "Servicio": "Aplicación de beneficios (becas/descuentos)",
+      "Responsable": "Paola Andrea Alvarez Florez",
+      "Autor": "ANGIE NATALY ROSERO MEJIA",
+      "Razón": "por información del usuario",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-06-19",
+      "Fecha Estimada de Atención": "2026-06-17",
+      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 141.0
+    },
+    {
+      "No. Caso": "33044",
+      "Id compuesto": "RF-275134-12-33044",
+      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
+      "Fecha de registro": "2026-06-17",
+      "Estado": "En Espera",
+      "Cliente": "SEBASTIAN ABSPOEL SEGURA",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Re-liquidación de matricula financiera",
+      "Responsable": "Paola Andrea Alvarez Florez",
+      "Autor": "SEBASTIAN ABSPOEL SEGURA",
+      "Razón": "por información del usuario",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -5705,148 +6666,24 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.9,
-      "Progreso": 44.0
-    },
-    {
-      "No. Caso": "33047",
-      "Id compuesto": "RF-275139-12-33047",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "NAHOMY INSUASTI TANGARIFE",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
-      "Autor": "NAHOMY INSUASTI TANGARIFE",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 134.0
-    },
-    {
-      "No. Caso": "33046",
-      "Id compuesto": "RF-275137-12-33046",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "FRANCISCO JAVIER PEDROZA FERNANDEZ",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
-      "Autor": "FRANCISCO JAVIER PEDROZA FERNANDEZ",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 134.0
-    },
-    {
-      "No. Caso": "33045",
-      "Id compuesto": "RF-275135-12-33045",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "ANGIE NATALY ROSERO MEJIA",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
-      "Autor": "ANGIE NATALY ROSERO MEJIA",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 134.0
-    },
-    {
-      "No. Caso": "33044",
-      "Id compuesto": "RF-275134-12-33044",
-      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "SEBASTIAN ABSPOEL SEGURA",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Carolina Cortes Jaramillo",
-      "Autor": "SEBASTIAN ABSPOEL SEGURA",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Reliquidaciones",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-02",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 44.0
+      "Progreso": 46.0
     },
     {
       "No. Caso": "33043",
       "Id compuesto": "RF-275129-12-33043",
       "Asunto": "Aplicación de beneficios (becas/descuentos)  Servicios Financieros INTERCAMBIO JAVERIANA",
       "Fecha de registro": "2026-06-17",
-      "Estado": "En Espera",
+      "Estado": "Solucionado",
       "Cliente": "VALENTINA PEREZ ALVAREZ",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "VALENTINA PEREZ ALVAREZ",
-      "Razón": "por información del usuario",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
-      "Grupo": "Kardex 5",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -5860,7 +6697,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.7,
-      "Progreso": 99.0
+      "Progreso": 103.0
     },
     {
       "No. Caso": "33042",
@@ -5871,13 +6708,13 @@
       "Cliente": "LAURA XIMENA PATINO LUNA",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "LAURA XIMENA PATINO LUNA",
       "Razón": "por información del usuario",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
-      "Grupo": "Kardex 5",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -5891,24 +6728,24 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.7,
-      "Progreso": 99.0
+      "Progreso": 100.0
     },
     {
       "No. Caso": "33041",
       "Id compuesto": "RF-275127-12-33041",
       "Asunto": "Otros >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "Solucionado",
       "Cliente": "JUAN FERNANDO OTERO GARCIA",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Otros",
-      "Responsable": "Harold Vanegas Muñoz",
+      "Responsable": "Santiago Gomez Murcia",
       "Autor": "JUAN FERNANDO OTERO GARCIA",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 4",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -5921,25 +6758,25 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 17.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 19.0
     },
     {
       "No. Caso": "33037",
       "Id compuesto": "RF-275113-12-33037",
       "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "En Proceso",
       "Cliente": "VALERIA FRANCO FRANKLIN",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Carolina Cortes Jaramillo",
+      "Responsable": "Santiago Gomez Murcia",
       "Autor": "VALERIA FRANCO FRANKLIN",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Reliquidaciones",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -5952,56 +6789,25 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 45.0
-    },
-    {
-      "No. Caso": "33036",
-      "Id compuesto": "RF-275109-12-33036",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "LESLY ALEXANDRA GRANADA VEGA",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
-      "Autor": "LESLY ALEXANDRA GRANADA VEGA",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 135.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 48.0
     },
     {
       "No. Caso": "33035",
       "Id compuesto": "RF-275105-12-33035",
       "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "Solucionado",
       "Cliente": "MARIA PAULA LLANO BRAVO",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Carolina Cortes Jaramillo",
+      "Responsable": "Santiago Gomez Murcia",
       "Autor": "MARIA PAULA LLANO BRAVO",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Reliquidaciones",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -6014,25 +6820,25 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 45.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 48.0
     },
     {
       "No. Caso": "33034",
       "Id compuesto": "RF-275103-12-33034",
       "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "Solucionado",
       "Cliente": "JUAN CAMILO PRESIGA TORRES",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Carolina Cortes Jaramillo",
+      "Responsable": "Santiago Gomez Murcia",
       "Autor": "JUAN CAMILO PRESIGA TORRES",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Reliquidaciones",
+      "Prioridad": "MEDIO",
+      "Grupo": "Apoyo tickets kardex",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -6045,83 +6851,21 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 45.0
-    },
-    {
-      "No. Caso": "33032",
-      "Id compuesto": "RF-275098-12-33032",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "JUAN FERNANDO CALCETO PINO",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Luis Jamerzon Hernandez Rizo",
-      "Autor": "JUAN FERNANDO CALCETO PINO",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Kardex 5",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 136.0
-    },
-    {
-      "No. Caso": "33031",
-      "Id compuesto": "RF-275097-12-33031",
-      "Asunto": "Reversiones de matrícula >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
-      "Cliente": "ISABELLA CARO GIRALDO",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Reversiones de matrícula",
-      "Responsable": "Carolina Cortes Jaramillo",
-      "Autor": "ISABELLA CARO GIRALDO",
-      "Razón": "NEW",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "Reversiones Matricula",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-07-02",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 45.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 48.0
     },
     {
       "No. Caso": "33030",
       "Id compuesto": "RF-275094-12-33030",
       "Asunto": "VICTORIA CATALINA GOMEZ ABELLA",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Registrado",
+      "Estado": "Solucionado",
       "Cliente": "VICTORIA CATALINA GOMEZ ABELLA",
       "Categoría": "Parametrización de valores",
       "Servicio": "Parametrización de fechas de descuento",
-      "Responsable": "Gilmar Anderson Advincula Quinones",
+      "Responsable": "Paola Andrea Alvarez Florez",
       "Autor": "VICTORIA CATALINA GOMEZ ABELLA",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -6138,52 +6882,21 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 91.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 98.0
     },
     {
       "No. Caso": "33029",
       "Id compuesto": "RF-275092-12-33029",
       "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "En Proceso",
+      "Estado": "En Espera",
       "Cliente": "JUAN SEBASTIAN BOTERO DUQUE",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
       "Responsable": "Santiago Gomez Murcia",
       "Autor": "JUAN SEBASTIAN BOTERO DUQUE",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 138.0
-    },
-    {
-      "No. Caso": "33028",
-      "Id compuesto": "RF-275091-12-33028",
-      "Asunto": "Aplicación de beneficios (becas/descuentos)  Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "En Proceso",
-      "Cliente": "LAURA VICTORIA SANCHEZ HERRERA",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "LAURA VICTORIA SANCHEZ HERRERA",
-      "Razón": "Validado",
+      "Razón": "por información del usuario",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -6208,13 +6921,13 @@
       "Id compuesto": "RF-275088-12-33026",
       "Asunto": "Re-liquidación de matricula financiera  Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "En Proceso",
+      "Estado": "Solucionado",
       "Cliente": "VICTORIA CATALINA GOMEZ ABELLA",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
       "Responsable": "Santiago Gomez Murcia",
       "Autor": "VICTORIA CATALINA GOMEZ ABELLA",
-      "Razón": "por información del usuario",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -6231,8 +6944,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 4.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 7.0
     },
     {
       "No. Caso": "33025",
@@ -6293,8 +7006,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 139.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 148.0
     },
     {
       "No. Caso": "33021",
@@ -6325,7 +7038,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 3.0
+      "Progreso": 6.0
     },
     {
       "No. Caso": "33015",
@@ -6356,7 +7069,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.0,
-      "Progreso": 47.0
+      "Progreso": 51.0
     },
     {
       "No. Caso": "33014",
@@ -6387,7 +7100,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.0,
-      "Progreso": 144.0
+      "Progreso": 154.0
     },
     {
       "No. Caso": "33013",
@@ -6418,7 +7131,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.0,
-      "Progreso": 48.0
+      "Progreso": 51.0
     },
     {
       "No. Caso": "33012",
@@ -6448,8 +7161,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.0,
-      "Progreso": 1.0
+      "Tiempo transcurrido": 0.1,
+      "Progreso": 4.0
     },
     {
       "No. Caso": "33011",
@@ -6480,100 +7193,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 2.0
-    },
-    {
-      "No. Caso": "33010",
-      "Id compuesto": "RF-275054-12-33010",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Solucionado",
-      "Cliente": "MARIA FERNANDA MARTINEZ MORENO",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "MARIA FERNANDA MARTINEZ MORENO",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 145.0
-    },
-    {
-      "No. Caso": "33009",
-      "Id compuesto": "RF-275051-12-33009",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Solucionado",
-      "Cliente": "ROBERTO JOSE GUERRERO CRIOLLO",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "ROBERTO JOSE GUERRERO CRIOLLO",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 146.0
-    },
-    {
-      "No. Caso": "33008",
-      "Id compuesto": "RF-275050-12-33008",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Solucionado",
-      "Cliente": "JORGE ENRIQUE MORENO BARRAGAN",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "JORGE ENRIQUE MORENO BARRAGAN",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-18",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 146.0
+      "Progreso": 5.0
     },
     {
       "No. Caso": "33006",
@@ -6604,38 +7224,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.1,
-      "Progreso": 8.0
-    },
-    {
-      "No. Caso": "33004",
-      "Id compuesto": "RF-275044-12-33004",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-17",
-      "Estado": "Solucionado",
-      "Cliente": "DANIELA SANTACRUZ CEBALLOS",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "DANIELA SANTACRUZ CEBALLOS",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-18",
-      "Fecha Estimada de Atención": "2026-06-17",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 146.0
+      "Progreso": 17.0
     },
     {
       "No. Caso": "33003",
@@ -6696,21 +7285,21 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 298.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 318.0
     },
     {
       "No. Caso": "33001",
       "Id compuesto": "RF-275034-12-33001",
       "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
       "Fecha de registro": "2026-06-17",
-      "Estado": "Solucionado",
+      "Estado": "En Espera",
       "Cliente": "ANA SOFIA BARRERA GONZALEZ",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
       "Responsable": "Johan Stiven Piraquive Castro",
       "Autor": "ANA SOFIA BARRERA GONZALEZ",
-      "Razón": "Validado",
+      "Razón": "por información del usuario",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -6821,7 +7410,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 41.0
+      "Progreso": 50.0
     },
     {
       "No. Caso": "32995",
@@ -6851,8 +7440,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 156.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 165.0
     },
     {
       "No. Caso": "32994",
@@ -6883,7 +7472,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 105.0
+      "Progreso": 111.0
     },
     {
       "No. Caso": "32993",
@@ -6913,8 +7502,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 283.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 303.0
     },
     {
       "No. Caso": "32992",
@@ -7037,8 +7626,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 155.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 164.0
     },
     {
       "No. Caso": "32988",
@@ -7100,7 +7689,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 159.0
+      "Progreso": 168.0
     },
     {
       "No. Caso": "32984",
@@ -7131,7 +7720,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 106.0
+      "Progreso": 112.0
     },
     {
       "No. Caso": "32983",
@@ -7162,7 +7751,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 159.0
+      "Progreso": 168.0
     },
     {
       "No. Caso": "32981",
@@ -7193,7 +7782,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 159.0
+      "Progreso": 168.0
     },
     {
       "No. Caso": "32980",
@@ -7286,7 +7875,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 159.0
+      "Progreso": 168.0
     },
     {
       "No. Caso": "32970",
@@ -7317,7 +7906,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 159.0
+      "Progreso": 168.0
     },
     {
       "No. Caso": "32969",
@@ -7348,7 +7937,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.0,
-      "Progreso": 146.0
+      "Progreso": 156.0
     },
     {
       "No. Caso": "32967",
@@ -7379,7 +7968,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 13.0
+      "Progreso": 16.0
     },
     {
       "No. Caso": "32965",
@@ -7410,7 +7999,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 318.0
+      "Progreso": 337.0
     },
     {
       "No. Caso": "32964",
@@ -7440,8 +8029,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 157.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 166.0
     },
     {
       "No. Caso": "32963",
@@ -7471,39 +8060,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 34.0
-    },
-    {
-      "No. Caso": "32962",
-      "Id compuesto": "RF-274959-12-32962",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-16",
-      "Estado": "Solucionado",
-      "Cliente": "DANNA SOFIA CHARA DE LOS RIOS",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "DANNA SOFIA CHARA DE LOS RIOS",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-18",
-      "Fecha Estimada de Atención": "2026-06-16",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 156.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 37.0
     },
     {
       "No. Caso": "32961",
@@ -7596,7 +8154,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 37.0
+      "Progreso": 47.0
     },
     {
       "No. Caso": "32957",
@@ -7627,7 +8185,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 42.0
+      "Progreso": 52.0
     },
     {
       "No. Caso": "32956",
@@ -7658,7 +8216,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 162.0
+      "Progreso": 171.0
     },
     {
       "No. Caso": "32954",
@@ -7688,8 +8246,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 51.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 55.0
     },
     {
       "No. Caso": "32952",
@@ -7719,8 +8277,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 163.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 172.0
     },
     {
       "No. Caso": "32950",
@@ -7781,8 +8339,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 166.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 175.0
     },
     {
       "No. Caso": "32948",
@@ -7843,8 +8401,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 169.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 179.0
     },
     {
       "No. Caso": "32942",
@@ -7905,8 +8463,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 163.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 173.0
     },
     {
       "No. Caso": "32939",
@@ -8060,8 +8618,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 250.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 269.0
     },
     {
       "No. Caso": "32934",
@@ -8216,7 +8774,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.1,
-      "Progreso": 160.0
+      "Progreso": 169.0
     },
     {
       "No. Caso": "32926",
@@ -8247,7 +8805,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.2,
-      "Progreso": 58.0
+      "Progreso": 62.0
     },
     {
       "No. Caso": "32925",
@@ -8278,7 +8836,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.2,
-      "Progreso": 176.0
+      "Progreso": 186.0
     },
     {
       "No. Caso": "32924",
@@ -8339,8 +8897,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 178.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 187.0
     },
     {
       "No. Caso": "32922",
@@ -8432,8 +8990,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 23.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 25.0
     },
     {
       "No. Caso": "32919",
@@ -8463,8 +9021,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 60.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 63.0
     },
     {
       "No. Caso": "32914",
@@ -8494,8 +9052,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 135.0
+      "Tiempo transcurrido": 1.0,
+      "Progreso": 145.0
     },
     {
       "No. Caso": "32912",
@@ -8556,8 +9114,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 121.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 128.0
     },
     {
       "No. Caso": "32910",
@@ -8588,7 +9146,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 71.0
+      "Progreso": 80.0
     },
     {
       "No. Caso": "32908",
@@ -8618,8 +9176,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 185.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 195.0
     },
     {
       "No. Caso": "32907",
@@ -8649,8 +9207,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 60.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 67.0
     },
     {
       "No. Caso": "32904",
@@ -8680,8 +9238,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 163.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 173.0
     },
     {
       "No. Caso": "32903",
@@ -8711,8 +9269,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 219.0
+      "Tiempo transcurrido": 0.8,
+      "Progreso": 238.0
     },
     {
       "No. Caso": "32902",
@@ -8774,7 +9332,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 188.0
+      "Progreso": 198.0
     },
     {
       "No. Caso": "32899",
@@ -8836,7 +9394,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 190.0
+      "Progreso": 200.0
     },
     {
       "No. Caso": "32897",
@@ -8898,7 +9456,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 190.0
+      "Progreso": 200.0
     },
     {
       "No. Caso": "32894",
@@ -8929,7 +9487,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 190.0
+      "Progreso": 200.0
     },
     {
       "No. Caso": "32893",
@@ -9053,7 +9611,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 190.0
+      "Progreso": 200.0
     },
     {
       "No. Caso": "32887",
@@ -9084,7 +9642,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 190.0
+      "Progreso": 200.0
     },
     {
       "No. Caso": "32886",
@@ -9177,7 +9735,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 190.0
+      "Progreso": 200.0
     },
     {
       "No. Caso": "32880",
@@ -9363,7 +9921,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.2,
-      "Progreso": 176.0
+      "Progreso": 185.0
     },
     {
       "No. Caso": "32872",
@@ -9425,7 +9983,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 191.0
+      "Progreso": 201.0
     },
     {
       "No. Caso": "32870",
@@ -9517,8 +10075,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 50.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 53.0
     },
     {
       "No. Caso": "32867",
@@ -9548,21 +10106,21 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 25.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 27.0
     },
     {
       "No. Caso": "32866",
       "Id compuesto": "RF-274709-12-32866",
       "Asunto": "Inconvenientes con pagos >> Servicios Financieros",
       "Fecha de registro": "2026-06-16",
-      "Estado": "En Espera",
+      "Estado": "Solucionado",
       "Cliente": "SARAY CAICEDO TIGREROS",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Otros",
       "Responsable": "Johan Stiven Piraquive Castro",
       "Autor": "SARAY CAICEDO TIGREROS",
-      "Razón": "por información del usuario",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -9610,8 +10168,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 171.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 181.0
     },
     {
       "No. Caso": "32864",
@@ -9703,8 +10261,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 194.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 203.0
     },
     {
       "No. Caso": "32860",
@@ -9734,8 +10292,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 194.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 204.0
     },
     {
       "No. Caso": "32858",
@@ -9765,8 +10323,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 186.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 195.0
     },
     {
       "No. Caso": "32857",
@@ -9796,8 +10354,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 60.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 63.0
     },
     {
       "No. Caso": "32853",
@@ -9890,20 +10448,20 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.3,
-      "Progreso": 63.0
+      "Progreso": 66.0
     },
     {
       "No. Caso": "32845",
       "Id compuesto": "RF-274677-12-32845",
       "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
       "Fecha de registro": "2026-06-16",
-      "Estado": "En Espera",
+      "Estado": "Solucionado",
       "Cliente": "ALEJANDRO RODRIGUEZ CORTES",
       "Categoría": "Kardex Financiero",
       "Servicio": "Re-liquidación de matricula financiera",
       "Responsable": "Santiago Gomez Murcia",
       "Autor": "ALEJANDRO RODRIGUEZ CORTES",
-      "Razón": "por información del usuario",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -9921,7 +10479,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.8,
-      "Progreso": 39.0
+      "Progreso": 40.0
     },
     {
       "No. Caso": "32841",
@@ -10044,8 +10602,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 26.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 27.0
     },
     {
       "No. Caso": "32833",
@@ -10199,8 +10757,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 199.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 209.0
     },
     {
       "No. Caso": "32825",
@@ -10231,7 +10789,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.2,
-      "Progreso": 175.0
+      "Progreso": 185.0
     },
     {
       "No. Caso": "32824",
@@ -10261,8 +10819,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 200.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 209.0
     },
     {
       "No. Caso": "32823",
@@ -10323,8 +10881,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 197.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 207.0
     },
     {
       "No. Caso": "32821",
@@ -10354,8 +10912,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 26.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 28.0
     },
     {
       "No. Caso": "32820",
@@ -10416,8 +10974,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 401.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 421.0
     },
     {
       "No. Caso": "32818",
@@ -10447,8 +11005,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 200.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 210.0
     },
     {
       "No. Caso": "32816",
@@ -10478,8 +11036,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.3,
-      "Progreso": 201.0
+      "Tiempo transcurrido": 1.4,
+      "Progreso": 210.0
     },
     {
       "No. Caso": "32815",
@@ -10541,7 +11099,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.4,
-      "Progreso": 202.0
+      "Progreso": 212.0
     },
     {
       "No. Caso": "32813",
@@ -10634,7 +11192,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.4,
-      "Progreso": 204.0
+      "Progreso": 214.0
     },
     {
       "No. Caso": "32809",
@@ -10696,7 +11254,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.4,
-      "Progreso": 412.0
+      "Progreso": 431.0
     },
     {
       "No. Caso": "32807",
@@ -10758,7 +11316,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.4,
-      "Progreso": 206.0
+      "Progreso": 216.0
     },
     {
       "No. Caso": "32805",
@@ -10819,8 +11377,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 69.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 72.0
     },
     {
       "No. Caso": "32802",
@@ -10850,8 +11408,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 69.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 72.0
     },
     {
       "No. Caso": "32800",
@@ -10881,8 +11439,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 27.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 29.0
     },
     {
       "No. Caso": "32799",
@@ -11098,8 +11656,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 212.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 222.0
     },
     {
       "No. Caso": "32788",
@@ -11129,8 +11687,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 118.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 127.0
     },
     {
       "No. Caso": "32786",
@@ -11285,7 +11843,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 1.4,
-      "Progreso": 202.0
+      "Progreso": 212.0
     },
     {
       "No. Caso": "32779",
@@ -11408,8 +11966,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32774",
@@ -11439,8 +11997,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32770",
@@ -11470,8 +12028,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.8,
-      "Progreso": 120.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 129.0
     },
     {
       "No. Caso": "32766",
@@ -11501,8 +12059,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 71.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 75.0
     },
     {
       "No. Caso": "32765",
@@ -11563,8 +12121,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32763",
@@ -11594,8 +12152,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32762",
@@ -11718,8 +12276,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 47.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 50.0
     },
     {
       "No. Caso": "32755",
@@ -11749,8 +12307,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32752",
@@ -11780,8 +12338,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.1,
-      "Progreso": 55.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 58.0
     },
     {
       "No. Caso": "32750",
@@ -11811,8 +12369,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 430.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 450.0
     },
     {
       "No. Caso": "32749",
@@ -11842,8 +12400,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32748",
@@ -11904,8 +12462,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.2,
-      "Progreso": 61.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 64.0
     },
     {
       "No. Caso": "32744",
@@ -11997,8 +12555,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 430.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 450.0
     },
     {
       "No. Caso": "32741",
@@ -12028,8 +12586,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32740",
@@ -12059,8 +12617,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 215.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 225.0
     },
     {
       "No. Caso": "32739",
@@ -12090,8 +12648,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 71.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 75.0
     },
     {
       "No. Caso": "32737",
@@ -12121,8 +12679,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 28.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 30.0
     },
     {
       "No. Caso": "32735",
@@ -12152,8 +12710,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 47.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 50.0
     },
     {
       "No. Caso": "32734",
@@ -12191,13 +12749,13 @@
       "Id compuesto": "RF-274479-12-32733",
       "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
       "Fecha de registro": "2026-06-14",
-      "Estado": "En Espera",
+      "Estado": "Solucionado",
       "Cliente": "GERALDINE GONZALEZ HERRERA",
       "Categoría": "Otros servicios Kardex Financiero",
       "Servicio": "Aplicación de beneficios (becas/descuentos)",
       "Responsable": "Santiago Gomez Murcia",
       "Autor": "GERALDINE GONZALEZ HERRERA",
-      "Razón": "por información del usuario",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
@@ -12214,8 +12772,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 32.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 38.0
     },
     {
       "No. Caso": "32732",
@@ -12245,8 +12803,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 28.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 30.0
     },
     {
       "No. Caso": "32728",
@@ -12276,8 +12834,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 71.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 75.0
     },
     {
       "No. Caso": "32727",
@@ -12307,39 +12865,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 71.0
-    },
-    {
-      "No. Caso": "32726",
-      "Id compuesto": "RF-274471-12-32726",
-      "Asunto": "Aplicación de beneficios (becas/descuentos) >> Servicios Financieros",
-      "Fecha de registro": "2026-06-13",
-      "Estado": "Solucionado",
-      "Cliente": "SANTIAGO RAMIREZ SALCEDO",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Aplicación de beneficios (becas/descuentos)",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "SANTIAGO RAMIREZ SALCEDO",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-17",
-      "Fecha Estimada de Atención": "2026-06-13",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 103.0
+      "Tiempo transcurrido": 1.5,
+      "Progreso": 75.0
     },
     {
       "No. Caso": "32720",
@@ -12400,8 +12927,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.5,
-      "Progreso": 74.0
+      "Tiempo transcurrido": 1.6,
+      "Progreso": 77.0
     },
     {
       "No. Caso": "32710",
@@ -12462,8 +12989,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.5,
-      "Progreso": 75.0
+      "Tiempo transcurrido": 1.6,
+      "Progreso": 78.0
     },
     {
       "No. Caso": "32706",
@@ -12493,70 +13020,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.5,
-      "Progreso": 65.0
-    },
-    {
-      "No. Caso": "32703",
-      "Id compuesto": "RF-274415-12-32703",
-      "Asunto": "Activación de matricula financiera >> Servicios Financieros",
-      "Fecha de registro": "2026-06-12",
-      "Estado": "En Espera",
-      "Cliente": "ILDER ALEJANDRO DAZA GARCIA",
-      "Categoría": "Otros servicios Kardex Financiero",
-      "Servicio": "Activación de matricula financiera",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "ILDER ALEJANDRO DAZA GARCIA",
-      "Razón": "por información del usuario",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-16",
-      "Fecha Estimada de Atención": "2026-06-12",
-      "Jerarquía": "Kardex Financiero.Otros servicios Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 82.0
-    },
-    {
-      "No. Caso": "32702",
-      "Id compuesto": "RF-274414-12-32702",
-      "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
-      "Fecha de registro": "2026-06-12",
-      "Estado": "Solucionado",
-      "Cliente": "JUAN JOSE OROZCO LOPEZ",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "JUAN JOSE OROZCO LOPEZ",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-30",
-      "Fecha Estimada de Atención": "2026-06-12",
-      "Jerarquía": "Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
       "Tiempo transcurrido": 1.6,
-      "Progreso": 78.0
+      "Progreso": 67.0
     },
     {
       "No. Caso": "32699",
@@ -12586,8 +13051,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.6,
-      "Progreso": 32.0
+      "Tiempo transcurrido": 1.7,
+      "Progreso": 33.0
     },
     {
       "No. Caso": "32698",
@@ -12648,8 +13113,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 36.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 46.0
     },
     {
       "No. Caso": "32696",
@@ -12680,7 +13145,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.2,
-      "Progreso": 27.0
+      "Progreso": 36.0
     },
     {
       "No. Caso": "32695",
@@ -12927,8 +13392,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.8,
-      "Progreso": 77.0
+      "Tiempo transcurrido": 1.9,
+      "Progreso": 80.0
     },
     {
       "No. Caso": "32672",
@@ -13052,7 +13517,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.5,
-      "Progreso": 71.0
+      "Progreso": 81.0
     },
     {
       "No. Caso": "32668",
@@ -13082,8 +13547,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.9,
-      "Progreso": 287.0
+      "Tiempo transcurrido": 2.0,
+      "Progreso": 297.0
     },
     {
       "No. Caso": "32666",
@@ -13113,8 +13578,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 18.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 28.0
     },
     {
       "No. Caso": "32665",
@@ -13144,8 +13609,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 9.0
     },
     {
       "No. Caso": "32664",
@@ -13238,7 +13703,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 2.0,
-      "Progreso": 195.0
+      "Progreso": 202.0
     },
     {
       "No. Caso": "32661",
@@ -13299,8 +13764,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 2.0,
-      "Progreso": 85.0
+      "Tiempo transcurrido": 2.1,
+      "Progreso": 87.0
     },
     {
       "No. Caso": "32659",
@@ -13330,8 +13795,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 19.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "32658",
@@ -13396,37 +13861,6 @@
       "Progreso": 25.0
     },
     {
-      "No. Caso": "32651",
-      "Id compuesto": "RF-274222-12-32651",
-      "Asunto": "LAURA GISEL RAMIREZ BERMEO",
-      "Fecha de registro": "2026-06-11",
-      "Estado": "Solucionado",
-      "Cliente": "LAURA GISEL RAMIREZ BERMEO",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Santiago Gomez Murcia",
-      "Autor": "LAURA GISEL RAMIREZ BERMEO",
-      "Razón": "Validado",
-      "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
-      "Compañía": "ESTUDIANTES",
-      "CI": "N/A",
-      "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
-      "Fecha Estimada de Atención": "2026-06-11",
-      "Jerarquía": "Kardex Financiero",
-      "Departamento": "N/A",
-      "Piso": "N/A",
-      "Ciudad": "N/A",
-      "País": "N/A",
-      "Sede": "N/A",
-      "Edificio": "N/A",
-      "Tiempo transcurrido": 1.7,
-      "Progreso": 85.0
-    },
-    {
       "No. Caso": "32647",
       "Id compuesto": "RF-274204-12-32647",
       "Asunto": "Liquidación crédito largo plazo >> Servicios Financieros",
@@ -13454,8 +13888,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 2.1,
-      "Progreso": 90.0
+      "Tiempo transcurrido": 2.2,
+      "Progreso": 93.0
     },
     {
       "No. Caso": "32646",
@@ -13486,7 +13920,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.9,
-      "Progreso": 36.0
+      "Progreso": 39.0
     },
     {
       "No. Caso": "32641",
@@ -13524,23 +13958,23 @@
       "Id compuesto": "RF-274172-12-32639",
       "Asunto": "Re-liquidación de matricula financiera >> Servicios Financieros",
       "Fecha de registro": "2026-06-10",
-      "Estado": "En Espera",
+      "Estado": "En Proceso",
       "Cliente": "JUAN ESTEBAN HERNANDEZ ELEJALDE",
-      "Categoría": "Kardex Financiero",
-      "Servicio": "Re-liquidación de matricula financiera",
-      "Responsable": "Santiago Gomez Murcia",
+      "Categoría": "Facturación electrónica (inquietudes)",
+      "Servicio": "Facturación electrónica (inquietudes)",
+      "Responsable": "Jose Ramiro Rivas Estupiñan",
       "Autor": "JUAN ESTEBAN HERNANDEZ ELEJALDE",
       "Razón": "por información del usuario",
-      "Impacto": "ALTO",
+      "Impacto": "MEDIO",
       "Urgencia": "BAJO",
-      "Prioridad": "MEDIO",
-      "Grupo": "Apoyo tickets kardex",
+      "Prioridad": "BAJO",
+      "Grupo": "Kardex 2",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
-      "Fecha Estimada de Solución": "2026-06-19",
+      "Fecha Estimada de Solución": "2026-07-01",
       "Fecha Estimada de Atención": "2026-06-10",
-      "Jerarquía": "Kardex Financiero",
+      "Jerarquía": "Kardex Financiero.Facturación electrónica (inquietudes)",
       "Departamento": "N/A",
       "Piso": "N/A",
       "Ciudad": "N/A",
@@ -13548,7 +13982,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 20.0
+      "Progreso": 14.0
     },
     {
       "No. Caso": "32635",
@@ -13609,8 +14043,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 2.3,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 2.4,
+      "Progreso": 47.0
     },
     {
       "No. Caso": "32630",
@@ -13702,8 +14136,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 18.0
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 28.0
     },
     {
       "No. Caso": "32613",
@@ -13764,8 +14198,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 154.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 164.0
     },
     {
       "No. Caso": "32590",
@@ -13796,7 +14230,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 2.2,
-      "Progreso": 43.0
+      "Progreso": 44.0
     },
     {
       "No. Caso": "32589",
@@ -13826,8 +14260,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 33.0
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 43.0
     },
     {
       "No. Caso": "32587",
@@ -13858,7 +14292,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.3,
-      "Progreso": 41.0
+      "Progreso": 51.0
     },
     {
       "No. Caso": "32572",
@@ -14013,7 +14447,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 2.8,
-      "Progreso": 55.0
+      "Progreso": 56.0
     },
     {
       "No. Caso": "32550",
@@ -14105,8 +14539,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.5,
-      "Progreso": 30.0
+      "Tiempo transcurrido": 1.6,
+      "Progreso": 31.0
     },
     {
       "No. Caso": "32500",
@@ -14136,8 +14570,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 3.5,
-      "Progreso": 70.0
+      "Tiempo transcurrido": 3.6,
+      "Progreso": 71.0
     },
     {
       "No. Caso": "32497",
@@ -14260,8 +14694,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 4.9,
-      "Progreso": 411.0
+      "Tiempo transcurrido": 5.0,
+      "Progreso": 416.0
     },
     {
       "No. Caso": "32432",
@@ -14291,8 +14725,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.9,
-      "Progreso": 81.0
+      "Tiempo transcurrido": 2.0,
+      "Progreso": 83.0
     },
     {
       "No. Caso": "32411",
@@ -14601,8 +15035,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 6.1,
-      "Progreso": 263.0
+      "Tiempo transcurrido": 6.2,
+      "Progreso": 265.0
     },
     {
       "No. Caso": "32350",
