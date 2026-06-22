@@ -1064,7 +1064,7 @@
     const solEl = document.getElementById("navBadgeSolucionados");
     if (solEl) {
       let total = 0;
-      AREAS.forEach(function (a) { total += (STATE.data[a] || []).filter(function (r) { return r["Estado"] === "Solucionado"; }).length; });
+      AREAS.forEach(function (a) { total += (STATE.rawData[a] || []).filter(function (r) { return r["Estado"] === "Solucionado"; }).length; });
       solEl.textContent = total;
     }
   }
