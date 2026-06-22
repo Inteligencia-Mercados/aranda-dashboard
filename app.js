@@ -1183,8 +1183,9 @@
       let html = "";
       AREAS.forEach(function (a) {
         const s = STATE.stats[a];
-        html += "<tr>";
-        html += "<td>" + areaChipHTML(a) + " " + esc(a) + "</td>";
+        const viewKey = AREA_PREFIX[a];
+        html += '<tr class="comparativo-row" data-view="' + viewKey + '" title="Ver detalle de ' + esc(a) + '" style="cursor:pointer">';
+        html += "<td>" + areaChipHTML(a) + " " + esc(a) + ' <i class="bi bi-box-arrow-in-right" style="font-size:.75rem;opacity:.5;margin-left:4px"></i></td>';
         html += '<td data-order="' + s.total + '">' + s.total + "</td>";
         html += '<td data-order="' + s.vencidos + '">' + s.vencidos + "</td>";
         html += '<td data-order="' + s.criticos + '">' + s.criticos + "</td>";
@@ -1196,6 +1197,11 @@
       tbody.innerHTML = html;
     }
     initDataTable("#tableComparativo", { paging: false, searching: false, info: false, order: [] });
+
+    $("#tableComparativo tbody").off("click.comp").on("click.comp", "tr.comparativo-row", function () {
+      const viewKey = $(this).attr("data-view");
+      if (viewKey) switchView(viewKey);
+    });
 
     const datasets = ["Normal", "Riesgo", "Critico", "Vencido"].map(function (cls) {
       return {
