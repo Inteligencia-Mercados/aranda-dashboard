@@ -1616,6 +1616,7 @@
         const cBadge   = r.criticosActivos > 0 ? '<span class="resp-badge resp-badge--critico">' + r.criticosActivos + '</span>' : "0";
         return (
           '<tr class="resp-row ' + rowCls + '" data-resp="' + esc(r.nombre) + '" title="Clic para ver el detalle de ' + esc(r.nombre) + '">' +
+          '<td class="row-num" style="text-align:center;color:#888;font-size:.82rem;width:32px"></td>' +
           '<td><strong>' + esc(r.nombre) + '</strong></td>' +
           '<td data-order="' + r.totalCasos + '">' + r.totalCasos + '</td>' +
           '<td data-order="' + r.abiertos + '">' + r.abiertos + '</td>' +
@@ -1630,13 +1631,20 @@
     }
 
     dtRegistry[selSum] = $(selSum).DataTable(Object.assign({ language: DT_LANG_ES }, {
-      paging: true, pageLength: 5, lengthChange: false, order: [[2, "desc"]],
+      paging: true, pageLength: 5, lengthChange: false, order: [[3, "desc"]],
       autoWidth: false,
       dom: "frtipB",
       buttons: [
         { extend: "excelHtml5", text: '<i class="bi bi-file-earmark-excel"></i> Excel', className: "dt-button" },
         { extend: "csvHtml5",   text: '<i class="bi bi-filetype-csv"></i> CSV',         className: "dt-button" }
-      ]
+      ],
+      drawCallback: function () {
+        var api = this.api();
+        var start = api.page.info().start;
+        api.rows({ page: "current" }).nodes().each(function (row, i) {
+          $(row).find("td.row-num").text(start + i + 1);
+        });
+      }
     }));
 
     // Delegación de clic en fila (funciona con paginación de DataTables)
