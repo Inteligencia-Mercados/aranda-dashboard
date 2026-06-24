@@ -859,14 +859,15 @@ table.resp-resumen-table{
   table-layout:fixed;
   width:100% !important;
 }
-table.resp-resumen-table thead th:first-child{ width:28%; }
-table.resp-resumen-table thead th:nth-child(2){ width:8%; }
+table.resp-resumen-table thead th:first-child{ width:3%; }
+table.resp-resumen-table thead th:nth-child(2){ width:25%; }
 table.resp-resumen-table thead th:nth-child(3){ width:8%; }
-table.resp-resumen-table thead th:nth-child(4){ width:10%; }
+table.resp-resumen-table thead th:nth-child(4){ width:8%; }
 table.resp-resumen-table thead th:nth-child(5){ width:10%; }
 table.resp-resumen-table thead th:nth-child(6){ width:10%; }
 table.resp-resumen-table thead th:nth-child(7){ width:10%; }
-table.resp-resumen-table thead th:nth-child(8){ width:16%; }
+table.resp-resumen-table thead th:nth-child(8){ width:10%; }
+table.resp-resumen-table thead th:nth-child(9){ width:16%; }
 
 /* ============================== MODULE TEMPLATE (injected via JS) ============================== */
 .module-section .kpi-grid{ margin-bottom:18px; }
