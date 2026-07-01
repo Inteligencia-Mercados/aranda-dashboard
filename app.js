@@ -1693,10 +1693,10 @@
         kpi("Total asignados",          respData.totalCasos,         "info",    "bi-collection",         "todos los procesos") +
         kpi("Abiertos",                  respData.abiertos,           "info",    "bi-folder2-open",       "pendientes de resolución") +
         kpi("Solucionados",              respData.solucionados,       "sla",     "bi-check2-circle",      respData.tasaResolucion + "% de tasa de resolución") +
-        kpi("Vencidos activos",          respData.vencidosActivos,    "vencido", "bi-x-octagon",          "requieren acción inmediata") +
-        kpi("Críticos activos",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","SLA ≥ 90%") +
-        kpi("SLA cumplido (soluc.)",     slaStr,                      "sla",     "bi-patch-check",        "% de resueltos dentro de SLA") +
-        kpi("Días prom. de resolución",  tiempoSolStr,                "normal",  "bi-clock-history",      "tiempo promedio al cerrar") +
+        kpi("Vencidos activ",          respData.vencidosActivos,    "vencido", "bi-x-octagon",          "requieren acción inmediata") +
+        kpi("Críticos activ",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","SLA ≥ 90%") +
+        kpi("SLA cumplido",     slaStr,                      "sla",     "bi-patch-check",        "% de resueltos dentro de SLA") +
+        kpi("Días prom. Sln",  tiempoSolStr,                "normal",  "bi-clock-history",      "tiempo promedio al cerrar") +
         kpi("Antigüedad prom. (abiertos)", tiempoAbStr,               "riesgo",  "bi-hourglass-split",    "backlog acumulado sin resolver");
     }
 
