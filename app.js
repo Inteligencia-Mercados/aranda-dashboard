@@ -108,7 +108,7 @@
   const chartRegistry = {};
   const dtRegistry = {};
   let _respDetalleActual = null; // nombre del responsable actualmente abierto en el panel de detalle
-  const RESP_SECTION_FILTER = { responsable: [], grupo: [] };
+  const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [] };
   let TENDENCY_PERIOD = "semana"; // "semana" | "mes" | "año"
 
   /* ============================ UTILIDADES ============================ */
@@ -1413,6 +1413,7 @@
       (STATE.rawData[a] || []).forEach(function (r) {
         if (RESP_SECTION_FILTER.responsable.length && RESP_SECTION_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
         if (RESP_SECTION_FILTER.grupo.length       && RESP_SECTION_FILTER.grupo.indexOf(r["Grupo"])             === -1) return;
+        if (RESP_SECTION_FILTER.estado.length      && RESP_SECTION_FILTER.estado.indexOf(r["Estado"])           === -1) return;
         allRaw.push(r);
       });
     });
@@ -1483,23 +1484,27 @@
   function populateRespSectionFilters() {
     const bar = document.getElementById("respSectionFilter");
     if (!bar) return;
-    const respSet = new Set();
-    const grupoSet = new Set();
+    const respSet   = new Set();
+    const grupoSet  = new Set();
+    const estadoSet = new Set();
     AREAS.forEach(function (a) {
       (STATE.rawData[a] || []).forEach(function (r) {
         if (r["Responsable"]) respSet.add(r["Responsable"]);
         if (r["Grupo"])       grupoSet.add(r["Grupo"]);
+        if (r["Estado"])      estadoSet.add(r["Estado"]);
       });
     });
     const respNames = Array.from(respSet).sort();
     const grupos    = Array.from(grupoSet).sort();
+    const estados   = Array.from(estadoSet).sort();
 
     bar.innerHTML =
       '<div class="gfb-inner">' +
         '<span class="gfb-title"><i class="bi bi-funnel-fill"></i> Filtros de sección</span>' +
         '<div class="gfb-drops" id="respSectionDrops">' +
-          buildMsDropHTML("responsable", "Responsable", "bi-person",   respNames, RESP_SECTION_FILTER) +
-          buildMsDropHTML("grupo",       "Grupo",        "bi-building", grupos,    RESP_SECTION_FILTER) +
+          buildMsDropHTML("responsable", "Responsable", "bi-person",       respNames, RESP_SECTION_FILTER) +
+          buildMsDropHTML("grupo",       "Grupo",        "bi-building",     grupos,    RESP_SECTION_FILTER) +
+          buildMsDropHTML("estado",      "Estado",       "bi-circle-half",  estados,   RESP_SECTION_FILTER) +
         '</div>' +
         '<button class="gfb-clear" id="respFilterClear" title="Limpiar filtros de sección">' +
           '<i class="bi bi-x-circle"></i> Limpiar' +
@@ -1567,6 +1572,7 @@
       clearBtn.addEventListener("click", function () {
         RESP_SECTION_FILTER.responsable = [];
         RESP_SECTION_FILTER.grupo = [];
+        RESP_SECTION_FILTER.estado = [];
         populateRespSectionFilters(); // rebuild with empty state
         renderResponsables();
       });
