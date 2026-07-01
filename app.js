@@ -53,7 +53,9 @@
   }
 
   function effectiveClass(r) {
-    return r["Estado"] === "Solucionado" ? "Normal" : classify(r["Progreso"]);
+    const e = r["Estado"];
+    if (e === "Solucionado" || e === "Cerrado" || e === "Anulado") return "Normal";
+    return classify(r["Progreso"]);
   }
 
   const VIEW_TITLES = {
@@ -108,7 +110,7 @@
   const chartRegistry = {};
   const dtRegistry = {};
   let _respDetalleActual = null; // nombre del responsable actualmente abierto en el panel de detalle
-  const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [] };
+  const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [], area: [] };
   let TENDENCY_PERIOD = "semana"; // "semana" | "mes" | "año"
 
   /* ============================ UTILIDADES ============================ */
@@ -1414,6 +1416,7 @@
         if (RESP_SECTION_FILTER.responsable.length && RESP_SECTION_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
         if (RESP_SECTION_FILTER.grupo.length       && RESP_SECTION_FILTER.grupo.indexOf(r["Grupo"])             === -1) return;
         if (RESP_SECTION_FILTER.estado.length      && RESP_SECTION_FILTER.estado.indexOf(r["Estado"])           === -1) return;
+        if (RESP_SECTION_FILTER.area.length        && RESP_SECTION_FILTER.area.indexOf(r["_area"])              === -1) return;
         allRaw.push(r);
       });
     });
@@ -1449,13 +1452,11 @@
       const cat = r["Categoría"] || "Sin categoría";
       d.categorias[cat] = (d.categorias[cat] || 0) + 1;
 
-      if (r["Estado"] === "Solucionado") {
+      if (r["Estado"] === "Solucionado" || r["Estado"] === "Cerrado" || r["Estado"] === "Anulado") {
         d.solucionados++;
         if (r["Progreso"] <= 100) d.solucionadosSLA++;
         if (r["Tiempo transcurrido"] != null) d.tiemposSolucionados.push(r["Tiempo transcurrido"]);
-      } else if (r["Estado"] === "Anulado" || r["Estado"] === "Cerrado") {
-        /* no cuenta como abierto ni solucionado, solo en totalCasos */
-      } else {
+      } else if (r["Estado"] === "En Espera" || r["Estado"] === "En Proceso" || r["Estado"] === "Registrado") {
         d.abiertos++;
         if (r["Tiempo transcurrido"] != null) d.tiemposAbiertos.push(r["Tiempo transcurrido"]);
         const cls = classify(r["Progreso"]);
@@ -1464,6 +1465,7 @@
         else if (cls === "Riesgo")  d.riesgoActivos++;
         else                        d.normalActivos++;
       }
+      /* Cerrado, Anulado u otros: solo cuentan en totalCasos */
     });
 
     Object.keys(byResp).forEach(function (k) {
@@ -1499,16 +1501,21 @@
     const respNames = Array.from(respSet).sort();
     const grupos    = Array.from(grupoSet).sort();
     const estados   = Array.from(estadoSet).sort();
+    const areas     = AREAS.slice();
 
     if (RESP_SECTION_FILTER.estado.length === 0 && estados.length > 0) {
       RESP_SECTION_FILTER.estado = estados.slice();
+    }
+    if (RESP_SECTION_FILTER.area.length === 0 && areas.length > 0) {
+      RESP_SECTION_FILTER.area = areas.slice();
     }
 
     bar.innerHTML =
       '<div class="gfb-inner">' +
         '<span class="gfb-title"><i class="bi bi-funnel-fill"></i> Filtros de sección</span>' +
         '<div class="gfb-drops" id="respSectionDrops">' +
-          buildMsDropHTML("responsable", "Responsable", "bi-person",       respNames, RESP_SECTION_FILTER) +
+          buildMsDropHTML("area",        "Área",         "bi-diagram-3",    areas,     RESP_SECTION_FILTER) +
+          buildMsDropHTML("responsable", "Responsable",  "bi-person",       respNames, RESP_SECTION_FILTER) +
           buildMsDropHTML("grupo",       "Grupo",        "bi-building",     grupos,    RESP_SECTION_FILTER) +
           buildMsDropHTML("estado",      "Estado",       "bi-circle-half",  estados,   RESP_SECTION_FILTER) +
         '</div>' +
@@ -1579,6 +1586,7 @@
         RESP_SECTION_FILTER.responsable = [];
         RESP_SECTION_FILTER.grupo = [];
         RESP_SECTION_FILTER.estado = [];
+        RESP_SECTION_FILTER.area = [];
         populateRespSectionFilters(); // rebuild with empty state
         renderResponsables();
       });
@@ -1730,7 +1738,12 @@
     const allRaw = [];
     AREAS.forEach(function (a) { (STATE.rawData[a] || []).forEach(function (r) { allRaw.push(r); }); });
     const casosAbiertos = allRaw
-      .filter(function (r) { return r["Responsable"] === respData.nombre && ["Solucionado","Anulado","Cerrado"].indexOf(r["Estado"]) === -1; })
+      .filter(function (r) {
+        if (r["Responsable"] !== respData.nombre) return false;
+        if (r["Estado"] !== "En Espera" && r["Estado"] !== "En Proceso" && r["Estado"] !== "Registrado") return false;
+        if (RESP_SECTION_FILTER.area.length && RESP_SECTION_FILTER.area.indexOf(r["_area"]) === -1) return false;
+        return true;
+      })
       .sort(function (a, b) { return b["Progreso"] - a["Progreso"]; });
 
     const cntEl = document.getElementById("respDetalleCasosCount");
