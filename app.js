@@ -1453,6 +1453,8 @@
         d.solucionados++;
         if (r["Progreso"] <= 100) d.solucionadosSLA++;
         if (r["Tiempo transcurrido"] != null) d.tiemposSolucionados.push(r["Tiempo transcurrido"]);
+      } else if (r["Estado"] === "Anulado" || r["Estado"] === "Cerrado") {
+        /* no cuenta como abierto ni solucionado, solo en totalCasos */
       } else {
         d.abiertos++;
         if (r["Tiempo transcurrido"] != null) d.tiemposAbiertos.push(r["Tiempo transcurrido"]);
@@ -1497,6 +1499,10 @@
     const respNames = Array.from(respSet).sort();
     const grupos    = Array.from(grupoSet).sort();
     const estados   = Array.from(estadoSet).sort();
+
+    if (RESP_SECTION_FILTER.estado.length === 0 && estados.length > 0) {
+      RESP_SECTION_FILTER.estado = estados.slice();
+    }
 
     bar.innerHTML =
       '<div class="gfb-inner">' +
@@ -1724,7 +1730,7 @@
     const allRaw = [];
     AREAS.forEach(function (a) { (STATE.rawData[a] || []).forEach(function (r) { allRaw.push(r); }); });
     const casosAbiertos = allRaw
-      .filter(function (r) { return r["Responsable"] === respData.nombre && r["Estado"] !== "Solucionado"; })
+      .filter(function (r) { return r["Responsable"] === respData.nombre && ["Solucionado","Anulado","Cerrado"].indexOf(r["Estado"]) === -1; })
       .sort(function (a, b) { return b["Progreso"] - a["Progreso"]; });
 
     const cntEl = document.getElementById("respDetalleCasosCount");
