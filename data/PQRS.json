@@ -1,8 +1,70 @@
 {
   "area": "PQRS",
-  "generatedAt": "2026-07-01T22:11:18.220852",
+  "generatedAt": "2026-07-02T14:16:23.453260",
   "source": "Convertido desde export real de Aranda Service Desk (Items.xlsx).",
   "records": [
+    {
+      "No. Caso": "3302",
+      "Id compuesto": "RF-276485-10-3302",
+      "Asunto": "Becas y descuentos >> RECLAMO",
+      "Fecha de registro": "2026-07-01",
+      "Estado": "Registrado",
+      "Cliente": "JUANITA MARTINEZ ZAMORA",
+      "Categoría": "Kardex Financiero",
+      "Servicio": "Becas y descuentos",
+      "Responsable": "Daniela Elena Guerrero Gasca",
+      "Autor": "JUANITA MARTINEZ ZAMORA",
+      "Razón": "NEW",
+      "Impacto": "MEDIO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "PQRS-Kardex 3",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-15",
+      "Fecha Estimada de Atención": "2026-07-01",
+      "Jerarquía": "RECLAMO.Servicios Financieros.Kardex Financiero",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.2,
+      "Progreso": 6.0
+    },
+    {
+      "No. Caso": "3301",
+      "Id compuesto": "RF-276447-10-3301",
+      "Asunto": "Danikidsz",
+      "Fecha de registro": "2026-07-01",
+      "Estado": "Registrado",
+      "Cliente": "JUAN DANIEL CARDENAS MONTOYA",
+      "Categoría": "Registro Académico",
+      "Servicio": "Cursos de opción de grado",
+      "Responsable": "Alexander Mejia",
+      "Autor": "JUAN DANIEL CARDENAS MONTOYA",
+      "Razón": "NEW",
+      "Impacto": "ALTO",
+      "Urgencia": "BAJO",
+      "Prioridad": "BAJO",
+      "Grupo": "Grupo Registro Académico",
+      "Compañía": "ESTUDIANTES",
+      "CI": "N/A",
+      "Tipo de Registro": "Web",
+      "Fecha Estimada de Solución": "2026-07-15",
+      "Fecha Estimada de Atención": "2026-07-01",
+      "Jerarquía": "RECLAMO.Registro Académico",
+      "Departamento": "N/A",
+      "Piso": "N/A",
+      "Ciudad": "N/A",
+      "País": "N/A",
+      "Sede": "N/A",
+      "Edificio": "N/A",
+      "Tiempo transcurrido": 0.3,
+      "Progreso": 7.0
+    },
     {
       "No. Caso": "3300",
       "Id compuesto": "RF-276346-10-3300",
@@ -31,8 +93,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 2.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 11.0
     },
     {
       "No. Caso": "3299",
@@ -62,24 +124,24 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 1.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 7.0
     },
     {
       "No. Caso": "3298",
       "Id compuesto": "RF-276318-10-3298",
       "Asunto": "UAO-ICETEX >> PETICIÓN",
       "Fecha de registro": "2026-06-30",
-      "Estado": "Registrado",
+      "Estado": "En Proceso",
       "Cliente": "ANIBAL LOPEZ NARANJO",
       "Categoría": "Apoyo Financiero a Estudiantes",
       "Servicio": "UAO-ICETEX",
-      "Responsable": "Jhon Edison Marmolejo Garrido",
+      "Responsable": "Vivian Bolaños Gutierrez",
       "Autor": "ANIBAL LOPEZ NARANJO",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
-      "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
+      "Urgencia": "ALTO",
+      "Prioridad": "ALTO",
       "Grupo": "Apoyo 2",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
@@ -93,8 +155,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.1,
-      "Progreso": 3.0
+      "Tiempo transcurrido": 0.4,
+      "Progreso": 12.0
     },
     {
       "No. Caso": "3297",
@@ -124,8 +186,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 5.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 14.0
     },
     {
       "No. Caso": "3296",
@@ -155,8 +217,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 5.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 14.0
     },
     {
       "No. Caso": "3295",
@@ -186,8 +248,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.2,
-      "Progreso": 6.0
+      "Tiempo transcurrido": 0.5,
+      "Progreso": 15.0
     },
     {
       "No. Caso": "3294",
@@ -217,8 +279,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 7.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 17.0
     },
     {
       "No. Caso": "3293",
@@ -279,25 +341,25 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.3,
-      "Progreso": 9.0
+      "Tiempo transcurrido": 0.6,
+      "Progreso": 18.0
     },
     {
       "No. Caso": "3291",
       "Id compuesto": "RF-276178-10-3291",
       "Asunto": "Estado de cuenta  PETICIÓN",
       "Fecha de registro": "2026-06-30",
-      "Estado": "Registrado",
+      "Estado": "Cerrado",
       "Cliente": "ERICA DEL CARMEN ANGULO DELGADO",
       "Categoría": "Kardex Financiero",
       "Servicio": "Estado de cuenta",
-      "Responsable": "Carolina Cortes Jaramillo",
+      "Responsable": "Yuddy Suleima Rayo Arias",
       "Autor": "ERICA DEL CARMEN ANGULO DELGADO",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
-      "Prioridad": "BAJO",
-      "Grupo": "PQRS-Kardex 1",
+      "Prioridad": "MEDIO",
+      "Grupo": "Gestores del CAE",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -311,7 +373,7 @@
       "Sede": "N/A",
       "Edificio": "N/A",
       "Tiempo transcurrido": 0.4,
-      "Progreso": 11.0
+      "Progreso": 12.0
     },
     {
       "No. Caso": "3290",
@@ -341,8 +403,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3289",
@@ -372,8 +434,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3288",
@@ -403,8 +465,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3287",
@@ -434,8 +496,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3286",
@@ -465,8 +527,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3285",
@@ -496,8 +558,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3284",
@@ -527,8 +589,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3283",
@@ -589,8 +651,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3281",
@@ -651,8 +713,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3279",
@@ -682,8 +744,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3278",
@@ -713,8 +775,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3277",
@@ -744,8 +806,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 8.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 14.0
     },
     {
       "No. Caso": "3276",
@@ -775,8 +837,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3275",
@@ -930,8 +992,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.4,
-      "Progreso": 12.0
+      "Tiempo transcurrido": 0.7,
+      "Progreso": 21.0
     },
     {
       "No. Caso": "3270",
@@ -961,8 +1023,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 17.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 26.0
     },
     {
       "No. Caso": "3269",
@@ -992,8 +1054,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 17.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 26.0
     },
     {
       "No. Caso": "3268",
@@ -1023,25 +1085,25 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.7,
-      "Progreso": 22.0
+      "Tiempo transcurrido": 1.1,
+      "Progreso": 31.0
     },
     {
       "No. Caso": "3267",
       "Id compuesto": "RF-275406-10-3267",
       "Asunto": "Solicitud de revisión de nota de examen nivelatorio - Thomas Rivera",
       "Fecha de registro": "2026-06-18",
-      "Estado": "Registrado",
+      "Estado": "En Proceso",
       "Cliente": "THOMAS DANIEL RIVERA CHACON",
       "Categoría": "Asuntos Académicos",
       "Servicio": "Pregrado",
-      "Responsable": "Martha Cecilia Realpe Ceballos",
+      "Responsable": "Miguel Angel Medina Ospina",
       "Autor": "THOMAS DANIEL RIVERA CHACON",
-      "Razón": "NEW",
+      "Razón": "Validado",
       "Impacto": "ALTO",
       "Urgencia": "BAJO",
       "Prioridad": "MEDIO",
-      "Grupo": "Secretarias académicas",
+      "Grupo": "Gestores del CAE",
       "Compañía": "ESTUDIANTES",
       "CI": "N/A",
       "Tipo de Registro": "Web",
@@ -1054,8 +1116,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 25.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 34.0
     },
     {
       "No. Caso": "3266",
@@ -1085,8 +1147,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 27.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 36.0
     },
     {
       "No. Caso": "3265",
@@ -1116,8 +1178,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.9,
-      "Progreso": 27.0
+      "Tiempo transcurrido": 1.2,
+      "Progreso": 36.0
     },
     {
       "No. Caso": "3264",
@@ -1178,8 +1240,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.0,
-      "Progreso": 30.0
+      "Tiempo transcurrido": 1.3,
+      "Progreso": 39.0
     },
     {
       "No. Caso": "3262",
@@ -1395,8 +1457,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.4,
-      "Progreso": 42.0
+      "Tiempo transcurrido": 1.7,
+      "Progreso": 51.0
     },
     {
       "No. Caso": "3255",
@@ -1457,8 +1519,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 1.6,
-      "Progreso": 46.0
+      "Tiempo transcurrido": 1.9,
+      "Progreso": 55.0
     },
     {
       "No. Caso": "3253",
@@ -1643,8 +1705,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 2.1,
-      "Progreso": 62.0
+      "Tiempo transcurrido": 2.4,
+      "Progreso": 71.0
     },
     {
       "No. Caso": "3247",
@@ -1674,8 +1736,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 2.1,
-      "Progreso": 62.0
+      "Tiempo transcurrido": 2.4,
+      "Progreso": 71.0
     },
     {
       "No. Caso": "3246",
@@ -1767,8 +1829,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 0.6,
-      "Progreso": 18.0
+      "Tiempo transcurrido": 0.9,
+      "Progreso": 27.0
     },
     {
       "No. Caso": "3243",
@@ -1891,8 +1953,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 3.3,
-      "Progreso": 99.0
+      "Tiempo transcurrido": 3.6,
+      "Progreso": 108.0
     },
     {
       "No. Caso": "3239",
@@ -1953,8 +2015,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 3.8,
-      "Progreso": 112.0
+      "Tiempo transcurrido": 4.1,
+      "Progreso": 121.0
     },
     {
       "No. Caso": "3237",
@@ -2108,8 +2170,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 4.5,
-      "Progreso": 136.0
+      "Tiempo transcurrido": 4.8,
+      "Progreso": 145.0
     },
     {
       "No. Caso": "3232",
@@ -2232,8 +2294,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 5.1,
-      "Progreso": 101.0
+      "Tiempo transcurrido": 5.4,
+      "Progreso": 107.0
     },
     {
       "No. Caso": "3228",
@@ -2604,8 +2666,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 6.4,
-      "Progreso": 193.0
+      "Tiempo transcurrido": 6.7,
+      "Progreso": 202.0
     },
     {
       "No. Caso": "3216",
@@ -2945,8 +3007,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 9.1,
-      "Progreso": 181.0
+      "Tiempo transcurrido": 9.4,
+      "Progreso": 187.0
     },
     {
       "No. Caso": "3205",
@@ -3007,8 +3069,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 9.4,
-      "Progreso": 283.0
+      "Tiempo transcurrido": 9.7,
+      "Progreso": 292.0
     },
     {
       "No. Caso": "3203",
@@ -3255,8 +3317,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 10.6,
-      "Progreso": 211.0
+      "Tiempo transcurrido": 10.9,
+      "Progreso": 217.0
     },
     {
       "No. Caso": "3195",
@@ -3317,8 +3379,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 10.9,
-      "Progreso": 327.0
+      "Tiempo transcurrido": 11.2,
+      "Progreso": 336.0
     },
     {
       "No. Caso": "3193",
@@ -3503,8 +3565,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 11.3,
-      "Progreso": 337.0
+      "Tiempo transcurrido": 11.6,
+      "Progreso": 346.0
     },
     {
       "No. Caso": "3187",
@@ -3565,8 +3627,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 11.3,
-      "Progreso": 340.0
+      "Tiempo transcurrido": 11.6,
+      "Progreso": 349.0
     },
     {
       "No. Caso": "3185",
@@ -3596,8 +3658,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 11.4,
-      "Progreso": 342.0
+      "Tiempo transcurrido": 11.7,
+      "Progreso": 351.0
     },
     {
       "No. Caso": "3184",
@@ -3627,8 +3689,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 11.4,
-      "Progreso": 342.0
+      "Tiempo transcurrido": 11.7,
+      "Progreso": 351.0
     },
     {
       "No. Caso": "3183",
@@ -3751,8 +3813,8 @@
       "País": "N/A",
       "Sede": "N/A",
       "Edificio": "N/A",
-      "Tiempo transcurrido": 11.6,
-      "Progreso": 347.0
+      "Tiempo transcurrido": 11.9,
+      "Progreso": 356.0
     },
     {
       "No. Caso": "3179",
