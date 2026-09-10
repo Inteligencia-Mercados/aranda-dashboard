@@ -41,8 +41,7 @@
     { key: "categoria",   label: "Categoría",   field: "Categoría",   icon: "bi-tags" },
     { key: "servicio",    label: "Servicio",     field: "Servicio",    icon: "bi-diagram-3" },
     { key: "responsable", label: "Responsable",  field: "Responsable", icon: "bi-person" },
-    { key: "grupo",       label: "Grupo",        field: "Grupo",       icon: "bi-building" },
-    { key: "urgencia",    label: "Urgencia",     field: "Urgencia",    icon: "bi-flag" }
+    { key: "grupo",       label: "Grupo",        field: "Grupo",       icon: "bi-building" }
   ];
 
   function classify(progreso) {
@@ -102,7 +101,6 @@
     servicio: [],
     responsable: [],
     grupo: [],
-    urgencia: [],
     fechaDesde: "",
     fechaHasta: ""
   };
@@ -111,6 +109,8 @@
   const dtRegistry = {};
   let _respDetalleActual = null; // nombre del responsable actualmente abierto en el panel de detalle
   const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [], area: [], fechaDesde: "", fechaHasta: "" };
+  const RESP_GRUPO_DEFAULT = "GESTORES DE CAE"; // filtro inicial de la pestaña Gestión de Responsables
+  let _respFilterDefaulted = false;             // el filtro por defecto sólo se aplica al abrir la pestaña por primera vez
   let TENDENCY_PERIOD = "semana"; // "semana" | "mes" | "año"
 
   /* ============================ UTILIDADES ============================ */
@@ -411,7 +411,6 @@
         if (GLOBAL_FILTER.servicio.length     && GLOBAL_FILTER.servicio.indexOf(r["Servicio"])       === -1) return false;
         if (GLOBAL_FILTER.responsable.length  && GLOBAL_FILTER.responsable.indexOf(r["Responsable"]) === -1) return false;
         if (GLOBAL_FILTER.grupo.length        && GLOBAL_FILTER.grupo.indexOf(r["Grupo"])             === -1) return false;
-        if (GLOBAL_FILTER.urgencia.length     && GLOBAL_FILTER.urgencia.indexOf(r["Urgencia"])       === -1) return false;
         if (GLOBAL_FILTER.fechaDesde && (r["Fecha de registro"] || "") < GLOBAL_FILTER.fechaDesde) return false;
         if (GLOBAL_FILTER.fechaHasta && (r["Fecha de registro"] || "") > GLOBAL_FILTER.fechaHasta) return false;
         return true;
@@ -1329,7 +1328,6 @@
         if (GLOBAL_FILTER.servicio.length    && GLOBAL_FILTER.servicio.indexOf(r["Servicio"])     === -1) return;
         if (GLOBAL_FILTER.responsable.length && GLOBAL_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
         if (GLOBAL_FILTER.grupo.length       && GLOBAL_FILTER.grupo.indexOf(r["Grupo"])           === -1) return;
-        if (GLOBAL_FILTER.urgencia.length    && GLOBAL_FILTER.urgencia.indexOf(r["Urgencia"])     === -1) return;
         if (GLOBAL_FILTER.fechaDesde && (r["Fecha de registro"] || "") < GLOBAL_FILTER.fechaDesde) return;
         if (GLOBAL_FILTER.fechaHasta && (r["Fecha de registro"] || "") > GLOBAL_FILTER.fechaHasta) return;
         sol.push(r);
@@ -1345,7 +1343,6 @@
         if (GLOBAL_FILTER.servicio.length    && GLOBAL_FILTER.servicio.indexOf(r["Servicio"])     === -1) return;
         if (GLOBAL_FILTER.responsable.length && GLOBAL_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
         if (GLOBAL_FILTER.grupo.length       && GLOBAL_FILTER.grupo.indexOf(r["Grupo"])           === -1) return;
-        if (GLOBAL_FILTER.urgencia.length    && GLOBAL_FILTER.urgencia.indexOf(r["Urgencia"])     === -1) return;
         if (GLOBAL_FILTER.fechaDesde && (r["Fecha de registro"] || "") < GLOBAL_FILTER.fechaDesde) return;
         if (GLOBAL_FILTER.fechaHasta && (r["Fecha de registro"] || "") > GLOBAL_FILTER.fechaHasta) return;
         totalCasos++;
@@ -1511,6 +1508,13 @@
     if (RESP_SECTION_FILTER.area.length === 0 && areas.length > 0) {
       RESP_SECTION_FILTER.area = areas.slice();
     }
+    /* Filtro por defecto: al abrir la pestaña por primera vez, mostrar sólo el grupo GESTORES DE CAE */
+    if (!_respFilterDefaulted) {
+      _respFilterDefaulted = true;
+      if (grupos.indexOf(RESP_GRUPO_DEFAULT) !== -1) {
+        RESP_SECTION_FILTER.grupo = [RESP_GRUPO_DEFAULT];
+      }
+    }
 
     bar.innerHTML =
       '<div class="gfb-inner">' +
@@ -1637,10 +1641,8 @@
     /* ---- KPI generales ---- */
     const topCarga = responsables.reduce(function (m, r) { return r.abiertos > m.abiertos ? r : m; }, { nombre: "—", abiertos: 0 });
     const topVenc  = responsables.reduce(function (m, r) { return r.vencidosActivos > m.vencidosActivos ? r : m; }, { nombre: "—", vencidosActivos: 0 });
-    const conTiempo = responsables.filter(function (r) { return r.avgTiempoSolucionados !== null; });
-    const avgGlobal = conTiempo.length > 0
-      ? (conTiempo.reduce(function (s, r) { return s + r.avgTiempoSolucionados; }, 0) / conTiempo.length).toFixed(1)
-      : null;
+    const totalCasosResp = responsables.reduce(function (s, r) { return s + r.totalCasos; }, 0);
+    const totalAbiertos  = responsables.reduce(function (s, r) { return s + r.abiertos; }, 0);
 
     const kpiGrid = document.getElementById("kpiResponsablesGrid");
     if (kpiGrid) {
@@ -1649,8 +1651,8 @@
         kpi("Responsables en vista", responsables.length, "info",    "bi-people",             "según los filtros de sección") +
         kpi("Mayor carga activa",    n2w(topCarga.nombre), "info",    "bi-person-badge",       topCarga.abiertos + " casos abiertos") +
         kpi("Más vencidos activos",  n2w(topVenc.nombre),  "vencido", "bi-person-exclamation", topVenc.vencidosActivos + " casos vencidos") +
-        kpi("Período analizado",     globalDays + " días", "sla",     "bi-calendar-range",     "rango de fechas en los datos") +
-        kpi("Días prom. resolución", avgGlobal !== null ? avgGlobal + " días" : "—", "normal", "bi-clock-history", "promedio del grupo seleccionado");
+        kpi("Total de casos de los responsables", totalCasosResp, "info", "bi-folder2-open", "histórico completo en la vista") +
+        kpi("Total de casos abiertos", totalAbiertos, "info", "bi-folder-symlink", "En Espera · En Proceso · Registrado");
     }
 
     /* ---- Tabla resumen (8 columnas) ---- */
