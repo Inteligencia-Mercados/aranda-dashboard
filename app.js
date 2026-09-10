@@ -32,6 +32,9 @@
   const STATUS_COLORS = { "Normal": "#9C8C7E", "Riesgo": "#D9A441", "Critico": "#C0151A", "Vencido": "#4A0608" };
   const STATUS_LABELS = { "Normal": "Normal", "Riesgo": "Riesgo", "Critico": "Crítico", "Vencido": "Vencido" };
 
+  /* Estados considerados "activos": selección por defecto del filtro Estado en todas las pestañas */
+  const ESTADOS_ABIERTOS = ["En Espera", "En Proceso", "Registrado"];
+
   const SERIES_PALETTE = ["#8C0F13", "#C0151A", "#D9A441", "#9C8C7E", "#4A0608", "#B5654A", "#6B5E54", "#D9B68B", "#7A1E22", "#C98A3E"];
 
   /* Campos de la barra de filtros globales */
@@ -467,7 +470,9 @@
         if (r["Estado"]) estadoSet.add(r["Estado"]);
       });
     });
-    GLOBAL_FILTER.estado = Array.from(estadoSet).sort();
+    /* Por defecto se visualizan sólo los casos activos (En Espera, En Proceso, Registrado) */
+    const preSel = ESTADOS_ABIERTOS.filter(function (e) { return estadoSet.has(e); });
+    GLOBAL_FILTER.estado = preSel.length > 0 ? preSel : Array.from(estadoSet).sort();
   }
 
   function populateGlobalFilterBar() {
@@ -542,15 +547,14 @@
 
       if (allCb) {
         allCb.addEventListener("change", function () {
-          if (this.checked) {
-            drop.querySelectorAll(".ms-cb").forEach(function (cb) { cb.checked = false; });
-            GLOBAL_FILTER[key] = [];
-            badge.style.display = "none";
-            badge.textContent = "0";
-            onFilterChange();
-          } else {
-            this.checked = true; // no se puede desmarcar "Todos" sin seleccionar algo
-          }
+          // Al pulsar "Todos" se desactivan todas las opciones individuales;
+          // "Todos" queda marcado hasta que el usuario seleccione alguna.
+          drop.querySelectorAll(".ms-cb").forEach(function (cb) { cb.checked = false; });
+          this.checked = true;
+          GLOBAL_FILTER[key] = [];
+          badge.style.display = "none";
+          badge.textContent = "0";
+          onFilterChange();
         });
       }
 
@@ -587,7 +591,7 @@
         GF_FIELDS.forEach(function (f) { GLOBAL_FILTER[f.key] = []; });
         GLOBAL_FILTER.fechaDesde = "";
         GLOBAL_FILTER.fechaHasta = "";
-        initEstadoFilter(); // re-inicializa Estado con todos los valores seleccionados
+        initEstadoFilter(); // re-inicializa Estado con la selección por defecto (casos activos)
         populateGlobalFilterBar(); // reconstruye con estado limpio
         onFilterChange();
       });
@@ -646,14 +650,12 @@
       }
     });
 
-    const cumplidos = total - vencidos;
     return {
       total: total,
       vencidos: vencidos,
       criticos: criticos,
       riesgo: riesgo,
       normal: normal,
-      slaPct: pct(cumplidos, total),
       avgTiempo: total ? Math.round((sumTiempo / total) * 10) / 10 : 0,
       vencidosPorResponsable: vencidosPorResponsable,
       vencidosPorCategoria: vencidosPorCategoria,
@@ -870,7 +872,7 @@
       STATE.prevErrors = Object.assign({}, STATE.errors);
 
       if (!STATE.firstLoadDone) {
-        initEstadoFilter(); // pre-selecciona todos los estados en el primer arranque
+        initEstadoFilter(); // pre-selecciona sólo los estados activos en el primer arranque
       }
       populateGlobalFilterBar(); // reconstruye opciones con nuevos datos
       renderAll();
@@ -1079,7 +1081,6 @@
         kpi("Vencidos", s.vencidos, "vencido", "bi-x-octagon", pct(s.vencidos, s.total) + "% del total") +
         kpi("Críticos", s.criticos, "critico", "bi-exclamation-triangle", pct(s.criticos, s.total) + "% del total") +
         kpi("En riesgo", s.riesgo, "riesgo", "bi-shield-exclamation", pct(s.riesgo, s.total) + "% del total") +
-        kpi("SLA cumplido", s.slaPct + "%", "sla", "bi-patch-check", "Progreso ≤ 100%") +
         kpi("Tiempo promedio", s.avgTiempo + " días", "normal", "bi-clock-history", "transcurrido por caso") +
         kpi("Responsables con vencidos", Object.keys(s.vencidosPorResponsable).length, "info", "bi-person-badge", "personas con casos vencidos");
     }
@@ -1131,8 +1132,7 @@
       grid.innerHTML =
         kpi("Vencidos", s.vencidos, "vencido", "bi-x-octagon", "requieren acción inmediata") +
         kpi("Críticos", s.criticos, "critico", "bi-exclamation-triangle", "por vencer en horas") +
-        kpi("Total en atención", s.vencidos + s.criticos, "atencion", "bi-megaphone", "vencidos + críticos") +
-        kpi("SLA incumplido", (100 - s.slaPct).toFixed(1) + "%", "vencido", "bi-graph-down", "del total de casos");
+        kpi("Total en atención", s.vencidos + s.criticos, "atencion", "bi-megaphone", "vencidos + críticos");
     }
 
     const respTop = topEntry(s.vencidosPorResponsable);
@@ -1191,7 +1191,6 @@
         html += '<td data-order="' + s.vencidos + '">' + s.vencidos + "</td>";
         html += '<td data-order="' + s.criticos + '">' + s.criticos + "</td>";
         html += '<td data-order="' + s.riesgo + '">' + s.riesgo + "</td>";
-        html += '<td data-order="' + s.slaPct + '">' + s.slaPct + "%</td>";
         html += '<td data-order="' + s.avgTiempo + '">' + s.avgTiempo + "</td>";
         html += "</tr>";
       });
@@ -1246,7 +1245,6 @@
         kpi("Vencidos", s.vencidos, "vencido", "bi-x-octagon", pct(s.vencidos, s.total) + "% del total") +
         kpi("Críticos", s.criticos, "critico", "bi-exclamation-triangle", pct(s.criticos, s.total) + "% del total") +
         kpi("En riesgo", s.riesgo, "riesgo", "bi-shield-exclamation", pct(s.riesgo, s.total) + "% del total") +
-        kpi("SLA cumplido", s.slaPct + "%", "sla", "bi-patch-check", "Progreso ≤ 100%") +
         kpi("Tiempo promedio", s.avgTiempo + " días", "normal", "bi-clock-history", "transcurrido por caso");
     }
 
@@ -1434,7 +1432,6 @@
           totalCasos: 0,
           abiertos: 0,
           solucionados: 0,
-          solucionadosSLA: 0,
           vencidosActivos: 0,
           criticosActivos: 0,
           riesgoActivos: 0,
@@ -1451,9 +1448,8 @@
       const cat = r["Categoría"] || "Sin categoría";
       d.categorias[cat] = (d.categorias[cat] || 0) + 1;
 
-      if (r["Estado"] === "Solucionado" || r["Estado"] === "Cerrado" || r["Estado"] === "Anulado") {
+      if (r["Estado"] === "Solucionado" || r["Estado"] === "Cerrado") {
         d.solucionados++;
-        if (r["Progreso"] <= 100) d.solucionadosSLA++;
         if (r["Tiempo transcurrido"] != null) d.tiemposSolucionados.push(r["Tiempo transcurrido"]);
       } else if (r["Estado"] === "En Espera" || r["Estado"] === "En Proceso" || r["Estado"] === "Registrado") {
         d.abiertos++;
@@ -1464,13 +1460,12 @@
         else if (cls === "Riesgo")  d.riesgoActivos++;
         else                        d.normalActivos++;
       }
-      /* Cerrado, Anulado u otros: solo cuentan en totalCasos */
+      /* Anulado u otros estados: solo cuentan en totalCasos */
     });
 
     Object.keys(byResp).forEach(function (k) {
       const d = byResp[k];
       d.tasaResolucion = d.totalCasos > 0 ? +(d.solucionados / d.totalCasos * 100).toFixed(1) : 0;
-      d.slaCumplido    = d.solucionados > 0 ? +(d.solucionadosSLA / d.solucionados * 100).toFixed(1) : null;
       d.avgTiempoSolucionados = d.tiemposSolucionados.length > 0
         ? +(d.tiemposSolucionados.reduce(function (s, v) { return s + v; }, 0) / d.tiemposSolucionados.length).toFixed(1)
         : null;
@@ -1503,7 +1498,9 @@
     const areas     = AREAS.slice();
 
     if (RESP_SECTION_FILTER.estado.length === 0 && estados.length > 0) {
-      RESP_SECTION_FILTER.estado = estados.slice();
+      /* Por defecto sólo los casos activos: En Espera, En Proceso, Registrado */
+      const preSel = ESTADOS_ABIERTOS.filter(function (e) { return estados.indexOf(e) !== -1; });
+      RESP_SECTION_FILTER.estado = preSel.length > 0 ? preSel : estados.slice();
     }
     if (RESP_SECTION_FILTER.area.length === 0 && areas.length > 0) {
       RESP_SECTION_FILTER.area = areas.slice();
@@ -1574,15 +1571,14 @@
       }
       if (allCb) {
         allCb.addEventListener("change", function () {
-          if (this.checked) {
-            drop.querySelectorAll(".ms-cb").forEach(function (cb) { cb.checked = false; });
-            RESP_SECTION_FILTER[key] = [];
-            badge.style.display = "none";
-            badge.textContent = "0";
-            renderResponsablesContent();
-          } else {
-            this.checked = true;
-          }
+          // Al pulsar "Todos" se desactivan todas las opciones individuales;
+          // "Todos" queda marcado hasta que el usuario seleccione alguna.
+          drop.querySelectorAll(".ms-cb").forEach(function (cb) { cb.checked = false; });
+          this.checked = true;
+          RESP_SECTION_FILTER[key] = [];
+          badge.style.display = "none";
+          badge.textContent = "0";
+          renderResponsablesContent();
         });
       }
       drop.querySelectorAll(".ms-cb").forEach(function (cb) {
@@ -1662,7 +1658,6 @@
     if (tbodySum) {
       tbodySum.innerHTML = responsables.map(function (r) {
         const rowCls   = r.vencidosActivos > 0 ? "row--vencido" : (r.criticosActivos > 0 ? "row--critico" : "");
-        const slaStr   = r.slaCumplido !== null ? r.slaCumplido + "%" : "—";
         const tiempoStr = r.avgTiempoSolucionados !== null ? r.avgTiempoSolucionados + " d" : "—";
         const vBadge   = r.vencidosActivos > 0 ? '<span class="resp-badge resp-badge--vencido">' + r.vencidosActivos + '</span>' : "0";
         const cBadge   = r.criticosActivos > 0 ? '<span class="resp-badge resp-badge--critico">' + r.criticosActivos + '</span>' : "0";
@@ -1675,7 +1670,6 @@
           '<td data-order="' + r.vencidosActivos + '">' + vBadge + '</td>' +
           '<td data-order="' + r.criticosActivos + '">' + cBadge + '</td>' +
           '<td data-order="' + r.tasaResolucion + '">' + r.tasaResolucion + '%</td>' +
-          '<td data-order="' + (r.slaCumplido !== null ? r.slaCumplido : -1) + '">' + slaStr + '</td>' +
           '<td data-order="' + (r.avgTiempoSolucionados !== null ? r.avgTiempoSolucionados : 99999) + '">' + tiempoStr + '</td>' +
           '</tr>'
         );
@@ -1740,14 +1734,12 @@
     if (kpiGrid) {
       const tiempoSolStr = respData.avgTiempoSolucionados !== null ? respData.avgTiempoSolucionados + " días" : "—";
       const tiempoAbStr  = respData.avgTiempoAbiertos !== null ? respData.avgTiempoAbiertos + " días" : "—";
-      const slaStr       = respData.slaCumplido !== null ? respData.slaCumplido + "%" : "—";
       kpiGrid.innerHTML =
         kpi("Total asignados",          respData.totalCasos,         "info",    "bi-collection",         "todos los procesos") +
         kpi("Abiertos",                  respData.abiertos,           "info",    "bi-folder2-open",       "pendientes de resolución") +
         kpi("Solucionados",              respData.solucionados,       "sla",     "bi-check2-circle",      respData.tasaResolucion + "% de tasa de resolución") +
         kpi("Vencidos activ",          respData.vencidosActivos,    "vencido", "bi-x-octagon",          "requieren acción inmediata") +
-        kpi("Críticos activ",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","SLA ≥ 90%") +
-        kpi("SLA cumplido",     slaStr,                      "sla",     "bi-patch-check",        "% de resueltos dentro de SLA") +
+        kpi("Críticos activ",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","Progreso ≥ 90%") +
         kpi("Días prom. Sln",  tiempoSolStr,                "normal",  "bi-clock-history",      "tiempo promedio al cerrar") +
         kpi("Antigüedad prom. (abiertos)", tiempoAbStr,               "riesgo",  "bi-hourglass-split",    "backlog acumulado sin resolver");
     }
