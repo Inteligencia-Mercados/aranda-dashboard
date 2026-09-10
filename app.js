@@ -48,9 +48,9 @@
   ];
 
   function classify(progreso) {
-    if (progreso > 100) return "Vencido";
-    if (progreso >= 90) return "Critico";
-    if (progreso >= 70) return "Riesgo";
+    if (progreso >= 98) return "Vencido";
+    if (progreso >= 95) return "Critico";
+    if (progreso >= 90) return "Riesgo";
     return "Normal";
   }
 
@@ -1363,10 +1363,10 @@
       grid.innerHTML =
         kpi("% de solución", pctSolucion + "%", "sla", "bi-graph-up", sol.length + " de " + totalCasos + " casos totales") +
         kpi("Total solucionados", sol.length, "sla", "bi-check2-circle", "todos los procesos") +
-        kpi("A tiempo", aTiempo, "normal", "bi-patch-check", "Progreso ≤ 70% al resolver") +
-        kpi("Resueltos en riesgo", riesgo, "riesgo", "bi-shield-exclamation", "Progreso 70–90% al resolver") +
-        kpi("Resueltos críticos", criticos, "critico", "bi-exclamation-triangle", "Progreso 90–100% al resolver") +
-        kpi("Resueltos vencidos", vencidos, "vencido", "bi-x-octagon", "Progreso >100% al resolver");
+        kpi("A tiempo", aTiempo, "normal", "bi-patch-check", "Progreso < 90% al resolver") +
+        kpi("Resueltos en riesgo", riesgo, "riesgo", "bi-shield-exclamation", "Progreso 90–95% al resolver") +
+        kpi("Resueltos críticos", criticos, "critico", "bi-exclamation-triangle", "Progreso 95–98% al resolver") +
+        kpi("Resueltos vencidos", vencidos, "vencido", "bi-x-octagon", "Progreso ≥ 98% al resolver");
     }
 
     const sorted = sol.slice().sort(function (a, b) { return b["Progreso"] - a["Progreso"]; });
@@ -1739,7 +1739,7 @@
         kpi("Abiertos",                  respData.abiertos,           "info",    "bi-folder2-open",       "pendientes de resolución") +
         kpi("Solucionados",              respData.solucionados,       "sla",     "bi-check2-circle",      respData.tasaResolucion + "% de tasa de resolución") +
         kpi("Vencidos activ",          respData.vencidosActivos,    "vencido", "bi-x-octagon",          "requieren acción inmediata") +
-        kpi("Críticos activ",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","Progreso ≥ 90%") +
+        kpi("Críticos activ",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","Progreso ≥ 95%") +
         kpi("Días prom. Sln",  tiempoSolStr,                "normal",  "bi-clock-history",      "tiempo promedio al cerrar") +
         kpi("Antigüedad prom. (abiertos)", tiempoAbStr,               "riesgo",  "bi-hourglass-split",    "backlog acumulado sin resolver");
     }
