@@ -110,7 +110,7 @@
   const chartRegistry = {};
   const dtRegistry = {};
   let _respDetalleActual = null; // nombre del responsable actualmente abierto en el panel de detalle
-  const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [], area: [] };
+  const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [], area: [], fechaDesde: "", fechaHasta: "" };
   let TENDENCY_PERIOD = "semana"; // "semana" | "mes" | "año"
 
   /* ============================ UTILIDADES ============================ */
@@ -1417,6 +1417,8 @@
         if (RESP_SECTION_FILTER.grupo.length       && RESP_SECTION_FILTER.grupo.indexOf(r["Grupo"])             === -1) return;
         if (RESP_SECTION_FILTER.estado.length      && RESP_SECTION_FILTER.estado.indexOf(r["Estado"])           === -1) return;
         if (RESP_SECTION_FILTER.area.length        && RESP_SECTION_FILTER.area.indexOf(r["_area"])              === -1) return;
+        if (RESP_SECTION_FILTER.fechaDesde && (r["Fecha de registro"] || "") < RESP_SECTION_FILTER.fechaDesde) return;
+        if (RESP_SECTION_FILTER.fechaHasta && (r["Fecha de registro"] || "") > RESP_SECTION_FILTER.fechaHasta) return;
         allRaw.push(r);
       });
     });
@@ -1519,6 +1521,18 @@
           buildMsDropHTML("grupo",       "Grupo",        "bi-building",     grupos,    RESP_SECTION_FILTER) +
           buildMsDropHTML("estado",      "Estado",       "bi-circle-half",  estados,   RESP_SECTION_FILTER) +
         '</div>' +
+        '<div class="gfb-dates">' +
+          '<div class="filter-group">' +
+            '<label for="respFechaDesde">Desde</label>' +
+            '<input type="date" id="respFechaDesde" class="filter-select filter-select--sm"' +
+              (RESP_SECTION_FILTER.fechaDesde ? ' value="' + RESP_SECTION_FILTER.fechaDesde + '"' : '') + '>' +
+          '</div>' +
+          '<div class="filter-group">' +
+            '<label for="respFechaHasta">Hasta</label>' +
+            '<input type="date" id="respFechaHasta" class="filter-select filter-select--sm"' +
+              (RESP_SECTION_FILTER.fechaHasta ? ' value="' + RESP_SECTION_FILTER.fechaHasta + '"' : '') + '>' +
+          '</div>' +
+        '</div>' +
         '<button class="gfb-clear" id="respFilterClear" title="Limpiar filtros de sección">' +
           '<i class="bi bi-x-circle"></i> Limpiar' +
         '</button>' +
@@ -1580,6 +1594,20 @@
       });
     });
 
+    /* Fechas */
+    ["respFechaDesde", "respFechaHasta"].forEach(function (id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener("change", function () {
+          const d = document.getElementById("respFechaDesde");
+          const h = document.getElementById("respFechaHasta");
+          RESP_SECTION_FILTER.fechaDesde = d ? d.value : "";
+          RESP_SECTION_FILTER.fechaHasta = h ? h.value : "";
+          renderResponsablesContent();
+        });
+      }
+    });
+
     const clearBtn = document.getElementById("respFilterClear");
     if (clearBtn) {
       clearBtn.addEventListener("click", function () {
@@ -1587,6 +1615,8 @@
         RESP_SECTION_FILTER.grupo = [];
         RESP_SECTION_FILTER.estado = [];
         RESP_SECTION_FILTER.area = [];
+        RESP_SECTION_FILTER.fechaDesde = "";
+        RESP_SECTION_FILTER.fechaHasta = "";
         populateRespSectionFilters(); // rebuild with empty state
         renderResponsables();
       });
@@ -1742,6 +1772,8 @@
         if (r["Responsable"] !== respData.nombre) return false;
         if (r["Estado"] !== "En Espera" && r["Estado"] !== "En Proceso" && r["Estado"] !== "Registrado") return false;
         if (RESP_SECTION_FILTER.area.length && RESP_SECTION_FILTER.area.indexOf(r["_area"]) === -1) return false;
+        if (RESP_SECTION_FILTER.fechaDesde && (r["Fecha de registro"] || "") < RESP_SECTION_FILTER.fechaDesde) return false;
+        if (RESP_SECTION_FILTER.fechaHasta && (r["Fecha de registro"] || "") > RESP_SECTION_FILTER.fechaHasta) return false;
         return true;
       })
       .sort(function (a, b) { return b["Progreso"] - a["Progreso"]; });
