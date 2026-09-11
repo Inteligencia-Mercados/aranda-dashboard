@@ -1795,25 +1795,26 @@
         }
       });
     });
-    const avgTiempoSolucionados = tiempos.length > 0
-      ? +(tiempos.reduce(function (s, v) { return s + v; }, 0) / tiempos.length).toFixed(1)
+    /* "Tiempo transcurrido" viene en días (fraccionarios) en los datos; se convierte a horas para la tarjeta */
+    const avgHorasSolucion = tiempos.length > 0
+      ? +((tiempos.reduce(function (s, v) { return s + v; }, 0) / tiempos.length) * 24).toFixed(1)
       : null;
     return { abiertos: abiertos, solucionados: solucionados, vencidosActivos: vencidosActivos,
-      criticosActivos: criticosActivos, riesgoActivos: riesgoActivos, avgTiempoSolucionados: avgTiempoSolucionados };
+      criticosActivos: criticosActivos, riesgoActivos: riesgoActivos, avgHorasSolucion: avgHorasSolucion };
   }
 
   function renderRespDetalleKpis(nombre) {
     const kpiGrid = document.getElementById("kpiRespDetalle");
     if (!kpiGrid) return;
     const stats = computeRespDetallePeriodoStats(nombre);
-    const tiempoStr = stats.avgTiempoSolucionados !== null ? stats.avgTiempoSolucionados + " días" : "—";
+    const tiempoStr = stats.avgHorasSolucion !== null ? stats.avgHorasSolucion + " h" : "—";
     kpiGrid.innerHTML =
       kpi("Total casos abiertos",              stats.abiertos,         "info",    "bi-folder2-open",         "En Espera · En Proceso · Registrado") +
       kpi("Total casos solucionados o cerrados", stats.solucionados,   "sla",     "bi-check2-circle",        "Solucionado + Cerrado") +
       kpi("Total vencidos activos",             stats.vencidosActivos, "vencido", "bi-x-octagon",            "Progreso ≥ 98%") +
       kpi("Total críticos activos",             stats.criticosActivos, "critico", "bi-exclamation-triangle", "Progreso 95–98%") +
       kpi("Total en riesgo activos",            stats.riesgoActivos,   "riesgo",  "bi-shield-exclamation",   "Progreso 90–95%") +
-      kpi("Días promedio de solución",          tiempoStr,             "normal",  "bi-clock-history",        "de los solucionados/cerrados en el periodo");
+      kpi("Promedio de tiempo de solución",     tiempoStr,             "normal",  "bi-clock-history",        "horas · solucionados/cerrados en el periodo");
   }
 
   function wireRespDetallePeriodoSelect() {
