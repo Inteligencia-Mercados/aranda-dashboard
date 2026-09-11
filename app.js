@@ -1501,10 +1501,12 @@
          de Estado actual); el histórico de solucionados vive aparte en histByResp. */
     });
 
-    /* Total de tareas (reporte de Tareas/Eventos) por responsable — respeta el filtro de fechas
-       de la sección sobre "Fecha de creación"; no depende de Área/Grupo/Estado porque ese reporte
-       no tiene esos campos. El cruce por nombre tolera tildes y nombres truncados (namesMatch). */
+    /* Total de tareas PENDIENTES (Estado !== "Completada", reporte de Tareas/Eventos) por
+       responsable — respeta el filtro de fechas de la sección sobre "Fecha de creación"; no
+       depende de Área/Grupo/Estado (de casos) porque ese reporte no tiene esos campos. El cruce
+       por nombre tolera tildes y nombres truncados (namesMatch). */
     const tareasFiltradas = (STATE.rawTareas || []).filter(function (t) {
+      if (t["Estado"] === "Completada") return false;
       const f = t["Fecha de creación"] || "";
       if (RESP_SECTION_FILTER.fechaDesde && f < RESP_SECTION_FILTER.fechaDesde) return false;
       if (RESP_SECTION_FILTER.fechaHasta && f > RESP_SECTION_FILTER.fechaHasta) return false;
@@ -1524,7 +1526,7 @@
         : null;
       d.casosXDia  = +(d.totalCasos  / globalDays).toFixed(3);
       d.areasList  = Object.keys(d.areas).join(", ");
-      d.totalTareas = tareasFiltradas.reduce(function (n, t) { return namesMatch(t["Responsable"], d.nombre) ? n + 1 : n; }, 0);
+      d.tareasPendientes = tareasFiltradas.reduce(function (n, t) { return namesMatch(t["Responsable"], d.nombre) ? n + 1 : n; }, 0);
     });
 
     return { byResp: byResp, globalDays: Math.round(globalDays) };
@@ -1723,7 +1725,7 @@
           '<td data-order="' + r.criticosActivos + '">' + cBadge + '</td>' +
           '<td data-order="' + r.tasaResolucion + '">' + r.tasaResolucion + '%</td>' +
           '<td data-order="' + (horasSolucion !== null ? horasSolucion : 999999) + '">' + tiempoStr + '</td>' +
-          '<td data-order="' + r.totalTareas + '">' + r.totalTareas + '</td>' +
+          '<td data-order="' + r.tareasPendientes + '">' + r.tareasPendientes + '</td>' +
           '</tr>'
         );
       }).join("");
