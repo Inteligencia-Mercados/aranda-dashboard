@@ -93,8 +93,12 @@
     combinedRecords: [],
     statsCombined: {},
     lastUpdated: null,
-    firstLoadDone: false
+    firstLoadDone: false,
+    rawTareas: [],      // reporte de Tareas/Eventos (Gestión de Tareas, dentro del detalle de responsable)
+    errorTareas: null
   };
+
+  const TAREAS_SOURCE = "data/Tareas.json";
 
   /* Estado del filtro global: arrays vacíos = sin filtro (todos) */
   const GLOBAL_FILTER = {
@@ -850,9 +854,28 @@
       });
   }
 
+  /* Reporte de Tareas/Eventos (Aranda) — fuente independiente de PQRS/CAE/SF: no tiene
+     Progreso/SLA, se usa sólo dentro de "Gestión de Tareas" en el detalle de responsable. */
+  function loadTareas() {
+    const url = TAREAS_SOURCE + "?_=" + Date.now();
+    return fetch(url, { cache: "no-store" })
+      .then(function (resp) {
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        return resp.json();
+      })
+      .then(function (json) {
+        STATE.rawTareas = (json && Array.isArray(json.records)) ? json.records : [];
+        STATE.errorTareas = null;
+      })
+      .catch(function (err) {
+        STATE.errorTareas = "Origen no disponible (" + err.message + ")";
+        if (!STATE.rawTareas) STATE.rawTareas = [];
+      });
+  }
+
   function loadAllData(isManual) {
     setSyncStatus("syncing");
-    return Promise.all(AREAS.map(loadDataSource)).then(function () {
+    return Promise.all(AREAS.map(loadDataSource).concat([loadTareas()])).then(function () {
       STATE.lastUpdated = new Date();
 
       let hasError = false, allError = true;
@@ -1825,8 +1848,96 @@
     sel._wired = true;
     sel.addEventListener("change", function () {
       RESP_DETALLE_PERIODO = this.value;
-      if (_respDetalleActual) renderRespDetalleKpis(_respDetalleActual);
+      if (_respDetalleActual) {
+        renderRespDetalleKpis(_respDetalleActual);
+        renderRespTareas(_respDetalleActual);
+      }
     });
+  }
+
+  /* ====================== GESTIÓN DE TAREAS (subsección del detalle de responsable) ======================
+     Fuente independiente: reporte de Tareas/Eventos de Aranda (data/Tareas.json). No tiene Progreso/SLA,
+     así que no usa classify()/effectiveClass(). Se cruza con el responsable por nombre porque el reporte
+     de tareas y el de casos no siempre usan exactamente el mismo texto (con/sin segundo apellido, con/sin
+     tilde) — normalizeName()/namesMatch() lo toleran. */
+  const ACCENT_MAP = { "á":"a","é":"e","í":"i","ó":"o","ú":"u","ñ":"n","ü":"u" };
+  function normalizeName(s) {
+    return (s || "").toString()
+      .toLowerCase()
+      .replace(/[áéíóúñü]/g, function (c) { return ACCENT_MAP[c] || c; })
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function namesMatch(a, b) {
+    const na = normalizeName(a), nb = normalizeName(b);
+    if (!na || !nb) return false;
+    if (na === nb) return true;
+    return na.indexOf(nb) === 0 || nb.indexOf(na) === 0; // nombre truncado/con menos apellidos
+  }
+
+  function computeRespTareasStats(nombre) {
+    const range = getRespDetallePeriodoRange();
+    let total = 0, completadas = 0;
+    const porCanal = {};
+    const porCausa = {};
+    const rows = [];
+    (STATE.rawTareas || []).forEach(function (t) {
+      if (!namesMatch(t["Responsable"], nombre)) return;
+      const f = t["Fecha de creación"] || "";
+      if (range.desde && f < range.desde) return;
+      if (range.hasta && f > range.hasta) return;
+      total++;
+      if (t["Estado"] === "Completada") completadas++;
+      const canal = t["Canal"] || "Sin canal";
+      porCanal[canal] = (porCanal[canal] || 0) + 1;
+      const causa = t["Causa"] || "Sin causa";
+      porCausa[causa] = (porCausa[causa] || 0) + 1;
+      rows.push(t);
+    });
+    rows.sort(function (a, b) { return (b["Fecha de creación"] || "").localeCompare(a["Fecha de creación"] || ""); });
+    return { total: total, completadas: completadas, porCanal: porCanal, porCausa: porCausa, rows: rows };
+  }
+
+  function renderRespTareas(nombre) {
+    const kpiGrid = document.getElementById("kpiRespTareas");
+    if (!kpiGrid) return;
+    const stats = computeRespTareasStats(nombre);
+    const pctCompletadas = stats.total > 0 ? +(stats.completadas / stats.total * 100).toFixed(1) : 0;
+    const topCanal = topEntry(stats.porCanal);
+    const topCausa = topEntry(stats.porCausa);
+
+    const emptyEl = document.getElementById("respTareasEmpty");
+    if (emptyEl) emptyEl.style.display = stats.total === 0 ? "" : "none";
+    const countEl = document.getElementById("respTareasSubCount");
+    if (countEl) countEl.textContent = stats.total + " tarea" + (stats.total !== 1 ? "s" : "") + " en el periodo";
+
+    kpiGrid.innerHTML =
+      kpi("Total de tareas",        stats.total,       "info",    "bi-list-check",    "en el periodo seleccionado") +
+      kpi("Tareas completadas",     stats.completadas, "sla",     "bi-check2-circle", pctCompletadas + "% del total") +
+      kpi("Canal más usado",        topCanal.key,       "info",    "bi-headset",       topCanal.count + " tareas") +
+      kpi("Causa más frecuente",    topCausa.key,       "riesgo",  "bi-tags",          topCausa.count + " tareas");
+
+    renderChart("chartRespTareasCanal", "doughnut", toChartDataDoughnut(stats.porCanal, null, null), doughnutOpts());
+    renderChart("chartRespTareasCausa", "bar", toChartDataBar(stats.porCausa, "#8C0F13", 8), horizontalBarOpts());
+
+    const selTareas = "#tableRespTareas";
+    const tbody = document.querySelector(selTareas + " tbody");
+    if (tbody) {
+      tbody.innerHTML = stats.rows.map(function (t) {
+        return (
+          '<tr>' +
+          '<td>' + esc(t["Fecha de creación"]) + '</td>' +
+          '<td>' + esc(t["Asunto"]) + '</td>' +
+          '<td>' + esc(t["Estado"]) + '</td>' +
+          '<td>' + esc(t["Ciclo"]) + '</td>' +
+          '<td>' + esc(t["Canal"]) + '</td>' +
+          '<td>' + esc(t["Causa"]) + '</td>' +
+          '</tr>'
+        );
+      }).join("");
+    }
+    initDataTable(selTareas, { paging: true, pageLength: 10, order: [], lengthChange: false, dom: "frtip" });
   }
 
   function renderResponsableDetalle(respData) {
@@ -1842,6 +1953,9 @@
     /* KPI del responsable — según el periodo seleccionado (Diario/Semanal/Mensual/Histórico) */
     wireRespDetallePeriodoSelect();
     renderRespDetalleKpis(respData.nombre);
+
+    /* Gestión de Tareas — mismo periodo, fuente independiente (reporte de Tareas/Eventos) */
+    renderRespTareas(respData.nombre);
 
     /* Gráfico: distribución de abiertos por clasificación */
     const clasifData = {

@@ -14,18 +14,22 @@
   Este dashboard NO recibe carga manual de archivos. La arquitectura prevista es:
 
     1) SharePoint Online
-       Los archivos PQRS.xlsx, "Servicios Fsnancieros.xlsx" y CAE.xlsx se
-       almacenan en una biblioteca de documentos de SharePoint Online y son
-       actualizados de forma continua por los usuarios de negocio (Aranda
-       exporta / sincroniza hacia estas tablas).
+       Los archivos PQRS.xlsx, "Servicios Fsnancieros.xlsx", CAE.xlsx y el
+       reporte de Tareas/Eventos (Gestión de Tareas) se almacenan en una
+       biblioteca de documentos de SharePoint Online y son actualizados de
+       forma continua por los usuarios de negocio (Aranda exporta / sincroniza
+       hacia estas tablas).
 
     2) Power Automate (disparador: "Cuando se modifica un archivo" /
        "Cuando se crea o modifica un elemento" sobre la tabla de SharePoint)
-       - Detecta cambios en cada uno de los tres archivos Excel.
-       - Lee las filas de la tabla de Excel mediante el conector de Excel
+       - Detecta cambios en cada uno de los cuatro archivos.
+       - Lee las filas de la tabla de Excel/CSV mediante el conector de Excel
          Online (Business) / Lists.
        - Normaliza y transforma cada fila al modelo JSON que consume este
          dashboard (ver carpeta /data y la sección "Estructura de datos").
+       - IMPORTANTE (reporte de Tareas): el export original llega en CSV con
+         codificación Windows-1252 — el flujo debe leerlo con esa codificación
+         (no UTF-8 a secas) para no dañar tildes/ñ antes de generar el JSON.
 
     3) Publicación automática en GitHub Pages
        - El flujo invoca la GitHub REST API
@@ -33,17 +37,23 @@
          confirmar ("commit") el JSON actualizado directamente en la rama
          que sirve GitHub Pages.
        - Cada actualización reemplaza el contenido de data/PQRS.json,
-         data/ServiciosFinancieros.json y data/CAE.json sin intervención manual.
+         data/ServiciosFinancieros.json, data/CAE.json y data/Tareas.json
+         sin intervención manual.
 
     4) Dashboard Web (este archivo)
        - Consume ÚNICAMENTE los archivos JSON publicados (fetch con
          cache-busting) 3 veces al día (9am, 11am y 4pm), sin recargar la página.
        - Si un origen no responde o el JSON es inválido, se muestra un
          aviso de error en la fuente afectada y se conserva el último dato
-         válido en memoria (ver app.js → loadDataSource).
+         válido en memoria (ver app.js → loadDataSource / loadTareas).
+       - data/Tareas.json alimenta ÚNICAMENTE la subsección "Gestión de
+         Tareas" dentro del detalle de cada responsable (app.js →
+         computeRespTareasStats / renderRespTareas); no participa en los
+         KPIs de casos (PQRS/CAE/Servicios Financieros).
 
-  Para producción, basta reemplazar las rutas en CONFIG.dataSources (app.js)
-  por la URL pública de GitHub Pages donde Power Automate publica los JSON.
+  Para producción, basta reemplazar las rutas en CONFIG.dataSources y
+  TAREAS_SOURCE (app.js) por la URL pública de GitHub Pages donde Power
+  Automate publica los JSON.
   ============================================================================
 -->
 
@@ -392,6 +402,41 @@
               <tbody></tbody>
             </table>
           </div>
+
+          <!-- ============ SUBSECCIÓN: GESTIÓN DE TAREAS (reporte de Tareas/Eventos) ============ -->
+          <div class="panel-header resp-tareas-header" style="margin-top:24px">
+            <h2><i class="bi bi-list-check"></i> Gestión de Tareas</h2>
+            <span class="panel-sub" id="respTareasSubCount"></span>
+          </div>
+          <p class="panel-sub" id="respTareasEmpty" style="display:none;margin:0 0 12px">
+            Sin tareas registradas para este responsable en el periodo seleccionado.
+          </p>
+          <div class="kpi-grid" id="kpiRespTareas"></div>
+          <div class="grid-2col">
+            <div class="panel">
+              <div class="panel-header"><h2><i class="bi bi-headset"></i> Canal de atención</h2></div>
+              <div class="chart-wrap"><canvas id="chartRespTareasCanal" class="chart-skeleton"></canvas></div>
+            </div>
+            <div class="panel">
+              <div class="panel-header"><h2><i class="bi bi-tags"></i> Causas más frecuentes</h2></div>
+              <div class="chart-wrap"><canvas id="chartRespTareasCausa" class="chart-skeleton"></canvas></div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table data-table" id="tableRespTareas" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Asunto</th>
+                  <th>Estado</th>
+                  <th>Ciclo</th>
+                  <th>Canal</th>
+                  <th>Causa</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
 
       </section>
@@ -416,6 +461,6 @@
 <script src="lib/jszip.min.js"></script>
 <script src="lib/buttons.html5.min.js"></script>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
