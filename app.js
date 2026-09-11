@@ -111,6 +111,7 @@
   const chartRegistry = {};
   const dtRegistry = {};
   let _respDetalleActual = null; // nombre del responsable actualmente abierto en el panel de detalle
+  let RESP_DETALLE_PERIODO = "historico"; // "dia" | "semana" | "mes" | "historico" — filtro de las tarjetas KPI del detalle
   const RESP_SECTION_FILTER = { responsable: [], grupo: [], estado: [], area: [], fechaDesde: "", fechaHasta: "" };
   const RESP_GRUPO_DEFAULT = "GESTORES DE CAE"; // filtro inicial de la pestaña Gestión de Responsables
   let _respFilterDefaulted = false;             // el filtro por defecto sólo se aplica al abrir la pestaña por primera vez
@@ -1734,6 +1735,99 @@
     }
   }
 
+  /* Rango de fechas (sobre "Fecha de registro") para el filtro de periodo del detalle de responsable.
+     "semana" = domingo a sábado de la semana en curso; "mes" = mes calendario en curso;
+     "historico" = sin límite de fechas. */
+  function getRespDetallePeriodoRange() {
+    function toISO(d) {
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      return y + "-" + m + "-" + day;
+    }
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+
+    if (RESP_DETALLE_PERIODO === "dia") {
+      const iso = toISO(hoy);
+      return { desde: iso, hasta: iso };
+    }
+    if (RESP_DETALLE_PERIODO === "semana") {
+      const inicio = new Date(hoy);
+      inicio.setDate(hoy.getDate() - hoy.getDay()); // domingo de esta semana
+      const fin = new Date(inicio);
+      fin.setDate(inicio.getDate() + 6); // sábado
+      return { desde: toISO(inicio), hasta: toISO(fin) };
+    }
+    if (RESP_DETALLE_PERIODO === "mes") {
+      const inicio = new Date(hoy.getFullYear(), hoy.getMonth(), 1);
+      const fin = new Date(hoy.getFullYear(), hoy.getMonth() + 1, 0);
+      return { desde: toISO(inicio), hasta: toISO(fin) };
+    }
+    return { desde: null, hasta: null }; // histórico
+  }
+
+  /* KPIs del detalle de responsable, recalculados sobre el periodo seleccionado (Diario/Semanal/
+     Mensual/Histórico), filtrando por "Fecha de registro". Respeta el filtro de Área de la
+     sección; no depende de Estado/Grupo/Responsable de esa barra (aquí ya se mira una sola persona). */
+  function computeRespDetallePeriodoStats(nombre) {
+    const range = getRespDetallePeriodoRange();
+    let abiertos = 0, solucionados = 0, vencidosActivos = 0, criticosActivos = 0, riesgoActivos = 0;
+    const tiempos = [];
+    AREAS.forEach(function (a) {
+      (STATE.rawData[a] || []).forEach(function (r) {
+        if (r["Responsable"] !== nombre) return;
+        if (RESP_SECTION_FILTER.area.length && RESP_SECTION_FILTER.area.indexOf(r["_area"]) === -1) return;
+        const fr = r["Fecha de registro"] || "";
+        if (range.desde && fr < range.desde) return;
+        if (range.hasta && fr > range.hasta) return;
+
+        const estado = r["Estado"];
+        if (estado === "En Espera" || estado === "En Proceso" || estado === "Registrado") {
+          abiertos++;
+          const cls = classify(r["Progreso"]);
+          if (cls === "Vencido")      vencidosActivos++;
+          else if (cls === "Critico") criticosActivos++;
+          else if (cls === "Riesgo")  riesgoActivos++;
+        } else if (estado === "Solucionado" || estado === "Cerrado") {
+          solucionados++;
+          if (r["Tiempo transcurrido"] != null) tiempos.push(r["Tiempo transcurrido"]);
+        }
+      });
+    });
+    const avgTiempoSolucionados = tiempos.length > 0
+      ? +(tiempos.reduce(function (s, v) { return s + v; }, 0) / tiempos.length).toFixed(1)
+      : null;
+    return { abiertos: abiertos, solucionados: solucionados, vencidosActivos: vencidosActivos,
+      criticosActivos: criticosActivos, riesgoActivos: riesgoActivos, avgTiempoSolucionados: avgTiempoSolucionados };
+  }
+
+  function renderRespDetalleKpis(nombre) {
+    const kpiGrid = document.getElementById("kpiRespDetalle");
+    if (!kpiGrid) return;
+    const stats = computeRespDetallePeriodoStats(nombre);
+    const tiempoStr = stats.avgTiempoSolucionados !== null ? stats.avgTiempoSolucionados + " días" : "—";
+    kpiGrid.innerHTML =
+      kpi("Total casos abiertos",              stats.abiertos,         "info",    "bi-folder2-open",         "En Espera · En Proceso · Registrado") +
+      kpi("Total casos solucionados o cerrados", stats.solucionados,   "sla",     "bi-check2-circle",        "Solucionado + Cerrado") +
+      kpi("Total vencidos activos",             stats.vencidosActivos, "vencido", "bi-x-octagon",            "Progreso ≥ 98%") +
+      kpi("Total críticos activos",             stats.criticosActivos, "critico", "bi-exclamation-triangle", "Progreso 95–98%") +
+      kpi("Total en riesgo activos",            stats.riesgoActivos,   "riesgo",  "bi-shield-exclamation",   "Progreso 90–95%") +
+      kpi("Días promedio de solución",          tiempoStr,             "normal",  "bi-clock-history",        "de los solucionados/cerrados en el periodo");
+  }
+
+  function wireRespDetallePeriodoSelect() {
+    const sel = document.getElementById("respDetallePeriodo");
+    if (!sel) return;
+    sel.value = RESP_DETALLE_PERIODO;
+    if (sel._wired) return;
+    sel._wired = true;
+    sel.addEventListener("change", function () {
+      RESP_DETALLE_PERIODO = this.value;
+      if (_respDetalleActual) renderRespDetalleKpis(_respDetalleActual);
+    });
+  }
+
   function renderResponsableDetalle(respData) {
     if (!respData) return;
     const panel = document.getElementById("panelRespDetalle");
@@ -1744,20 +1838,9 @@
     const areaEl = document.getElementById("respDetalleArea");
     if (areaEl) areaEl.textContent = respData.areasList;
 
-    /* KPI del responsable */
-    const kpiGrid = document.getElementById("kpiRespDetalle");
-    if (kpiGrid) {
-      const tiempoSolStr = respData.avgTiempoSolucionados !== null ? respData.avgTiempoSolucionados + " días" : "—";
-      const tiempoAbStr  = respData.avgTiempoAbiertos !== null ? respData.avgTiempoAbiertos + " días" : "—";
-      kpiGrid.innerHTML =
-        kpi("Total asignados",          respData.totalCasos,         "info",    "bi-collection",         "todos los procesos") +
-        kpi("Abiertos",                  respData.abiertos,           "info",    "bi-folder2-open",       "pendientes de resolución") +
-        kpi("Solucionados",              respData.solucionados,       "sla",     "bi-check2-circle",      respData.tasaResolucion + "% de tasa de resolución") +
-        kpi("Vencidos activ",          respData.vencidosActivos,    "vencido", "bi-x-octagon",          "requieren acción inmediata") +
-        kpi("Críticos activ",          respData.criticosActivos,    "critico", "bi-exclamation-triangle","Progreso ≥ 95%") +
-        kpi("Días prom. Sln",  tiempoSolStr,                "normal",  "bi-clock-history",      "tiempo promedio al cerrar") +
-        kpi("Antigüedad prom. (abiertos)", tiempoAbStr,               "riesgo",  "bi-hourglass-split",    "backlog acumulado sin resolver");
-    }
+    /* KPI del responsable — según el periodo seleccionado (Diario/Semanal/Mensual/Histórico) */
+    wireRespDetallePeriodoSelect();
+    renderRespDetalleKpis(respData.nombre);
 
     /* Gráfico: distribución de abiertos por clasificación */
     const clasifData = {
