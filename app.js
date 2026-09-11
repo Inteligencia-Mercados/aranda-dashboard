@@ -1667,7 +1667,7 @@
         kpi("Total de casos abiertos", totalAbiertos, "info", "bi-folder-symlink", "En Espera · En Proceso · Registrado");
     }
 
-    /* ---- Tabla resumen (8 columnas) ---- */
+    /* ---- Tabla resumen (7 columnas) ---- */
     const selSum = "#tableRespResumen";
     if (dtRegistry[selSum]) { try { dtRegistry[selSum].destroy(); } catch (e) { /* noop */ } delete dtRegistry[selSum]; }
     const tbodySum = document.querySelector(selSum + " tbody");
@@ -1681,7 +1681,6 @@
           '<tr class="resp-row ' + rowCls + '" data-resp="' + esc(r.nombre) + '" title="Clic para ver el detalle de ' + esc(r.nombre) + '">' +
           '<td class="row-num" style="text-align:center;color:#888;font-size:.82rem;width:32px"></td>' +
           '<td><strong>' + esc(r.nombre) + '</strong></td>' +
-          '<td data-order="' + r.totalCasos + '">' + r.totalCasos + '</td>' +
           '<td data-order="' + r.abiertos + '">' + r.abiertos + '</td>' +
           '<td data-order="' + r.vencidosActivos + '">' + vBadge + '</td>' +
           '<td data-order="' + r.criticosActivos + '">' + cBadge + '</td>' +
@@ -1693,7 +1692,7 @@
     }
 
     dtRegistry[selSum] = $(selSum).DataTable(Object.assign({ language: DT_LANG_ES }, {
-      paging: true, pageLength: 5, lengthChange: false, order: [[3, "desc"]],
+      paging: true, pageLength: 5, lengthChange: false, order: [[2, "desc"]],
       autoWidth: false,
       dom: "frtipB",
       buttons: [
