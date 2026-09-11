@@ -860,12 +860,13 @@ table.resp-resumen-table{
   width:100% !important;
 }
 table.resp-resumen-table thead th:first-child{ width:4%; }
-table.resp-resumen-table thead th:nth-child(2){ width:28%; }
-table.resp-resumen-table thead th:nth-child(3){ width:12%; }
-table.resp-resumen-table thead th:nth-child(4){ width:14%; }
-table.resp-resumen-table thead th:nth-child(5){ width:14%; }
-table.resp-resumen-table thead th:nth-child(6){ width:14%; }
-table.resp-resumen-table thead th:nth-child(7){ width:14%; }
+table.resp-resumen-table thead th:nth-child(2){ width:24%; }
+table.resp-resumen-table thead th:nth-child(3){ width:10%; }
+table.resp-resumen-table thead th:nth-child(4){ width:12%; }
+table.resp-resumen-table thead th:nth-child(5){ width:12%; }
+table.resp-resumen-table thead th:nth-child(6){ width:12%; }
+table.resp-resumen-table thead th:nth-child(7){ width:13%; }
+table.resp-resumen-table thead th:nth-child(8){ width:13%; }
 
 /* ============================== MODULE TEMPLATE (injected via JS) ============================== */
 .module-section .kpi-grid{ margin-bottom:18px; }

@@ -1501,6 +1501,16 @@
          de Estado actual); el histórico de solucionados vive aparte en histByResp. */
     });
 
+    /* Total de tareas (reporte de Tareas/Eventos) por responsable — respeta el filtro de fechas
+       de la sección sobre "Fecha de creación"; no depende de Área/Grupo/Estado porque ese reporte
+       no tiene esos campos. El cruce por nombre tolera tildes y nombres truncados (namesMatch). */
+    const tareasFiltradas = (STATE.rawTareas || []).filter(function (t) {
+      const f = t["Fecha de creación"] || "";
+      if (RESP_SECTION_FILTER.fechaDesde && f < RESP_SECTION_FILTER.fechaDesde) return false;
+      if (RESP_SECTION_FILTER.fechaHasta && f > RESP_SECTION_FILTER.fechaHasta) return false;
+      return true;
+    });
+
     Object.keys(byResp).forEach(function (k) {
       const d = byResp[k];
       const h = histByResp[k] || { totalCasos: 0, solucionados: 0, tiempos: [] };
@@ -1514,6 +1524,7 @@
         : null;
       d.casosXDia  = +(d.totalCasos  / globalDays).toFixed(3);
       d.areasList  = Object.keys(d.areas).join(", ");
+      d.totalTareas = tareasFiltradas.reduce(function (n, t) { return namesMatch(t["Responsable"], d.nombre) ? n + 1 : n; }, 0);
     });
 
     return { byResp: byResp, globalDays: Math.round(globalDays) };
@@ -1691,14 +1702,16 @@
         kpi("Total de casos abiertos", totalAbiertos, "info", "bi-folder-symlink", "En Espera · En Proceso · Registrado");
     }
 
-    /* ---- Tabla resumen (7 columnas) ---- */
+    /* ---- Tabla resumen (8 columnas) ---- */
     const selSum = "#tableRespResumen";
     if (dtRegistry[selSum]) { try { dtRegistry[selSum].destroy(); } catch (e) { /* noop */ } delete dtRegistry[selSum]; }
     const tbodySum = document.querySelector(selSum + " tbody");
     if (tbodySum) {
       tbodySum.innerHTML = responsables.map(function (r) {
         const rowCls   = r.vencidosActivos > 0 ? "row--vencido" : (r.criticosActivos > 0 ? "row--critico" : "");
-        const tiempoStr = r.avgTiempoSolucionados !== null ? r.avgTiempoSolucionados + " d" : "—";
+        /* "avgTiempoSolucionados" viene en días (fraccionarios); se muestra en horas, igual que en el detalle */
+        const horasSolucion = r.avgTiempoSolucionados !== null ? +(r.avgTiempoSolucionados * 24).toFixed(1) : null;
+        const tiempoStr = horasSolucion !== null ? horasSolucion + " h" : "—";
         const vBadge   = r.vencidosActivos > 0 ? '<span class="resp-badge resp-badge--vencido">' + r.vencidosActivos + '</span>' : "0";
         const cBadge   = r.criticosActivos > 0 ? '<span class="resp-badge resp-badge--critico">' + r.criticosActivos + '</span>' : "0";
         return (
@@ -1709,7 +1722,8 @@
           '<td data-order="' + r.vencidosActivos + '">' + vBadge + '</td>' +
           '<td data-order="' + r.criticosActivos + '">' + cBadge + '</td>' +
           '<td data-order="' + r.tasaResolucion + '">' + r.tasaResolucion + '%</td>' +
-          '<td data-order="' + (r.avgTiempoSolucionados !== null ? r.avgTiempoSolucionados : 99999) + '">' + tiempoStr + '</td>' +
+          '<td data-order="' + (horasSolucion !== null ? horasSolucion : 999999) + '">' + tiempoStr + '</td>' +
+          '<td data-order="' + r.totalTareas + '">' + r.totalTareas + '</td>' +
           '</tr>'
         );
       }).join("");
