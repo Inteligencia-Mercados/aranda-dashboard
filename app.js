@@ -1406,14 +1406,16 @@
 
   function computeResponsableStats() {
     const allRaw = [];
+    const histRaw = []; // mismos filtros, salvo Estado — para las métricas históricas de resolución
     AREAS.forEach(function (a) {
       (STATE.rawData[a] || []).forEach(function (r) {
         if (RESP_SECTION_FILTER.responsable.length && RESP_SECTION_FILTER.responsable.indexOf(r["Responsable"]) === -1) return;
         if (RESP_SECTION_FILTER.grupo.length       && RESP_SECTION_FILTER.grupo.indexOf(r["Grupo"])             === -1) return;
-        if (RESP_SECTION_FILTER.estado.length      && RESP_SECTION_FILTER.estado.indexOf(r["Estado"])           === -1) return;
         if (RESP_SECTION_FILTER.area.length        && RESP_SECTION_FILTER.area.indexOf(r["_area"])              === -1) return;
         if (RESP_SECTION_FILTER.fechaDesde && (r["Fecha de registro"] || "") < RESP_SECTION_FILTER.fechaDesde) return;
         if (RESP_SECTION_FILTER.fechaHasta && (r["Fecha de registro"] || "") > RESP_SECTION_FILTER.fechaHasta) return;
+        histRaw.push(r);
+        if (RESP_SECTION_FILTER.estado.length && RESP_SECTION_FILTER.estado.indexOf(r["Estado"]) === -1) return;
         allRaw.push(r);
       });
     });
@@ -1423,6 +1425,22 @@
       ? Math.max(1, (new Date(fechas[fechas.length - 1] + "T00:00:00") - new Date(fechas[0] + "T00:00:00")) / 86400000) + 1
       : 1;
 
+    /* % Resolución y Días prom. de resolución se calculan sobre el histórico completo del
+       responsable (Área/Responsable/Grupo/Fecha, ignorando el filtro de Estado) — igual que la
+       pestaña Solucionados — para que no dependan de que "Solucionado"/"Cerrado" esté marcado
+       en el filtro de Estado (que por defecto sólo muestra los casos activos). */
+    const histByResp = {};
+    histRaw.forEach(function (r) {
+      const resp = r["Responsable"] || "Sin asignar";
+      if (!histByResp[resp]) histByResp[resp] = { totalCasos: 0, solucionados: 0, tiempos: [] };
+      const h = histByResp[resp];
+      h.totalCasos++;
+      if (r["Estado"] === "Solucionado" || r["Estado"] === "Cerrado") {
+        h.solucionados++;
+        if (r["Tiempo transcurrido"] != null) h.tiempos.push(r["Tiempo transcurrido"]);
+      }
+    });
+
     const byResp = {};
     allRaw.forEach(function (r) {
       const resp = r["Responsable"] || "Sin asignar";
@@ -1431,12 +1449,10 @@
           nombre: resp,
           totalCasos: 0,
           abiertos: 0,
-          solucionados: 0,
           vencidosActivos: 0,
           criticosActivos: 0,
           riesgoActivos: 0,
           normalActivos: 0,
-          tiemposSolucionados: [],
           tiemposAbiertos: [],
           categorias: {},
           areas: {}
@@ -1448,10 +1464,7 @@
       const cat = r["Categoría"] || "Sin categoría";
       d.categorias[cat] = (d.categorias[cat] || 0) + 1;
 
-      if (r["Estado"] === "Solucionado" || r["Estado"] === "Cerrado") {
-        d.solucionados++;
-        if (r["Tiempo transcurrido"] != null) d.tiemposSolucionados.push(r["Tiempo transcurrido"]);
-      } else if (r["Estado"] === "En Espera" || r["Estado"] === "En Proceso" || r["Estado"] === "Registrado") {
+      if (r["Estado"] === "En Espera" || r["Estado"] === "En Proceso" || r["Estado"] === "Registrado") {
         d.abiertos++;
         if (r["Tiempo transcurrido"] != null) d.tiemposAbiertos.push(r["Tiempo transcurrido"]);
         const cls = classify(r["Progreso"]);
@@ -1460,14 +1473,17 @@
         else if (cls === "Riesgo")  d.riesgoActivos++;
         else                        d.normalActivos++;
       }
-      /* Anulado u otros estados: solo cuentan en totalCasos */
+      /* Solucionado, Cerrado, Anulado u otros: sólo cuentan en totalCasos (carga bajo el filtro
+         de Estado actual); el histórico de solucionados vive aparte en histByResp. */
     });
 
     Object.keys(byResp).forEach(function (k) {
       const d = byResp[k];
-      d.tasaResolucion = d.totalCasos > 0 ? +(d.solucionados / d.totalCasos * 100).toFixed(1) : 0;
-      d.avgTiempoSolucionados = d.tiemposSolucionados.length > 0
-        ? +(d.tiemposSolucionados.reduce(function (s, v) { return s + v; }, 0) / d.tiemposSolucionados.length).toFixed(1)
+      const h = histByResp[k] || { totalCasos: 0, solucionados: 0, tiempos: [] };
+      d.solucionados = h.solucionados;
+      d.tasaResolucion = h.totalCasos > 0 ? +(h.solucionados / h.totalCasos * 100).toFixed(1) : 0;
+      d.avgTiempoSolucionados = h.tiempos.length > 0
+        ? +(h.tiempos.reduce(function (s, v) { return s + v; }, 0) / h.tiempos.length).toFixed(1)
         : null;
       d.avgTiempoAbiertos = d.tiemposAbiertos.length > 0
         ? +(d.tiemposAbiertos.reduce(function (s, v) { return s + v; }, 0) / d.tiemposAbiertos.length).toFixed(1)
